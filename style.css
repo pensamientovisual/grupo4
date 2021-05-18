@@ -100,12 +100,38 @@ h1{
   margin-top: 80px;
   font-size: 80px; 
 }
+
+#headerdatos{
+    margin:30px 0px;
+}
+#headerdatos h1{
+    font-size: 80px;
+    margin: 0px;
+    text-align: center;
+    margin-top: 10px;
+
+
+}
+#headerdatos #nro{
+    font-size: 150px;
+    margin: 0px;
+    text-align: center;
+    margin-top: 10px;
+}
+
 #titulo_slide4{
   position: relative;
   margin-top: 80px;
-  font-size: 55px;
+  font-size: 80px;
   color: #42424A;
 }
+
+#letrasn{
+    top: 0%;
+    vertical-align: middle;
+    font-size: 80px;
+    color: #42424A;
+  }
 #nro{
   position: relative;
   font-size: 100px;
@@ -117,6 +143,12 @@ h1{
   font-size: 55px;
   color: #42424A;
 }
+#dato2{
+    position: relative;
+    margin-top: -80px;
+    font-size: 55px;
+    color: #42424A;
+  }
 
 .flex{
     display: flex;
@@ -354,10 +386,3 @@ svg{
 
 }
 
-#headerdatos h1{
-    font-size: 30px;
-    margin: 0px;
-    text-align: center;
-    margin-top: 15px;
-
-}
