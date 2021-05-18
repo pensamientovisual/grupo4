@@ -246,3 +246,110 @@ h1{
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+
+
+
+
+svg{
+    cursor: pointer;
+
+}
+.personajes{
+    display: block;
+}
+.p{
+    float: right;
+    width: 20%;
+    position: relative;
+}
+
+#p1{
+    position: relative;
+
+}
+
+.n1{
+    position: absolute;
+}
+
+#p2{
+    position: relative;
+
+}
+
+.n2{
+    position: absolute;
+}
+
+#p3{
+    position: relative;
+
+}
+
+.n3{
+    position: absolute;
+}
+
+#p4{
+    position: relative;
+
+}
+
+.n4{
+    position: absolute;
+}
+
+#p5{
+    position: relative;
+
+}
+
+.n5{
+    position: absolute;
+}
+
+.triste{
+    opacity: 0;
+}
+
+.feliz{
+    opacity: 0;
+}
+
+.frase p{
+    
+    font-size: 30px;
+    text-align: center;
+
+
+}
+
+.frase1{
+    opacity: 0;
+    position: relative;
+
+    border: 5px solid #53637d;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 10;
+    cursor: pointer;
+    width: 400px;
+    transform: translate(-10%,40%);
+    background-color: #ffffff95;
+
+}
+.frase2{
+    opacity: 0;
+    position: relative;
+
+    border: 5px solid #53637d;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 10;
+    cursor: pointer;
+    width: 400px;
+    transform: translate(-10%,40%);
+    background-color: #ffffff95;
+
+}
