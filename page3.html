@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+
+    </head>
+    <body>
+        <br><br><br>
+        <p id='demoPage3' class="titulo_niveles">hola</p>
+        <script>
+            var textCorrectAns = String('respondiste BIEN entonces el caso es...');
+            var textWrongAns = String('respondiste MAL entonces el caso es...');
+            $(document).ready(function(){
+                if (btnSelect == 'correcta') {
+                    //alert('si');
+                    $('#demoPage3').text(textCorrectAns);
+                } else {
+                    //alert('no');
+                    $('#demoPage3').text(textWrongAns);
+                }
+
+
+
+            })
+                
+
+        </script>
+    </body>
+</html>

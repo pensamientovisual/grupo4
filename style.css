@@ -1,0 +1,248 @@
+@font-face{
+    font-family: Lunchbox Regular;
+    src: url(Lunchbox_Regular/Lunchbox.ttf);
+}
+
+body{
+    background: #E2C8A2;
+    color: #53637d;
+    font-family: Lunchbox Regular;
+    position: absolute;
+    display:block;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#navbar{
+    background: #cca569;
+    margin-top: 0px;
+    height: 60px;
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+
+}
+
+
+#navbar ul li {
+    list-style-type: none;
+}
+
+#navbar ul li a{
+    list-style-type: none;
+    font-size:30px;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    font-size: 80px;
+    margin-top: 65px;
+    position: relative;
+}
+
+#personajes{
+    display:block;
+}
+.mujer{
+    cursor: pointer;
+    position: relative;
+    float: left;
+    margin-left: 250px;
+}
+
+.hombre{
+    cursor: pointer;
+    position: relative;
+    float:right;
+    margin-right: 250px;
+}
+
+
+
+#nombre{
+    font-family: Lunchbox Regular;
+    width: 350px;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+    display:block;
+    position:relative;
+    margin: 10px auto;
+    color: #53637d;
+    padding: 10px 0px 0px 0px;
+}
+
+.ingresar{
+    width: 150px;
+    height: 60px;
+    text-align: center;
+    display:block;
+    position:relative;
+    margin: 10px auto;
+    font-size: 30px;
+    font-family: Lunchbox Regular;
+    padding: 5px 0px 0px 0px;
+    color: #53637d;
+    background-color: #f8e9d3;
+    box-shadow: -3px 3px #53637d;
+    border: solid #f8e9d3;
+    border-radius: 5px ;
+}
+
+#inp{
+    display: block;
+}
+.titulo_niveles{
+  position: relative;
+  margin-top: 80px;
+  font-size: 80px; 
+}
+#titulo_slide4{
+  position: relative;
+  margin-top: 80px;
+  font-size: 55px;
+  color: #42424A;
+}
+#nro{
+  position: relative;
+  font-size: 100px;
+  color: #C13B18;
+}
+#dato1{
+  position: relative;
+  margin-top: -80px;
+  font-size: 55px;
+  color: #42424A;
+}
+
+.flex{
+    display: flex;
+    position: center;
+}
+
+.radio_q{
+    width: 3em;
+    height: 3em;
+}
+
+.radio_res{
+    font-size: 50px;
+}
+
+.nextPage{
+    width: 110px;
+    height: 40px;
+    text-align: center;
+    display:block;
+    position:absolute;
+    bottom: 0;
+    right: 10;
+    margin: 10px auto;
+    font-size: 30px;
+    font-family: Lunchbox Regular;
+    padding: 5px 0px 0px 0px;
+    color: #53637d;
+    background-color: #f8e9d3;
+    box-shadow: -3px 3px #53637d;
+    border: solid #f8e9d3;
+    border-radius: 5px ;
+}
+
+.container{
+    margin: 0 auto;
+}
+.form{
+    height: 150px;
+    width: 150px;
+}
+
+#respuestas1{
+    background-color: #db5816;
+    width: 300px;
+    height: 130px;
+    font-family: Lunchbox Regular;
+    font-size: 30px;
+    border-radius: 10px;
+    float: left;
+    margin-left: 100px;
+  
+  }
+  #respuestas2{
+    background-color: #db5816;
+    width: 300px;
+    height: 130px;
+    font-family: Lunchbox Regular;
+    font-size: 30px;
+    border-radius: 10px;
+    margin-left: 210px;
+  }
+  #respuestas3{
+    background-color: #db5816;
+    width: 300px;
+    height: 130px;
+    font-family: Lunchbox Regular;
+    font-size: 30px;
+    border-radius: 10px;
+    float:right;
+    margin-right: 100px;
+  }
+.flex-container{
+    display: flex;
+}  
+
+.div_respuestas{
+    background-color: #db5816;
+    width: 300px;
+    height: 130px;
+    font-family: Lunchbox Regular;
+    font-size: 30px;
+    border-radius: 10px;
+    margin-right: 100px;
+}
+.parr {
+    font-size: 40px;
+}
+
+
+.sidenav {
+    
+    display: none;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #cca569;
+    overflow-x: hidden;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    font-family: Lunchbox Regular;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+  color: white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
