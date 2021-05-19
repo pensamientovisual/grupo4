@@ -112,6 +112,9 @@ h1{
 
 #espacio2{
     height: 200px;
+    position: sticky;
+    top: 30px;
+    text-align: center;
 }
 
 #headerdatos{
@@ -300,6 +303,10 @@ h1{
   .sidenav a {font-size: 18px;}
 }
 
+.pre-datos{
+    font-size: 50px;
+;
+}
 
 svg{
     cursor: pointer;
