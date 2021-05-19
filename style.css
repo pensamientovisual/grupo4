@@ -57,7 +57,8 @@ h1{
     cursor: pointer;
     position: relative;
     float: left;
-    margin-left: 20%;
+    margin-left: 10%;
+    height: 400px;
     
 }
 
@@ -65,7 +66,7 @@ h1{
     cursor: pointer;
     position: relative;
     float:right;
-    margin-right: 20%;
+    margin-right: 10%;
 }
 
 #nombrepapa{
