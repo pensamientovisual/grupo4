@@ -13,7 +13,11 @@ body{
     margin-top: 0px;
     margin-bottom: 0px;
     height: 1080px;
+<<<<<<< HEAD
     width: 100%;
+=======
+    width: 1920px;
+>>>>>>> 01177368be911246c719f094604afb2e851b1759
 }
 #navbar{
     background: rgba(255, 99, 0, 1);
@@ -246,6 +250,7 @@ h1{
     font-size: 40px;
     height: 50%px;
     width: 1000px;
+    padding: 10px 15px;
 }
 
 .parent {
@@ -284,7 +289,7 @@ h1{
     font-family: Lunchbox Regular;
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 35px;
     color: #818181;
     display: block;
 
@@ -414,44 +419,6 @@ svg{
     transform: translate(-25%,40%);
     background-color: #ffffff95;
 
-}
-#niv{
-    font-size: 100px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    color: #C13B18;
-}
-.il{
-    float: right;
-    width: 33.33%;
-    position: relative;
-}
-
-#ilvl1{
-    position: relative;
-
-}
-
-.iconlvl1{
-    position: absolute;
-}
-
-#ilvl2{
-    position: relative;
-
-}
-
-.iconlvl2{
-    position: absolute;
-}
-
-#ilvl3{
-    position: relative;
-
-}
-
-.iconlvl3{
-    position: absolute;
 }
 
 #bodypg4{
