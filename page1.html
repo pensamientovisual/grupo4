@@ -104,9 +104,16 @@
                 wrapper: mujerContainer,
                 animType: 'svg',
                 loop: true,
-                autoplay: true,
+                autoplay: false,
                 path: 'mujerA.json',
             })
+
+            mujerContainer.addEventListener('mouseenter', function(){
+                mujerA.play()
+             });
+            mujerContainer.addEventListener('mouseleave', function(){
+                mujerA.stop();
+             });
         </script>
 
     </body>
