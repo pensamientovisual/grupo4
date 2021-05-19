@@ -13,11 +13,7 @@ body{
     margin-top: 0px;
     margin-bottom: 0px;
     height: 1080px;
-<<<<<<< HEAD
     width: 100%;
-=======
-    width: 1920px;
->>>>>>> 01177368be911246c719f094604afb2e851b1759
 }
 #navbar{
     background: rgba(255, 99, 0, 1);
@@ -61,14 +57,20 @@ h1{
     cursor: pointer;
     position: relative;
     float: left;
-    margin-left: 250px;
+    margin-left: 20%;
+    
 }
 
 #hombre_user{
     cursor: pointer;
     position: relative;
     float:right;
-    margin-right: 250px;
+    margin-right: 20%;
+}
+
+#nombrepapa{
+    margin-bottom: 20%;
+
 }
 
 

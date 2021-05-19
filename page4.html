@@ -110,6 +110,7 @@
                 
 
         </div>
+        <div id="containerSVG"></div>
         <div id="espacio2">
             <p class="pre-datos" style="margin: 15px">Aquí hay 5 personas</p>
             <p class="pre-datos" style="margin: 15px">Descubre que pasó para que 2 de ellas estén tristes</p>
@@ -1663,6 +1664,10 @@
                 <h1> </h1>
             </div>
         </div>
+        
+
+
+
 
         <script>
 
@@ -1931,7 +1936,15 @@
 
             
             });
-
+            
+            const svgContainer = document.getElementById('containerSVG')
+            const animItem = bodymovin.loadAnimation({
+                wrapper: svgContainer,
+                animType: 'svg',
+                loop: true,
+                autoplay: true,
+                path: 'affordance.json',
+            })
         </script>
 
         <div id="textos">
