@@ -4,8 +4,8 @@
 }
 
 body{
-    background: #E2C8A2;
-    color: #53637d;
+    background:rgba(212, 97, 25, 0.1);
+    color: #404347;
     font-family: Lunchbox Regular;
     position: absolute;
     display:block;
@@ -14,7 +14,7 @@ body{
     margin-bottom: 0px;
 }
 #navbar{
-    background: #cca569;
+    background: #ff9900;
     margin-top: 0px;
     height: 60px;
     display: block;

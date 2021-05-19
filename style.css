@@ -4,17 +4,19 @@
 }
 
 body{
-    background: #E2C8A2;
-    color: #53637d;
+    background: rgba(255, 99, 0, 0.1);
+    color: #404347;
     font-family: Lunchbox Regular;
     position: absolute;
     display:block;
     width: 100%;
     margin-top: 0px;
     margin-bottom: 0px;
+    height: 1080px;
+    width: 1920px;
 }
 #navbar{
-    background: #cca569;
+    background: rgba(255, 99, 0, 1);
     margin-top: 0px;
     height: 60px;
     display: block;
@@ -51,14 +53,14 @@ h1{
     opacity: 0;
 
 }
-.mujer{
+#mujer_user{
     cursor: pointer;
     position: relative;
     float: left;
     margin-left: 250px;
 }
 
-.hombre{
+#hombre_user{
     cursor: pointer;
     position: relative;
     float:right;
@@ -85,7 +87,7 @@ h1{
     height: 60px;
     text-align: center;
     display:block;
-    position:relative;
+    position:static;
     margin: 10px auto;
     font-size: 30px;
     font-family: Lunchbox Regular;
@@ -102,8 +104,9 @@ h1{
 }
 .titulo_niveles{
   position: relative;
-  margin-top: 80px;
+  margin-top: 10px;
   font-size: 80px; 
+  padding: 10px 15px;
 }
 
 #espacio{
@@ -239,12 +242,14 @@ h1{
 }
 .parr {
     font-size: 40px;
+    height: 50%px;
+    width: 1000px;
 }
 
 .parent {
     position: relative;
-    width: auto;
-    height:fit-content;
+    width: fit-content;
+    height: 100px;;
 }
 
 .div_parr{
@@ -268,7 +273,7 @@ h1{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #cca569;
+    background-color: rgba(255, 99, 0, 1);
     overflow-x: hidden;
     padding-top: 60px;
 }
@@ -280,6 +285,7 @@ h1{
     font-size: 25px;
     color: #818181;
     display: block;
+
 }
 
 .sidenav a:hover {
