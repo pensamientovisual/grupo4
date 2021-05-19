@@ -410,4 +410,42 @@ svg{
     background-color: #ffffff95;
 
 }
+#niv{
+    font-size: 100px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #C13B18;
+}
+.il{
+    float: right;
+    width: 33.33%;
+    position: relative;
+}
+
+#ilvl1{
+    position: relative;
+
+}
+
+.iconlvl1{
+    position: absolute;
+}
+
+#ilvl2{
+    position: relative;
+
+}
+
+.iconlvl2{
+    position: absolute;
+}
+
+#ilvl3{
+    position: relative;
+
+}
+
+.iconlvl3{
+    position: absolute;
+}
 
