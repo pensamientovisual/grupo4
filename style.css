@@ -12,8 +12,8 @@ body{
     width: 100%;
     margin-top: 0px;
     margin-bottom: 0px;
-    height: 1080px;
-    width: 1920px;
+    height: 100%;
+    width: 100%;
 }
 #navbar{
     background: rgba(255, 99, 0, 1);
