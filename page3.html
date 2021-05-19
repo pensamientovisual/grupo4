@@ -9,6 +9,10 @@
     <body>
         <br><br><br>
         <p id='demoPage3' class="titulo_niveles">hola</p>
+        <br>
+        <br>
+        <button id="btnSig_3a4" class = 'ingresar'>Continuar</button>
+
         <script>
             var textCorrectAns = String('respondiste BIEN entonces el caso es...');
             var textWrongAns = String('respondiste MAL entonces el caso es...');
@@ -21,9 +25,25 @@
                     $('#demoPage3').text(textWrongAns);
                 }
 
+                $('#btnSig_3a4').on('click', function () {
 
+                    $("#mainContent").empty();
+                    $( "#mainContent" ).load( "page4.html" );
 
-            })
+                })
+                $('#btnSig_3a4').hover(function(){
+                    $('#btnSig_3a4').css("background", "#fff8ef");
+                    $('#btnSig_3a4').css("border", "0px");
+                    $('#btnSig_3a4').css("cursor", "pointer");
+                    $('#btnSig_3a4').css("transition-duration", "0.5s")}
+                    
+
+                , function(){
+                    $('#btnSig_3a4').css("background", "#f8e9d3");
+                    $('#btnSig_3a4').css("transition-duration", "0.2s")
+                });
+
+            });
                 
 
         </script>

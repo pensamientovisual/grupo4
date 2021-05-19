@@ -7,54 +7,70 @@
     </head>
 
     <body>
+        <style>
+        body {
+            transition: background-color .5s;
+        }
+        </style>
         <br>
         <br>
         <br>
         <br>
-        <div class='div_parr'>
-            <p class="titulo_niveles" id='saludo'></p>
-            <p class = 'parr'>Es otro día de colegio, y por fin terminaron las clases de la mañana. Entre tanto estudio y correr en el recreo, 
-                esperas con ansias la hora del almuerzo. Cuando por fin te sientas a comer el sándwich de queso que trajiste de tu casa, 
-                sientes un olor raro que te hace fijarte de dónde viene.</p> 
-    
-            <p class = 'parr'>Al mirar a tu alrededor, te das cuenta de que Arnaav, tu compañero nuevo que viene de la India, trajo un de almuerzo con un tipo 
-                de carne de color amarillento, con condimientos y vegetales que tú antes no conocías. El olor te molesta muchísimo, así que decides:</p>
-    
-            <p class='titulo_niveles'>Marca una respuesta<p>
-    
-        </div>
-        <div class='container'>
-
-            <!--
-            <form > 
-                <input class='radio_q' type='radio' name='res' value='correcta' id='opcion1'>
-                <label class='radio_res' for="opcion1">Opción a</label><br>
-                <input class='radio_q' type='radio' name='res' value='mala' id='opcion2'>   
-                <label class='radio_res' for="opcion2">Opción b</label><br>           
-                <input class='radio_q' type='radio' name='res' value='mala' id='opcion3'>
-                <label class='radio_res' for="opcion3">Opción c</label><br> 
+        <div class='parent'>
+            <div class='div_parr'>
+                <p class="titulo_niveles" id='saludo'></p>
+                <p class = 'parr'>Es otro día de colegio, y por fin terminaron las clases de la mañana. Entre tanto estudio y correr en el recreo, 
+                    esperas con ansias la hora del almuerzo. Cuando por fin te sientas a comer el sándwich de queso que trajiste de tu casa, 
+                    sientes un olor raro que te hace fijarte de donde viene.</p> 
+        
+                <p class = 'parr'>Al mirar a tu alrededor, te das cuenta de que Arnaav, tu compañero nuevo que viene de la India, trajo un almuerzo con
+                carne de un color amarillento, condimientos y vegetales que tu no conoces. El olor te molesta muchísimo, así que decides:</p>
+        
+                <button id='hideBtn1' class="ingresar">Ya he terminado de leer</button>
                 
-                <button id="radio_btn" class = 'ingresar'>Continuar</button>
-            </form> -->
-
-            <br>
-            <br>
-            <div class='flex-container'>
-            <form>
-                <div>
-                    <button id="btnA" value='correcta' class='div_respuestas'>A. AVISARLES A TUS COMPAÑEROS QUE EL CULPABLE DEL OLOR ES ARNAAV,
-                        PARA QUE ASI ALGUIEN SE LO QUITE.</button>
+                <!--
                 </div>
-                <div>
-                    <button id="btnB" value='mala' class='div_respuestas'>B. PEDIRLE A ARNAAV QUE VAYA A ALMORZAR A OTRO LUGAR
-                        DONDE NO MOLESTE A NADIE. </button>
-                </div>
-                <div>
-                    <button id="btnC" value='mala' class='div_respuestas'>C. DECIRLE A ARNAAV QUE BOTE SU COMIDA A LA BASURA.</button>
-                </div>
-
+                <div class='container'>
                     
-            </form>    
+                    <form > 
+                        <input class='radio_q' type='radio' name='res' value='correcta' id='opcion1'>
+                        <label class='radio_res' for="opcion1">Opción a</label><br>
+                        <input class='radio_q' type='radio' name='res' value='mala' id='opcion2'>   
+                        <label class='radio_res' for="opcion2">Opción b</label><br>           
+                        <input class='radio_q' type='radio' name='res' value='mala' id='opcion3'>
+                        <label class='radio_res' for="opcion3">Opción c</label><br> 
+                        
+                        <button id="radio_btn" class = 'ingresar'>Continuar</button>
+                    </form>  -->
+                    
+            </div> 
+            
+            <div id='divRes1' style='display: none;'>
+                <h2 id="titulo_pregunta1">¿QUÉ HARIAS TU?<h2>
+                    <style>
+                        #titulo_pregunta1{
+                            text-align: center;
+                            position: relative;
+                            color: #43474C;
+                            font-size: 90px;
+                        }
+                    </style>
+                <form>
+                    <div class='flex-container'>
+                    <div>
+                        <button id="btnA" value='correcta' class='div_respuestas'>A. AVISARLES A TUS COMPAÑEROS QUE EL CULPABLE DEL OLOR ES ARNAAV,
+                            PARA QUE ASÍ ALGUIEN LE QUITE SU COMIDA.</button>
+                    </div>
+                    <div>
+                        <button id="btnB" value='mala' class='div_respuestas'>B. PEDIRLE A ARNAAV QUE VAYA A ALMORZAR A OTRO LUGAR
+                            DONDE NO MOLESTE A NADIE. </button>
+                    </div>
+                    <div>
+                        <button id="btnC" value='mala' class='div_respuestas'>C. DECIRLE A ARNAAV QUE BOTE SU COMIDA A LA BASURA.</button>
+                    </div>
+
+                            
+                </form>    
             </div>
         </div>
 
@@ -64,6 +80,7 @@
             var btnSelect;
             var radioAns;
             var greet = '¡Hola '+ name + '!';
+            var hideBtn1 = '#hideBtn1'
 
             $(document).ready(function(){
 
@@ -87,7 +104,8 @@
 
                     $("#mainContent").empty();
                     $( "#mainContent" ).load( "page3.html" );
- 
+                    document.body.style.backgroundColor = 'rgba(226, 200, 162, 1)'
+
                 })
 
                 $('#btnB').on('click', function () {
@@ -96,7 +114,8 @@
 
                     $("#mainContent").empty();
                     $( "#mainContent" ).load( "page3.html" );
- 
+                    document.body.style.backgroundColor = 'rgba(226, 200, 162, 1)'
+
                 })
 
                 $('#btnC').on('click', function () {
@@ -104,8 +123,30 @@
 
                     $("#mainContent").empty();
                     $( "#mainContent" ).load( "page3.html" );
- 
+                    document.body.style.backgroundColor = 'rgba(226, 200, 162, 1)'
                 })
+                
+                $('#hideBtn1').click(function (){
+                    $('#divRes1').show();
+                    $(hideBtn1).hide()
+                    $('.div_parr').hide()
+
+                    document.body.style.backgroundColor = "rgba(169, 165, 163, 0.8)";
+                })
+
+                $(hideBtn1).hover(function(){
+                    $(hideBtn1).css("background", "#fff8ef");
+                    $(hideBtn1).css("border", "0px");
+                    $(hideBtn1).css("cursor", "pointer");
+                    $(hideBtn1).css("transition-duration", "0.5s")}
+                    
+
+                , function(){
+                    $(hideBtn1).css("background", "#f8e9d3");
+                    $(hideBtn1).css("transition-duration", "0.2s")}
+
+    );
+
 
 
             });
