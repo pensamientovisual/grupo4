@@ -10,10 +10,9 @@ body{
     position: absolute;
     display:block;
     width: 100%;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    max-height: 1080px;
-    max-width: 1920px;
+    
+    
+    
 }
 #navbar{
     background: rgba(255, 116, 61, 1);
