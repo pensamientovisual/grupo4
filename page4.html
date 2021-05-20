@@ -80,6 +80,7 @@
 
 
             }
+ 
 
 
         </style>
@@ -90,7 +91,7 @@
     
     <body>
     <div id="bodypg4">
-        
+        <div id="containerSVG"></div>
         <div id="headerdatos" class="datoos">
             <div id="bodyheader">
                 <div id="espacio">
@@ -113,9 +114,9 @@
                 
 
         </div>
-        <div id="containerSVG"></div>
         
-        <div id="espacio2">
+        
+        <div id="espacio2" style="margin-top: 90px;">
             <p class="pre-datos" style="margin: 15px">Aquí hay <span class="n">5</span> personas que vienen de otro país</p>
             <p class="pre-datos" style="margin: 15px">Descubre que pasó para que <span class="n">2</span> de ellas estén tristes</p>
                     
@@ -1717,6 +1718,7 @@
                 var d5 = $(".d5")
                 var t4 = $(".frase1")
                 var t1 = $(".frase2")
+                var esp = $("#espacio2")
 
                 
 
@@ -1911,7 +1913,7 @@
                     var xx = $("#personajes")
                     
                     function myFunction() {
-                        if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+                        if (document.body.scrollTop > 170 || document.documentElement.scrollTop > 170) {
                         document.getElementById("myImg").className = "slideUp";
                         arriba = true
                         console.log(arriba)
@@ -1922,7 +1924,18 @@
 
                         //$(txtt).css("position", "fixed")
                       };
-                      if (document.body.scrollTop > 2200 || document.documentElement.scrollTop > 2200) {
+                      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                        document.getElementById("espacio2").className = "slideUp2";
+                        arriba = true
+                        console.log(arriba)
+                        $(esp).css("opacity", 1);
+
+
+
+
+                        //$(txtt).css("position", "fixed")
+                      };
+                      if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
                         document.getElementById("personajes").className = "slideUp2";
                         arriba = true
                         console.log(arriba)
