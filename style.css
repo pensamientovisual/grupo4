@@ -432,6 +432,6 @@ svg{
 #mainContent{
     position:absolute;
     display: block;
-    top:0px;
+    top:-30px;
     width: 100%;
 }
