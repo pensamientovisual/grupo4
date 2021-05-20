@@ -78,14 +78,12 @@ h1{
 }
 
 #mujerAn{
-    width: auto;
-    height: auto;
-    background-color: #404347;
+    width: 60%;
+    height: 60%;
     float: right;
     position:absolute;
     bottom: 0;
     right: 0;
-;
 }
 
 
@@ -265,7 +263,7 @@ h1{
 }
 .parr {
     font-size: 40px;
-    height: 50%;
+    height: auto;
     width: 1000px;
     padding: 10px 15px;
 }
@@ -409,6 +407,7 @@ svg{
     
     font-size: 30px;
     text-align: center;
+    padding: 10 10;
 
 
 }
