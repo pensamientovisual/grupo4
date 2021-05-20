@@ -20,7 +20,6 @@ $(document).ready(function(){
         $(hombre).css("transition-duration", "0.5s");
         click_mujer = true
         click_hombre = true
-        alert('chao')
         clicked_mujer = true
     });
     $(hombre).click(function(){
@@ -30,7 +29,6 @@ $(document).ready(function(){
         $(hombre).css("transition-duration", "0.5s");
         click_hombre = true
         click_mujer = true
-        alert('hola')
         clicked_hombre = true
     });
 

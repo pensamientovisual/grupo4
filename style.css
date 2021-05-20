@@ -437,3 +437,7 @@ svg{
     top:-60px;
     width: 100%;
 }
+
+#containerSVG{
+    height: 750px;
+}
