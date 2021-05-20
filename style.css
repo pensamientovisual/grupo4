@@ -273,6 +273,8 @@ h1{
   } */
 .flex-container{
     display: inline-flex;
+    width: 90%;
+    justify-content: center;
 }  
 
 .div_respuestas{
