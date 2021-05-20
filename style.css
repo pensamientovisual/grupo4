@@ -57,12 +57,15 @@ h1{
     opacity: 0;
 
 }
+
 #mujer_user{
     cursor: url("cursor/cursor_pointer.png"), auto;
     position: relative;
     float: right;
     margin-right: 10%;
-    height: 200px;
+    height: 500px;
+    width: 500px;
+
     
 }
 
