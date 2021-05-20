@@ -361,8 +361,7 @@ h1{
 
 svg{
     cursor: none;
-    height: 100px;
-    width: 100px;
+
 
 
 }
@@ -478,9 +477,5 @@ svg{
     width: 100%;
 }
 
-<<<<<<< HEAD
-=======
-#containerSVG{
-    height: 750px;
-}
->>>>>>> 1a6e607e256fe7a53ef1a04b132f1bf1c077f7ad
+
+
