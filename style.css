@@ -423,7 +423,7 @@ svg{
     z-index: 10;
     cursor: pointer;
     width: 410px;
-    transform: translate(-25%,40%);
+    transform: translate(-25%,20%);
     background-color: #ffffff95;
 
 }
@@ -434,7 +434,7 @@ svg{
     border: 5px solid #53637d;
     text-align: center;
     border-radius: 10px;
-    z-index: 10;
+    z-index: 8;
     cursor: pointer;
     width: 410px;
     transform: translate(-25%,40%);
@@ -443,7 +443,7 @@ svg{
 }
 
 #bodypg4{
-    height: 3000px;
+    height: 300%;
 }
 
 #mainContent{
