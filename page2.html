@@ -1846,7 +1846,7 @@
         <div class='parent'>
             <div class='div_parr'>
 
-                <p class="titulo_niveles" id='saludo' style="margin-left: 80px;"></p>
+                <p class="titulo_niveles" id='saludo' style="margin-left: 80px; font-size: 90px;"></p>
                 <div id="parr1">
 
                     <p class = 'parr' style="margin-left: 40px;">Es otro día de colegio, y por fin terminaron las clases de la mañana. Entre tanto estudio y correr en el recreo, 
@@ -1876,7 +1876,7 @@
                     
             </div>
             <div id= 'mujerAn'></div> 
-            <button id='hideBtn1' class="ingresar" style="float: right">Ya he terminado de leer</button>
+            <button id='hideBtn1' class="ingresar" style="float: right; border: 0px;">Ya he terminado de leer</button>
            
             <div id='divRes1' style='display: none;'>
                 <h2 id="titulo_pregunta1">¿QUÉ HARÍAS TU?<h2>
@@ -1891,7 +1891,7 @@
                 <form>
                     <div class='flex-container'>
                     <div>
-                        <button id="btnA" value='correcta' class='div_respuestas'>PREGUNTARLE SOBRE LO QUE TRAJO Y PREGUNTARLE SI PUEDES PROBAR UN POCO.</button>
+                        <button id="btnA" value='correcta' class='div_respuestas'>PREGUNTARLE AMABLEMENTE QUE TRAJO Y SI PUEDES PROBAR UN POCO.</button>
                     </div>
                     <div>
                         <button id="btnB" value='mala' class='div_respuestas'>PEDIRLE A ARNAAV QUE VAYA A ALMORZAR A OTRO LUGAR
@@ -1971,15 +1971,18 @@
                 })
 
                 $(hideBtn1).hover(function(){
-                    $(hideBtn1).css("background", "#fff8ef");
+                    $(hideBtn1).css("background-color", "#c03600");
                     $(hideBtn1).css("border", "0px");
-                    $(hideBtn1).css("cursor", "pointer");
+                    $(hideBtn1).css("cursor", "url('cursor/cursor_pointer.png'), auto;");
+                    $(hideBtn1).css("color", "white");
                     $(hideBtn1).css("transition-duration", "0.5s")}
                     
 
                 , function(){
-                    $(hideBtn1).css("background", "#f8e9d3");
+                    $(hideBtn1).css("background", "#e1743d");
+                    $(hideBtn1).css("color", "404347");
                     $(hideBtn1).css("transition-duration", "0.2s")}
+                    
 
     );
 

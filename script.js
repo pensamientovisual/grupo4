@@ -70,14 +70,15 @@ $(document).ready(function(){
     );
 
     $(boton).hover(function(){
-            $(boton).css("background", "#fff8ef");
+            $(boton).css("background", "#c03600");
             $(boton).css("border", "0px");
-            $(boton).css("cursor", "pointer");
+            $(boton).css("color", "white");
+            $(boton).css("cursor", "url('cursor/cursor_pointer.png'), auto;");
             $(boton).css("transition-duration", "0.5s")}
             
 
         , function(){
-            $(boton).css("background", "#f8e9d3");
+            $(boton).css("background", "#e1743d");
             $(boton).css("transition-duration", "0.2s")}
 
     );
