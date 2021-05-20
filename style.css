@@ -56,8 +56,8 @@ h1{
 #mujer_user{
     cursor: pointer;
     position: relative;
-    float: left;
-    margin-left: 10%;
+    float: right;
+    margin-right: 10%;
     height: 400px;
     
 }
@@ -65,8 +65,8 @@ h1{
 #hombre_user{
     cursor: pointer;
     position: relative;
-    float:right;
-    margin-right: 10%;
+    float:left;
+    margin-left: 10%;
 }
 
 #nombrepapa{
@@ -84,6 +84,7 @@ h1{
     text-align: center;
     display:block;
     position:relative;
+    margin-left: 300px;
     margin: 10px auto;
     color: #53637d;
     padding: 10px 0px 0px 0px;
@@ -111,9 +112,9 @@ h1{
 }
 .titulo_niveles{
   position: relative;
-  margin-top: 10px;
+  margin-top: 0px;
   font-size: 80px; 
-  padding: 10px 15px;
+  padding: 0px 15px;
 }
 
 #espacio{
@@ -280,7 +281,7 @@ h1{
     height: 100%;
     width: 250px;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     top: 0;
     left: 0;
     background-color: rgba(255, 99, 0, 1);
@@ -426,4 +427,11 @@ svg{
 
 #bodypg4{
     height: 3000px;
+}
+
+#mainContent{
+    position:absolute;
+    display: block;
+    top:0px;
+    width: 100%;
 }
