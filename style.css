@@ -30,12 +30,15 @@ body{
 
 #navbar ul li {
     list-style-type: none;
+
 }
 
 #navbar ul li a{
     list-style-type: none;
     font-size:30px;
     color: white;
+    padding-top: 3px;
+
 }
 
 h1{
@@ -430,8 +433,7 @@ svg{
 }
 
 #mainContent{
-
-
-    top:-30px;
+    position: relative;
+    top:-60px;
     width: 100%;
 }
