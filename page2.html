@@ -43,9 +43,10 @@
                         <button id="radio_btn" class = 'ingresar'>Continuar</button>
                     </form>  -->
                     
-            </div> 
+            </div>
+            <div id= 'mujerAn'></div> 
             <button id='hideBtn1' class="ingresar">Ya he terminado de leer</button>
-            
+           
             <div id='divRes1' style='display: none;'>
                 <h2 id="titulo_pregunta1">¿QUÉ HARIAS TU?<h2>
                     <style>
@@ -151,6 +152,14 @@
 
 
             });
+            const mujerAnContainer = document.getElementById('mujerAn')
+            const mujerAn = bodymovin.loadAnimation({
+                wrapper: mujerAnContainer,
+                animType: 'svg',
+                loop: true,
+                autoplay: false,
+                path: 'mujerA.json',
+            })
         </script>
 
     </body>    
