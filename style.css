@@ -132,13 +132,13 @@ h1{
     height: 15px;
 }
 #espacio2{
-    height: 150px;
+    height: 120px;
     position: sticky;
     text-align: center;
     top: 30px;
 }
 #espacio3{
-    height: 550px;
+    height: 500px;
 
     text-align: center;
 
@@ -428,9 +428,12 @@ svg{
     z-index: 10;
     cursor: pointer;
     width: 410px;
-    transform: translate(-25%,50%);
+    transform: translate(-25%,20%);
     background-color: #ffffff95;
 
+}
+.n{
+    color:#C13B18
 }
 .frase2{
     opacity: 0;
@@ -442,13 +445,13 @@ svg{
     z-index: 8;
     cursor: pointer;
     width: 410px;
-    transform: translate(-25%,70%);
+    transform: translate(-25%,50%);
     background-color: #ffffff95;
 
 }
 
 #bodypg4{
-    height: 300%;
+    height: 350%;
 }
 
 #mainContent{
