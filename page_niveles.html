@@ -2797,9 +2797,9 @@
             </div>
             <script>
                 $(document).ready(function(){
-                    var lvl1 = $("#ilvl1")
+                    var lvl1 = $("#ilvl3")
                     var lvl2 = $("#ilvl2")
-                    var lvl3 = $("#ilvl3")
+                    var lvl3 = $("#ilvl1")
 
                     lvl1.mouseenter(function(){
                         $(lvl1).css("transform", "scale(1.1, 1.1)");
@@ -2808,82 +2808,85 @@
                         $(lvl1).css("transition-duration", "0.5s");
                         $(lvl2).css("transition-duration", "0.5s");
                         $(lvl3).css("transition-duration", "0.5s");
+                        console.log("hola")
 
 
 
 
-                });
-                lvl2.mouseenter(function(){
-                        $(lvl2).css("transform", "scale(1.1, 1.1)");
-                        $(lvl1).css("transform", "scale(0.9, 0.9)");
-                        $(lvl3).css("transform", "scale(0.9, 0.9)");
-                        $(lvl1).css("transition-duration", "0.5s");
-                        $(lvl2).css("transition-duration", "0.5s");
-                        $(lvl3).css("transition-duration", "0.5s");
+                    });
+                    lvl2.mouseenter(function(){
+                            $(lvl2).css("transform", "scale(1.1, 1.1)");
+                            $(lvl1).css("transform", "scale(0.9, 0.9)");
+                            $(lvl3).css("transform", "scale(0.9, 0.9)");
+                            $(lvl1).css("transition-duration", "0.5s");
+                            $(lvl2).css("transition-duration", "0.5s");
+                            $(lvl3).css("transition-duration", "0.5s");
 
 
 
 
-                });
-                lvl3.mouseenter(function(){
-                        $(lvl3).css("transform", "scale(1.1, 1.1)");
-                        $(lvl1).css("transform", "scale(0.9, 0.9)");
-                        $(lvl2).css("transform", "scale(0.9, 0.9)");
-                        $(lvl1).css("transition-duration", "0.5s");
-                        $(lvl2).css("transition-duration", "0.5s");
-                        $(lvl3).css("transition-duration", "0.5s");
+                    });
+                    lvl3.mouseenter(function(){
+                            $(lvl3).css("transform", "scale(1.1, 1.1)");
+                            $(lvl1).css("transform", "scale(0.9, 0.9)");
+                            $(lvl2).css("transform", "scale(0.9, 0.9)");
+                            $(lvl1).css("transition-duration", "0.5s");
+                            $(lvl2).css("transition-duration", "0.5s");
+                            $(lvl3).css("transition-duration", "0.5s");
 
 
 
 
-                });
+                    });
 
-                lvl1.mouseleave(function(){
-                        $(lvl1).css("transform", "scale(1, 1)");
-                        $(lvl2).css("transform", "scale(1, 1)");
-                        $(lvl3).css("transform", "scale(1, 1)");
-                        $(lvl1).css("transition-duration", "0.5s");
-                        $(lvl2).css("transition-duration", "0.5s");
-                        $(lvl3).css("transition-duration", "0.5s");
-
-
-
-
-                });
-                lvl2.mouseleave(function(){
-                        $(lvl2).css("transform", "scale(1, 1)");
-                        $(lvl1).css("transform", "scale(1, 1)");
-                        $(lvl3).css("transform", "scale(1, 1)");
-                        $(lvl1).css("transition-duration", "0.5s");
-                        $(lvl2).css("transition-duration", "0.5s");
-                        $(lvl3).css("transition-duration", "0.5s");
+                    lvl1.mouseleave(function(){
+                            $(lvl1).css("transform", "scale(1, 1)");
+                            $(lvl2).css("transform", "scale(1, 1)");
+                            $(lvl3).css("transform", "scale(1, 1)");
+                            $(lvl1).css("transition-duration", "0.5s");
+                            $(lvl2).css("transition-duration", "0.5s");
+                            $(lvl3).css("transition-duration", "0.5s");
 
 
 
 
-                });
-                lvl3.mouseleave(function(){
-                        $(lvl3).css("transform", "scale(1, 1)");
-                        $(lvl1).css("transform", "scale(1, 1)");
-                        $(lvl2).css("transform", "scale(1, 1)");
-                        $(lvl1).css("transition-duration", "0.5s");
-                        $(lvl2).css("transition-duration", "0.5s");
-                        $(lvl3).css("transition-duration", "0.5s");
+                    });
+                    lvl2.mouseleave(function(){
+                            $(lvl2).css("transform", "scale(1, 1)");
+                            $(lvl1).css("transform", "scale(1, 1)");
+                            $(lvl3).css("transform", "scale(1, 1)");
+                            $(lvl1).css("transition-duration", "0.5s");
+                            $(lvl2).css("transition-duration", "0.5s");
+                            $(lvl3).css("transition-duration", "0.5s");
 
 
 
 
-                });
+                    });
+                    lvl3.mouseleave(function(){
+                            $(lvl3).css("transform", "scale(1, 1)");
+                            $(lvl1).css("transform", "scale(1, 1)");
+                            $(lvl2).css("transform", "scale(1, 1)");
+                            $(lvl1).css("transition-duration", "0.5s");
+                            $(lvl2).css("transition-duration", "0.5s");
+                            $(lvl3).css("transition-duration", "0.5s");
 
-                $('#iconlvl1').on('click', function() {
 
-                            //alert(name);
 
-                            $("#mainContent").empty();
-                            $( "#mainContent" ).load( "page2.html" );
+
+                    });
+
+                    lvl1.click( function() {
+                        console.log("hola")
+
+    //alert(name);
+
+                        $("#mainContent").empty();
+                        $( "#mainContent" ).load( "page2.html" );
                         });
 
-                });
+
+                    });
 
             </script>
 

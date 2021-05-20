@@ -152,6 +152,8 @@ h1{
 #headerdatos{
     margin:30px 0px;
     height: auto;
+    top: 0px;
+    position: sticky;
 
 }
 
@@ -360,7 +362,7 @@ h1{
 
 
 svg{
-    cursor: none;
+    cursor: pointer;
 
 
 
