@@ -117,7 +117,7 @@ h1{
     height: 60px;
     text-align: center;
     display:block;
-    cursor: url("cursor/cursor_pointer.png"), auto;
+    cursor: url('cursor/cursor_pointer.png'), auto;
     margin: 10px auto;
     font-size: 30px;
     font-family: Lunchbox Regular;
