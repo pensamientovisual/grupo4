@@ -129,6 +129,12 @@ h1{
     text-align: center;
     top: 30px;
 }
+#espacio3{
+    height: 550px;
+
+    text-align: center;
+
+}
 
 #headerdatos{
     margin:30px 0px;
@@ -409,7 +415,7 @@ svg{
     z-index: 10;
     cursor: pointer;
     width: 410px;
-    transform: translate(-25%,20%);
+    transform: translate(-25%,50%);
     background-color: #ffffff95;
 
 }
@@ -423,7 +429,7 @@ svg{
     z-index: 8;
     cursor: pointer;
     width: 410px;
-    transform: translate(-25%,40%);
+    transform: translate(-25%,70%);
     background-color: #ffffff95;
 
 }
