@@ -106,9 +106,9 @@
                 font-family: Lunchbox Regular;
                 padding: 5px 0px 0px 0px;
                 color: #404347;
-                background-color: #e1743d;
+                background-color: #9cc2df80;
                 box-shadow: -3px 3px #404347;
-                border: solid #e1743d;
+                border: 0px;
                 border-radius: 5px ;
                 margin-left: 1%;
             }
@@ -140,10 +140,10 @@
 
                     <div id="myImg" class="sticky">
                         <h1 id="titulo_slide4" style="padding-top: 100px">SABÍAS QUE...</h1>
-                        <p class="pre-datos" style="margin: 15px">En Chile, hay más de <span class="n">110.000</span> niños inmigrantes que asisten a colegios públicos. Eso significa que existen miles de niños, 
+                        <p class="pre-datos" style="margin: 15px; width: 80%; text-align: center; margin-left: 10%;">En Chile, hay más de <span class="n">110.000</span> niños inmigrantes que asisten a colegios públicos. Eso significa que existen miles de niños, 
                             cómo tú, que tienen que adaptarse a una nueva vida en un país y a una cultura muy diferente a la suya: nuevas comidas, 
                             acentos, idiomas y costumbres. <span class="n">1</span> de cada <span class="n">10</span> de estos niños, se sienten discriminados o maltratados cuando ingresan a estos establecimientos”.</p>
-                        <h2 class='subtitulo' style="margin: 40px">SIN EMBARGO, la discriminación no solo ocurre en la escuela...</h2>
+                        <h2 class='subtitulo' style="margin: 40px; text-align: center;">SIN EMBARGO, la discriminación no solo ocurre en la escuela...</h2>
                         <style>
                             .subtitulo{
                                 font-size: 60px;
@@ -164,8 +164,8 @@
         </div>
         <div id="containerSVG1" style="cursor: url('cursor/cursor_pointer.png'), auto;"></div>
         
-        <div id="espacio2" style="margin-top: 90px;">
-            <p class="pre-datos" style="margin: 15px">Aquí hay <span class="n">5</span> personas que vienen de otro país.</p>
+        <div id="espacio2" style="margin-top: 40px; margin-bottom: 20px;">
+            <p class="pre-datos" style="margin: 15px;">Aquí hay <span class="n">5</span> personas que vienen de otro país.</p>
             <p class="pre-datos" style="margin: 15px">Descubre que pasó para que <span class="n">2</span> de ellas estén tristes</p>
                     
 
@@ -1728,7 +1728,7 @@
         </div>
         <div id="datospersonitas2">
             <div id="textopersonitas">
-                <p style="text-align: center; font-size:50px;">Aquí hay 14 personas que fueron discriminadas en Chile porque eran de otro país<br>¿De qué país venían?</p>
+                <p style="text-align: center; font-size:50px;">Aquí hay 39 personas que fueron discriminadas en Chile porque eran de otro país<br>¿De qué país venían?</p>
                 <button id="bperu" class="botonpais">Perú</button>
                 <button id="bcol" class="botonpais">Colombia</button>
                 <button id="barg" class="botonpais">Argentina</button>
@@ -2457,6 +2457,7 @@
                 var esp = $("#espacio2")
                 var botondatos = $("#botondatos")
                 var aparece = false
+                var botonpaiss =$(".botonpais")
 
                 
 
@@ -2657,6 +2658,11 @@
                     $(botondatos).css("transition-duration","0.5s" )
                     $(botondatos).css("color","#404347" )
                     
+                });
+
+                botonpaiss.click(function(){
+                    $(botonpaiss).css("background-color", "#9cc2df80")
+                    $(this).css("background-color", "#e1743d")
                 });
 
                 
