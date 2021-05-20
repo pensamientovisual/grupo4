@@ -55,7 +55,7 @@
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href ="index.html" class="link">INICIO</a>
-        <a href="page_niveles.html">NIVELES</a>
+        <a id='loadNiveles'>NIVELES</a>
         <a href="#">SOBRE NOSOTROS</a>
       </div>
       
@@ -69,6 +69,13 @@
       function closeNav() {
         document.getElementById("mySidenav").style.display = "none";
       }
+      $(document).ready(function (){
+        $('#loadNiveles').on('click', function () {
+          $("#mainContent").empty();
+          $( "#mainContent" ).load( "page_niveles.html" );
+
+        })
+      })
       </script>         
 </body>
 </html> 
