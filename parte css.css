@@ -48,9 +48,10 @@ h1{
     position: relative;
 }
 
-#personajes{
+#personajes1{
     display:block;
 }
+
 .mujer{
     cursor: pointer;
     position: relative;
