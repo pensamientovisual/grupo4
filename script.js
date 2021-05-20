@@ -4,8 +4,8 @@ $(document).ready(function(){
     //$("#contenido").empty();
     //$( "#contenido" ).load( "page1.html" );
 
-    var mujer = $("#mujer_user");
-    var hombre = $("#hombre_user");
+    var mujer = document.getElementById('mujer_user')
+    var hombre = document.getElementById('hombre_user')
     var click_mujer = false
     var click_hombre = false
     var boton = $("#username_btn")

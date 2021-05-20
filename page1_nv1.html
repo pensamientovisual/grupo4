@@ -14,7 +14,7 @@
             transition: background-color .5s;
             background-color: rgba(192, 54, 0, .1);
         }
-        b
+        
         </style>
         <br>
         <br>
@@ -1916,6 +1916,7 @@
             var greet = '¡Hola '+ name + '!';
             var hideBtn1 = '#hideBtn1'
 
+
             $(document).ready(function(){
 
                 $('#saludo').text(greet)
@@ -1967,6 +1968,7 @@
                     $('#mujerAn').css("opacity", "0.5")
                     $("#saludo").css("opacity", 0)
                     $("#ninacomiendo").css("opacity", "0.2")
+                    mujerAn.autoplay = false
 
 
                     document.body.style.backgroundColor = "rgba(169, 165, 163, 0.8)";
@@ -1999,6 +2001,8 @@
                 autoplay: true,
                 path: 'mujerA.json',
             })
+
+
         </script>
 
     </body>    
