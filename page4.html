@@ -80,6 +80,19 @@
 
 
             }
+            #botondatos{
+                position: fixed;
+                bottom: 20px;
+                opacity: 0;
+                text-align: center;
+                margin: 10px auto;
+            }
+            #divbotondatos{
+                position: fixed;
+                bottom: 20px;
+                height: 100px;
+            }
+ 
 
 
         </style>
@@ -90,7 +103,7 @@
     
     <body>
     <div id="bodypg4">
-        
+        <div id="containerSVG"></div>
         <div id="headerdatos" class="datoos">
             <div id="bodyheader">
                 <div id="espacio">
@@ -113,9 +126,9 @@
                 
 
         </div>
-        <div id="containerSVG"></div>
+        <div id="containerSVG1"></div>
         
-        <div id="espacio2">
+        <div id="espacio2" style="margin-top: 90px;">
             <p class="pre-datos" style="margin: 15px">Aquí hay <span class="n">5</span> personas que vienen de otro país</p>
             <p class="pre-datos" style="margin: 15px">Descubre que pasó para que <span class="n">2</span> de ellas estén tristes</p>
                     
@@ -815,7 +828,7 @@
                 </div>
                 <h1> </h1>
                 <div class="frase2 frase">
-                    <p id="p1" class="frase n2 t2">Cuando recién llegué, me tocaron varios compañeros odiosos, que me molestaban por ser extranjera, que me molestaban por mi color de piel.<br><span id="testiomonio" style="color: #C13B18">Niña Colombiana</span></p>
+                    <p id="p1" class="frase n2 t2">"Cuando recién llegué, me tocaron varios compañeros odiosos, que me molestaban por ser extranjera, que me molestaban por mi color de piel."<br><span id="testiomonio" style="color: #C13B18; text-align: right;">- Niña Colombiana</span></p>
                 </div>
             </div>
             <div id="p3" class="p">
@@ -1343,7 +1356,7 @@
                 </div>
                 <h1> </h1>
                 <div class="frase1 frase">
-                    <p id="p4" class="frase n4 t4">Todos eran blancos, muy blancos, ellos me veían a mií y me decían "esclavo", unos me lo deciían con mi confianza, con mi carinño, con mi consentimiento por así decirlo, y otros ya lo tomaban de un punto por así decirte racista y se burlaban de mí y trataban de oprimirme, como de bloquearme.<br><span id="testiomonio" style="color: #C13B18">Niño Colombiano</span></p>
+                    <p id="p4" class="frase n4 t4">"Todos eran blancos, muy blancos, ellos me veían a mií y me decían "esclavo", unos me lo deciían con mi confianza, con mi carinño, con mi consentimiento por así decirlo, y otros ya lo tomaban de un punto por así decirte racista y se burlaban de mí y trataban de oprimirme, como de bloquearme."<br><span id="testiomonio" style="color: #C13B18;text-align: right;">- Niño Colombiano</span></p>
                 </div>
             </div>
             <div id="p5" class="p">
@@ -1669,9 +1682,12 @@
             </div>
         </div>
         <div id="espacio3">
+        
 
         </div>
-        
+        <div id="divbotondatos"> 
+            <button id='botondatos' class="ingresar">Sigamos</button>
+        </div>
 
 
 
@@ -1717,6 +1733,9 @@
                 var d5 = $(".d5")
                 var t4 = $(".frase1")
                 var t1 = $(".frase2")
+                var esp = $("#espacio2")
+                var botondatos = $("#botondatos")
+                var aparece = false
 
                 
 
@@ -1724,6 +1743,7 @@
 
                 personajes.mouseenter(function(){
                     $(expresiones).fadeTo("fast", 1)
+                    var aparece = true
 
                 });
 
@@ -1750,24 +1770,24 @@
                 p1.mouseenter(function(){
                     $(d1).css("transform", "scale(1.1,1.1)")
                     $(d1).css("transition-duration", "0.5s")
-                    $(t1).fadeTo("fast", 1)
 
                 });
                 p1.mouseleave(function(){
                     $(d1).css("transform", "scale(1,1)")
                     $(d1).css("transition-duration", "0.5s")
-                    $(t1).fadeTo("fast", 0)
 
 
                 });
                 p2.mouseenter(function(){
                     $(d2).css("transform", "scale(1.1,1.1)")
                     $(d2).css("transition-duration", "0.5s")
+                    $(t1).fadeTo("fast", 1)
 
                 });
                 p2.mouseleave(function(){
                     $(d2).css("transform", "scale(1,1)")
                     $(d2).css("transition-duration", "0.5s")
+                    $(t1).fadeTo("fast", 0)
 
 
                 });
@@ -1817,6 +1837,8 @@
 
                 personajes.mouseenter(function(){
                     $(expresiones).fadeTo("fast", 1)
+                    $(botondatos).css("opacity", 1)
+                    $(botondatos).css("transition-duration", "1s")
 
                 });
 
@@ -1903,15 +1925,30 @@
 
                 });
 
+                botondatos.mouseenter(function(){
+                    $(botondatos).css("background-color","#c03600" )
+                    $(botondatos).css("transition-duration","0.5s" )
+                    $(botondatos).css("color","#f8e9d3" )
+                    $(botondatos).css("border","0px" )
+                });
+                botondatos.mouseleave(function(){
+                    $(botondatos).css("background-color","#e1743d" )
+                    $(botondatos).css("transition-duration","0.5s" )
+                    $(botondatos).css("color","#404347" )
+                    
+                });
+
                 
 
                     var arriba = false;
                     window.onscroll = function() {myFunction()};
                     var txtt = $("#myImg")
                     var xx = $("#personajes")
+
+
                     
                     function myFunction() {
-                        if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+                        if (document.body.scrollTop > 170 || document.documentElement.scrollTop > 170) {
                         document.getElementById("myImg").className = "slideUp";
                         arriba = true
                         console.log(arriba)
@@ -1922,11 +1959,24 @@
 
                         //$(txtt).css("position", "fixed")
                       };
-                      if (document.body.scrollTop > 2200 || document.documentElement.scrollTop > 2200) {
+                      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                        document.getElementById("espacio2").className = "slideUp2";
+                        arriba = true
+                        console.log(arriba)
+                        $(esp).css("opacity", 1);
+
+
+
+
+                        //$(txtt).css("position", "fixed")
+                      };
+                      if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
                         document.getElementById("personajes").className = "slideUp2";
                         arriba = true
                         console.log(arriba)
                         $(xx).css("opacity", 1);
+
+                    
 
 
 
@@ -1951,7 +2001,8 @@
                 loop: true,
                 autoplay: true,
                 path: 'affordanceF.json',
-            })
+            });
+
         </script>
 
         <div id="textos">

@@ -11,11 +11,11 @@
         <p id='demoPage3' class="titulo_niveles">hola</p>
         <br>
         <br>
-        <button id="btnSig_3a4" class = 'ingresar'>Continuar</button>
+        <button id="btnSig_3a4" class = 'ingresar'>Seguir</button>
 
         <script>
-            var textCorrectAns = String('respondiste BIEN entonces el caso es...');
-            var textWrongAns = String('¿Como te sentirias si te dijieran eso?');
+            var textCorrectAns = String('¡Felicitaciones! Esta vez hiciste lo correcto... Pero mucha gente no actúa así, mira lo que sucediera si hubieras elejido una de las otras opciones...');
+            var textWrongAns = String('Te cuento un poco sobre Arnavv...');
             $(document).ready(function(){
                 if (btnSelect == 'correcta') {
                     //alert('si');
@@ -28,19 +28,21 @@
                 $('#btnSig_3a4').on('click', function () {
 
                     $("#mainContent").empty();
-                    $( "#mainContent" ).load( "page4.html" );
+                    $( "#mainContent" ).load( "page_arnavv.html" );
 
                 })
                 $('#btnSig_3a4').hover(function(){
-                    $('#btnSig_3a4').css("background", "#fff8ef");
+                    $('#btnSig_3a4').css("background", "#C03600");
                     $('#btnSig_3a4').css("border", "0px");
-                    $('#btnSig_3a4').css("cursor", "pointer");
-                    $('#btnSig_3a4').css("transition-duration", "0.5s")}
+                    $('#btnSig_3a4').css("cursor", "url('cursor/cursor_pointer.png'), auto");
+                    $('#btnSig_3a4').css("transition-duration", "0.5s")
+                    $('#btnSig_3a4').css("color", "white")}
                     
 
                 , function(){
-                    $('#btnSig_3a4').css("background", "#f8e9d3");
+                    $('#btnSig_3a4').css("background", "#E1743D");
                     $('#btnSig_3a4').css("transition-duration", "0.2s")
+                    $('#btnSig_3a4').css("color", "404347")
                 });
 
             });
