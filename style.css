@@ -379,6 +379,10 @@ h1{
   .sidenav a {font-size: 18px;}
 }
 
+#nav{
+    z-index: 10;
+}
+
 .pre-datos{
     font-size: 50px;
 ;
