@@ -59,8 +59,12 @@
         <a href="#">SOBRE NOSOTROS</a>
       </div>
       
-      <span style="font-size:40px;cursor: url('cursor/cursor_pointer.png'), auto;" onclick="openNav()">&#9776; </span> <!--animacion der cabio de color-->
-      
+      <span id='openNav' style="font-size:40px;cursor: url('cursor/cursor_pointer.png'), auto;" onclick="openNav()">&#9776; </span> <!--animacion der cabio de color-->
+      <style>
+        #openNav{
+          z-index: 100;
+        }
+      </style>
       <script>
       function openNav() {
         document.getElementById("mySidenav").style.display = "block";
