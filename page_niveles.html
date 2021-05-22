@@ -32,7 +32,7 @@
 
             }
             #iconlvl3{
-                cursor: url("cursor/cursor_construccion.png"), auto;
+                cursor: url("cursor/cursor_pointer.png"), auto;
 
             }
 
@@ -52,7 +52,7 @@
 
             #ilvl3{
                 position: relative;
-                cursor: url("cursor/cursor_construccion.png"), auto;
+                cursor: url("cursor/cursor_pointer.png"), auto;
                 text-align: center;
 
             }
@@ -2924,6 +2924,15 @@
                         $( "#mainContent" ).load( "page1_nv2.html" );
 
                     });
+
+                    lvl1.click(function() {
+                        console.log("hola")
+
+                        $("#mainContent").empty();
+                        $( "#mainContent" ).load( "page1_nv3.html" );
+
+                    });
+
 
 
                 });
