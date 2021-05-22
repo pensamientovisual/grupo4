@@ -1850,7 +1850,7 @@
         <div class='parent'>
             <div class='div_parr'>
 
-                <p class="titulo_niveles" class='saludo' style="margin-left: 80px; font-size: 90px;"></p>
+                <p class="titulo_niveles" id='saludo' style="margin-left: 80px; font-size: 90px;"></p>
                 <div id="parr1">
 
                     <p class = 'parr' style="margin-left: 40px;">Es otro día de colegio, y por fin terminaron las clases de la mañana. Entre tanto estudio y correr en el recreo, 
@@ -1921,7 +1921,7 @@
 
             $(document).ready(function(){
 
-                $('.saludo').text(greet)
+                $('#saludo').text(greet)
                     
                 /*$('#radio_btn').on('click',function () {
                     if ($('input:radio[name=res]:checked').val() != undefined) {
@@ -1968,7 +1968,7 @@
                     $(hideBtn1).hide()
                     $('.div_parr').css("opacity", "0.5")
                     $('#mujerAn').css("opacity", "0.5")
-                    $(".saludo").css("opacity", 0)
+                    $("#saludo").css("opacity", 0)
                     $("#ninacomiendo").css("opacity", "0.2")
 
 
