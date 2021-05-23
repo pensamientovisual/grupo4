@@ -27,7 +27,32 @@ body{
 
 
 }
-
+/* Grid Index Start */
+.contenedor{
+    width: 90%;
+    max-width: 1080px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+ }
+ .contenedor .titulo_niveles{
+     grid-column-start: 1;
+     grid-column-end: 4;
+ }
+ .contenedor .nino1{
+     grid-column: span 1;
+ }
+ .contenedor .nina1{
+     grid-column-start: 3;
+     grid-column-end: 4;
+ }
+ .contenedor .footer{
+    grid-column-start: 2;
+    grid-column-end: 3;
+ }
+/* Grid Index End */
 
 #navbar ul li {
     list-style-type: none;
