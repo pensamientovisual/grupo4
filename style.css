@@ -53,6 +53,59 @@ body{
     grid-column-end: 3;
  }
 /* Grid Index End */
+/* Grid Levels Start */
+
+.contlvl{
+    width: 90%;
+    max-width: 1080px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    text-align: center;
+}
+.contlvl #niv{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+/* Grid Levels End*/
+
+/* Grid Page 1 Start*/
+
+.contpg1{
+    width: 100%;
+    max-width: 1080px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:"header header header"
+                        "sad sad x"
+                        "body body nina"
+                        "foot foot foot";    
+}
+.contpg1 .titulo_niveles{
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+}
+.contpg1 .ingresar{
+    grid-area: foot;
+}
+.contpg1 .div_parr{
+    grid-area: body;
+}
+.contpg1 #mujerAn{
+    grid-area: nina;
+}
+.contpg1 .china{
+    grid-area: sad;
+}
+
+/* Grid Page 1 End*/
 
 #navbar ul li {
     list-style-type: none;
@@ -328,13 +381,14 @@ h1{
 .parr {
     font-size: 35px;
     height: auto;
-    max-width: 1000px;
-    padding: 5px 15px;
+    width: 100%;
+   
+    
 }
 
 #ninacomiendo{
     z-index: -20;
-    position: absolute;
+   
     top:0px;
     left:0px;
     opacity: 0.4;
@@ -351,9 +405,12 @@ h1{
 .div_parr{
     position: relative;
     z-index: 1;
-    max-width: 75%;
+    max-width: 100%;
     height: 100%;
     float: left;
+    background-color: whitesmoke ;
+    border-radius: 15px;
+    padding: 10px 15px;
 }
 
 #divRes1{
