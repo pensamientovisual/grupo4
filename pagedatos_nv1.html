@@ -2725,6 +2725,12 @@
                     $(botondatos).css("color","#404347" )
                     
                 });
+                $(botondatos).click(function(){
+                    console.log('click')
+                    $("#mainContent").empty();
+                    $( "#mainContent" ).load( "page_niveles.html" );
+
+                })
 
                 botonpaiss.click(function(){
                     $(botonpaiss).css("background-color", "#9cc2df80")
@@ -2816,9 +2822,6 @@
 
         </script>
 
-        <div id="textos">
-
-        </div>
     </div>
 
     </body>
