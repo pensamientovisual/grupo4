@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet" />
+        <script type="text/javascript" src="Java/jquery-3.6.0.js"></script>
+        <script src="bodymovin.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+        <style>
+            #lugarotropreg{
+                font-size: 50px;
+                text-align: center;
+                margin: 50px auto;
+                width: 90%;
+                
+            }
+            #botonlugar{
+                background-color: #c03600;
+                border: 0px;
+                color: white;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <p id="lugarotropreg">Ahora, te toca a tí ponerte en el lugar de Arnaav<br><span style="color: #c03600; font-size: 70px; margin: 10px auto;">¿Qué pasaría si te encontrases tú en esa situación?</span>
+            <br>Tú almuerzo parece incomodar al resto, y aunque tienes hambre, te encuentras muy avergonzado/a por los comentarios de tu compañeros. Sabes que tu mamá se tomó mucho tiempo en prepararlo el día anterior, pero aún así, crees que lo mejor es no comer hoy.</p>
+        <button id='botonlugar' class="ingresar">Continuar
+
+        </button>
+
+ 
+        <div id='divRes2' style='display: none;'>
+            <h2 id="titulo_pregunta2">¿Cómo crees que te sentirías tú en esta situación? <h2>
+                <style>
+                    #titulo_pregunta2{
+                        text-align: center;
+                        position: absolute;
+                        color: #43474C;
+                        font-size: 90px;
+                        top:0px;
+                        width: 90%;
+                    }
+
+
+
+
+                </style>
+
+                <div class='flex-container'>
+                <div>
+                    <button id="btnA2"  class='div_respuestas m90'>Incómodo, porque me daría vergüenza que me lo diga enfrente de otras personas.</button>
+                </div>
+                <div>
+                    <button id="btnB2" class='div_respuestas m90'>Triste, porque sé que me lo hizo mi mamá con esfuerzo y ahora no lo voy a poder disfrutar.</button>
+                </div>
+                <div>
+                    <button id="btnC2" class='div_respuestas m90'>Enojado, porque los otros quieren dejarme sin almuerzo sólo porque a ellos les incomodan los olores.</button>
+                </div>
+
+
+
+                        
+
+        </div>
+        <script>
+            $(document).ready(function(){
+                var but = $("#botonlugar")
+                var con = 0
+                var parrr = $("#lugarotropreg")
+                var r = $("#divRes2")
+                var botones = $(".m90")
+                var titulop2 = $("#titulo_pregunta2")
+
+            but.mouseenter(function(){
+                $(but).css("background-color","#e1743d" )
+                $(but).css("transition-duration","0.5s" )
+                $(but).css("color","#404347" )
+                $(but).css("border","0px" )
+                console.log("hola")
+            });
+            but.mouseleave(function(){
+                $(but).css("background-color","#c03600" )
+                $(but).css("transition-duration","0.5s" )
+                $(but).css("color","#f8e9d3" )
+            });
+
+            but.click(function(){
+                con += 1
+                if (con == 1){
+                    but.fadeTo("fast", 0)
+                    parrr.fadeTo("fast", 0)
+                    document.body.style.backgroundColor = "rgba(169, 165, 163, 0.8)";
+                    r.show()
+                    svgllorar.css("opacity", 0)
+
+
+
+
+                };
+            
+
+            });
+            botones.click(function(){
+                botones.hide()
+                but.hide()
+                parrr.hide()
+                document.body.style.backgroundColor = 'rgba(255, 99, 0, 0.1)'
+                titulop2.hide()
+                $("#mainContent").empty();
+                $( "#mainContent" ).load( "page5_nv1.html" );
+                });
+
+
+
+            
+
+            });
+        </script>
+
+
+    </body>
+</html>
