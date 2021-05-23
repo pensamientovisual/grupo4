@@ -29,13 +29,16 @@ body{
 }
 /* Grid Index Start */
 .contenedor{
-    width: 90%;
-    max-width: 1080px;
+    width: 100%;
+    max-width: 1920px;
+    max-height: 1080px;
     margin: 20px auto;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
+    align-items: center;
+    justify-content: center;
  }
  .contenedor .titulo_niveles{
      grid-column-start: 1;
@@ -56,8 +59,9 @@ body{
 /* Grid Levels Start */
 
 .contlvl{
-    width: 90%;
-    max-width: 1080px;
+    width: 100%;
+    max-width: 1920px;
+    max-height: 1080px;
     margin: 20px auto;
     display: grid;
     grid-gap: 20px;
@@ -76,7 +80,8 @@ body{
 
 .contpg1{
     width: 100%;
-    max-width: 1080px;
+    max-width: 1920px;
+    max-height: 1080px;
     margin: 20px auto;
     display: grid;
     grid-gap: 20px;
