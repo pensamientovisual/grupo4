@@ -107,7 +107,33 @@ body{
 }
 
 /* Grid Page 1 End*/
-/* Grid Preguntas Star*/
+/* Grid Preguntas Start*/
+/* Grid Page 3 End*/
+
+.contPg3{
+    width: 100%;
+    max-width: 1920px;
+    max-height:1080px ;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 3fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:"header header header header"
+                        "pic pic body body"
+                        "pic pic body body"
+                        "foot foot foot foot";    
+}
+.contPg3 .textPg3{
+    grid-area: body;
+}
+.contPg3 .botonPg3{
+    grid-area: foot;
+}
+.contPg3 .picPg3{
+    grid-area: pic;
+}
+/* Grid Page 3 End*/
 
 #navbar ul li {
     list-style-type: none;
