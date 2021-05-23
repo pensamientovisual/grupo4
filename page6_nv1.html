@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<htm>
+    <head>
+        <meta charset="UTF-8">
+        <title>Migracion</title>
+        <link href="STYLE.css" rel="stylesheet" />
+        <script type="text/javascript" src="Java/jquery-3.6.0.js"></script>
+    </head>
+    <body>
+        <p style="font-size: 80px;">¡Felicitaciones!</p>
+        <p id="P6par1N1" style="font-size: 80px; margin-top: 0px;"></p>
+        <button class="ingresar" id='P6btnN1'>Sigamos</button>
+
+
+        <script>
+            var btnSelect='cor'
+            var textAnsAgain = String('¡nuevamente hiciste lo correcto y Arnaav está muy contento de compartir un poco de su almuerzo contigo!');
+            var textAns = String('¡esta vez hiciste lo correcto y Arnaav está muy contento de compartir un poco de su almuerzo contigo!');
+
+            $(document).ready(function(){
+                var btn = $("#P6btnN1");
+                var p1 = $("#P6par1N1");
+
+                if (btnSelect == 'correcta') {
+                    //alert('si');
+                    $(p1).text(textAnsAgain);
+                } else {
+                    //alert('no');
+                    $(p1).text(textAns);
+                };
+                $(btn).click(function(){
+                    console.log('click')
+                    $("#mainContent").empty();
+                    $( "#mainContent" ).load( "pagedatos_nv1.html" );
+
+                })
+            })
+
+        </script>
+    </body>
+    
+</htm>
