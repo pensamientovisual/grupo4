@@ -8,16 +8,16 @@
     </head>
     <body>
         <br><br><br>
-        <p id='demoPage3' class="titulo_niveles">hola</p>
+        <!--<p id='demoPage3' class="titulo_niveles">hola</p>-->
         <br>
         <br>
-        <button id="btnSig_3a4" class = 'ingresar'>Seguir</button>
+        <button id="btnSig_3a4" class = 'ingresar'>CONT</button>
 
         <script>
             var textCorrectAns = String('¡Felicitaciones! Hiciste lo correcto... Pero mucha gente no actúa así. Mira lo que sucedería si hubieras elejido una de las otras opciones...');
-            var textWrongAns = String('Te cuento un poco sobre Arnaav...');
+            var textWrongAns = String('Te cuento un poco sobre Leroi...');
             $(document).ready(function(){
-                if (btnSelect == 'correcta') {
+                if (btnSelectN2 == 'correcta') {
                     //alert('si');
                     $('#demoPage3').text(textCorrectAns);
                 } else {
@@ -25,10 +25,11 @@
                     $('#demoPage3').text(textWrongAns);
                 }
 
-                $('#btnSig_3a4').on('click', function () {
+                $('#btnSig_3a4').click(function () {
+                    console.log("HAHAHAH")
 
                     $("#mainContent").empty();
-                    $( "#mainContent" ).load( "page3_nv1.html" );
+                    $( "#mainContent" ).load( "page3_nv2.html" );
 
                 })
                 $('#btnSig_3a4').hover(function(){

@@ -1727,7 +1727,7 @@
         <div id="divbotondatos"> 
             <button id='botondatos' class="ingresar">Sigamos</button>
         </div>
-        <div id="datospersonitas2">
+        <!--<div id="datospersonitas2">
             <div id="textopersonitas">
                 <p style="text-align: center; font-size:50px;margin-top: 90px;">Cada una de las 39 figuras a continuación representan a 57 personas que fueron marginadas en Chile porque eran de otro país.<br>¿De qué país venían?</p>
                 <p style="text-align: center; font-size:30px;margin-top: 90px;">*De un total de 5.929 extranjeros encuestados, 2.226 se sintieron discriminados. Son estos los que se ven representados por las figuras.</p>
@@ -1741,7 +1741,7 @@
                 <button id="botro" class="botonpais">Otro</button>
             </div>
             
-            
+        
             
             <div id="personitas">
                 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewbox="200 210 520 520" class="peru">
@@ -2413,6 +2413,7 @@
             <p style="font-size:30px;margin-top: 90px;">**Los datos fueron obtenidos de la encuesta CASEN del año 2017.</p>
 
         </div>
+    -->
 
 
 
@@ -2462,81 +2463,19 @@
                 var botondatos = $("#botondatos")
                 var aparece = false
                 var botonpaiss =$(".botonpais")
-                var peru = $(".peru")
-                var argentina = $(".arg")
-                var colombia = $(".colombia")
-                var bolivia = $(".bolivia")
-                var ecuador = $(".ecuador")
-                var venezuela = $(".venezuela")
-                var haiti = $(".haiti")
-                var otro = $(".otro")
-                var bperu = $("#bperu")
-                var bargentina = $("#barg")
-                var bcolombia = $("#bcol")
-                var bbolivia = $("#bbol")
-                var becuador = $("#bec")
-                var bvenezuela = $("#bven")
-                var bhaiti = $("#bhaiti")
-                var botro = $("#botro")
-                var personitas = $("#personitas")
-
-                bperu.click(function(){
-                    personitas.css("opacity", 1)
-                    $(peru).css("opacity", 1.5)
-
-                });
-                
-                bargentina.click(function(){
-                    personitas.css("opacity", 1)
-                    $(argentina).css("opacity", 1.5)
-
-                });
-                bcolombia.click(function(){
-                    personitas.css("opacity", 1)
-                    $(colombia).css("opacity", 1.5)
-
-                });
-                bvenezuela.click(function(){
-                    personitas.css("opacity", 1)
-                    $(venezuela).css("opacity", 1.5)
-
-                });
-
-                becuador.click(function(){
-                    personitas.css("opacity", 1)
-                    $(ecuador).css("opacity", 1.5)
-
-                });
-                bbolivia.click(function(){
-                    personitas.css("opacity", 1)
-                    $(bolivia).css("opacity", 1.5)
-
-                });
-                botro.click(function(){
-                    personitas.css("opacity", 1)
-                    $(otro).css("opacity", 1.5)
-
-                });
-                bhaiti.click(function(){
-                    personitas.css("opacity", 1)
-                    $(haiti).css("opacity", 1.5)
-
-                });
-
-
-
-
 
 
 
                 personajes.mouseenter(function(){
                     $(expresiones).fadeTo("fast", 1)
                     var aparece = true
+                    $(botondatos).css("opacity", 1)
 
                 });
 
                 personajes.mouseleave(function(){
                     $(expresiones).fadeTo("fast", 0)
+                    
 
                 });
 
