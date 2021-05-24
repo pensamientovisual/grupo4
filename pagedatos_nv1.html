@@ -189,8 +189,10 @@
                     //})
                     //.catch((error) => console.log(error));
                 var box = document.querySelector('#personitas');
-                var width = box.clientWidth;
-                var height = box.clientHeight;
+                var width = box.offsetWidth;
+                var margin = getComputedStyle(box)
+                var widthtot = width + margin
+                var height = box.offsetHeight;
                 var box1 = document.querySelector('#botones');
                 var width1 = box1.clientWidth;
                 lista_paises = []
@@ -228,7 +230,7 @@
                         $(rect).css("border-radius", "80px");
                         $("#personitas").append(rect);
                         $("#info-escrita").css("width", "26%")
-                        $("#info-escrita").css("height", width - 40)
+                        $("#info-escrita").css("height", widthtot)
                         $("#info-escrita").css("background-color", "#e1743d20")
                     };
 
