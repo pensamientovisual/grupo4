@@ -54,10 +54,36 @@
             #botones{
                 float: right;
                 margin-right: 5%;
-                margin-top: 1%;
+                margin-top: 1.5%;
             }
             #lista-botones{
                 margin-top: 0px;
+            }
+            #info-escrita{
+                float: right;
+                margin-top: 2%;
+                padding: 0.05% 1%;
+            }
+
+            #info-escrita .infoe{
+                font-size: 40px;
+
+            }
+
+            #numero-personas {
+                font-size: 70px;
+                text-align: center;
+                color: #e1743d;
+                margin: 10px auto;
+                
+
+            }
+            #numero-personas-disc {
+                font-size: 70px;
+                text-align: center;
+                color: #9cc2df;
+                margin: 10px auto;
+
             }
 
         </style>
@@ -67,6 +93,16 @@
         <div id ="botones" >
             <ul id="lista-botones" style="list-style-type:none;">
             </ul>
+        </div>
+        <div id="info-escrita">
+            <div id="dibujo-bandera"></div>
+            
+
+            <p class="infoe">Total Personas: </p>
+            <p id="numero-personas">777.407</p>
+            <p class="infoe">Discriminados: </p>
+            <p id="numero-personas-disc">251.181</p>
+            
         </div>
         <!--<button id="botondisc">Discriminado</button>-->
         <div id ="personitas" ></div>
@@ -122,6 +158,7 @@
                 var height = box.clientHeight;
                 var box1 = document.querySelector('#botones');
                 var width1 = box1.clientWidth;
+                lista_paises = []
 
         
            
@@ -133,45 +170,20 @@
                     $(btn).attr("id", data.pais);
                     li.append(btn)
                     $("#lista-botones").append(li)
-                    //console.log(data)
-                    //console.log(data.pais)
-                    //console.log(parseFloat(data.porcentaje_migrantes_por_pais))
-                    
-                    
-                    
-                  //  for (var i = 0; i < (parseFloat(data.porcentaje_migrantes_por_pais) * 100); i++) {
-                    //    console.log(i, data.pais);
-                      //  var rect = document.createElement("P");
-                  //      var pais = data.pais
-                    //    $(rect).attr("id", pais);
-                      //  $(rect).css("height", "50px");
-                      //  $(rect).css("width", "50px");
-                    //    $(rect).css("background", "magenta");
-                    //    $(rect).css("position", "relative");
-                      //  $("body").append(rect);
-                        
-                    
+                    lista_paises.push([data.pais, data.total_migrantes_por_pais, data.porcentaje_migrantes_por_pais,data.cantidad_discriminados_por_pais, data.porcentaje_discriminado_por_pais, data.porcentaje_discriminado_por_pais_de_total])
 
 
-
-
-                //    };
                     contador = 0
-
-
                     for (var i = 0; i < (parseFloat(data.porcentaje_migrantes_por_pais) * 100); i++) {
-                        //console.log(i, data.pais);
                         var rect = document.createElement("DIV");
                         var pais = data.pais
                         $(rect).attr("id", pais  + "personita");
                         $(rect).attr("class", "personita-pais " + data.pais)
-                        //console.log(parseFloat(data.porcentaje_discriminado_por_pais_de_total) * 100)
                         if (contador < parseFloat(data.porcentaje_discriminado_por_pais_de_total) * 100){
                             $(rect).attr("class", "personita-pais " + data.pais + " discriminado")
                             contador += 1
-                            //console.log("hola", data.pais)
-
                         };
+
                         $(rect).css("height", (width - width1)/13);
                         $(rect).css("width", (width - width1)/13);
                         $(rect).css("background", "#e1743d40");
@@ -180,15 +192,11 @@
                         $(rect).css("border", "3px solid #e1743d40");
                         $(rect).css("border-radius", "80px");
                         $("#personitas").append(rect);
-
-                    
-                        
-                    
-
-
-
-
+                        $("#info-escrita").css("width", "26%")
+                        $("#info-escrita").css("height", width - 40)
+                        $("#info-escrita").css("background-color", "#e1743d20")
                     };
+
                 var botones = $(".boton-pais")
                 var personitas = $(".personita-pais")
                 botones.click(function(){
@@ -206,12 +214,19 @@
                     $(personitasDisBoton).css("border", "3px solid #9cc2df");
                     $(personitasDisBoton).css("background-color", "#9cc2df99")
 
+                    for (var i = 0; i < lista_paises.length; i++) {
+                        console.log(lista_paises[i][0], "for i")
+                        console.log(paisBoton, "boton")
+                        if (lista_paises[i][0] == paisBoton) {
+                            console.log("funcionaaa")
+                            var n_total = lista_paises[i][1]
+                            var n_discriminados = lista_paises[i][3]
 
-
+                        };
+                    };
+                    $("#numero-personas").text(n_total)
+                    $("#numero-personas-disc").text(n_discriminados)
                 });
-
-
-
                 });
             });
 
