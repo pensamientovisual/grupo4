@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <link href="style.css" rel="stylesheet" />
         <script type="text/javascript" src="Java/jquery-3.6.0.js"></script>
+        <script type="text/javascript" src="script.js"></script>
         <script src="https://d3js.org/d3.v6.js"></script>
         <title>Migración</title>
         <link rel="shortcut icon" type="image/png" href="flavicon.png"/>
@@ -62,13 +63,15 @@
             }
             #info-escrita{
                 float: right;
-                margin-top: 0%;
-                padding: 0.05% 1%;
+                padding: 0% 1%;
+
             }
 
             #info-escrita .infoe{
                 font-size: 40px;
                 margin-left: 7%;
+                margin-bottom: 0%;
+               
 
             }
 
@@ -82,7 +85,7 @@
                 font-size: 70px;
                 text-align: center;
                 color: #e1743d;
-                margin: 10px auto;
+                margin: 0% auto;
                 
 
             }
@@ -90,7 +93,7 @@
                 font-size: 70px;
                 text-align: center;
                 color: #9cc2df;
-                margin: 10px auto;
+                margin: 0% auto;
 
             }
 
@@ -104,6 +107,19 @@
                 visibility: hidden;
             }
 
+            #textoinfdata1{
+                width: 70%;
+                float: left;
+
+                
+            }
+            #textoinfdata1 p{
+                text-align: center;
+                margin: 1%;
+
+                font-size: 40px;
+            }
+
 
 
 
@@ -112,10 +128,16 @@
     </head>
 
     <body>
+        <div id="textoinfdata1">
+            <p>Imaginemos que los 777.407 migrantes de Chile son estas 100 personas que ves</p>
+            <p>Los celestes son aquellos que se han sentido discriminados por su país de origen</p>
+
+        </div>
         <div id ="botones" >
             <ul id="lista-botones" style="list-style-type:none;">
             </ul>
         </div>
+
         <div id="info-escrita">
             <div id="dibujo-bandera">
                 <!--<img src="imagenes/vacio.png" id="vacio" class="vacio" style="position: relative;;" width="80%">-->
@@ -145,7 +167,7 @@
         </div>
         <!--<button id="botondisc">Discriminado</button>-->
         <div id ="personitas" ></div>
-
+        <button class="ingresar" id='PDbtnN1' style="float:right; margin-right: 2%;">Nivel Terminado!</button>
 
 
 
@@ -167,6 +189,17 @@
 //});
 
             $(document).ready(function(){
+           //     $('#PDbtnN1').on('click', function () {
+                            
+             //               $("#mainContent").empty();
+            //                $( "#mainContent" ).load( "index.html" );
+
+                $("#PDbtnN1").click(function(){
+                    $("#mainContent").empty();
+                    $( "#mainContent" ).load( "page_niveles.html" );
+
+                    
+                });
                 function joinDeDatos(datos) {
                     svg
                       .selectAll("rect")
@@ -220,17 +253,21 @@
                         var pais = data.pais
                         $(rect).attr("id", pais  + "personita");
                         $(rect).attr("class", "personita-pais " + data.pais)
+                        var color = "#e1743d40"
+                        var borde = "#e1743d40"
                         if (contador < parseFloat(data.porcentaje_discriminado_por_pais_de_total) * 100){
                             $(rect).attr("class", "personita-pais " + data.pais + " discriminado")
+                            var color = "#9cc2df40"
+                            var borde = "#9cc2df40"
                             contador += 1
                         };
 
                         $(rect).css("height", (width - width1)/13);
                         $(rect).css("width", (width - width1)/13);
-                        $(rect).css("background", "#e1743d40");
+                        $(rect).css("background", color);
                         $(rect).css("display", "inline-block");
                         $(rect).css("margin", "5px");
-                        $(rect).css("border", "3px solid #e1743d40");
+                        $(rect).css("border", "3px solid " + borde);
                         $(rect).css("border-radius", "80px");
                         $("#personitas").append(rect);
                         $("#info-escrita").css("width", "26%")

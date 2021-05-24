@@ -36,7 +36,7 @@
 
             }
             #iconlvl3{
-                cursor: url("cursor/cursor_pointer.png"), auto;
+                cursor: url("cursor/cursor_candado.png"), auto;
 
             }
 
@@ -44,19 +44,19 @@
 
             #ilvl2{
                 position: relative;
-                cursor: url("cursor/cursor_pointer.png"), auto;
+                cursor: url("cursor/cursor_candado.png"), auto;
                 text-align: center;
 
             }
             #iconlvl2{
-                cursor: url("cursor/cursor_pointer.png"), auto;
+                cursor: url("cursor/cursor_candado.png"), auto;
 
             }
 
 
             #ilvl3{
                 position: relative;
-                cursor: url("cursor/cursor_pointer.png"), auto;
+                cursor: url("cursor/cursor_candado.png"), auto;
                 text-align: center;
 
             }
@@ -2839,6 +2839,9 @@
                     var lvl1 = $("#ilvl3")
                     var lvl2 = $("#ilvl2")
                     var lvl3 = $("#ilvl1")
+                    var n_1 = false
+                    var n_2 = false
+                    var n_3 = false
 
                     lvl1.mouseenter(function(){
                         $(lvl1).css("transform", "scale(1.1, 1.1)");
@@ -2926,17 +2929,19 @@
 
                     lvl2.click(function() {
                         console.log("hola")
+                        //if (n_1 == true){
 
                         $("#mainContent").empty();
-                        $( "#mainContent" ).load( "page1_nv2.html" );
+                        $( "#mainContent" ).load( "page1_nv2.html" )
 
                     });
 
                     lvl1.click(function() {
                         console.log("hola")
+                    //    if (n_2 == true){
 
                         $("#mainContent").empty();
-                        $( "#mainContent" ).load( "page1_nv3.html" );
+                        $( "#mainContent" ).load( "page1_nv3.html" )
 
                     });
 

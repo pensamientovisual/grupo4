@@ -12,6 +12,17 @@ $(document).ready(function(){
     var clicked_mujer = false
     var clicked_hombre = false
 
+    
+    $("#PDbtnN1").click(function(){
+        n_1 = true
+        console.log(n_1)
+        $("#ilvl2").css("cursor", "url('cursor/cursor_pointer.png'), auto")
+        $("#iconlvl2").css("cursor", "url('cursor/cursor_pointer.png'), auto")
+
+
+        
+    });
+
 
     $(mujer).click(function(){
         $(mujer).css("transform", "scale(1.1, 1.1)");
