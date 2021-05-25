@@ -141,6 +141,49 @@ body{
     grid-area: pic;
 }
 /* Grid Page 3 End*/
+/* Grid Page 3 End*/
+
+
+.contPg3lv2{
+    width: 100%;
+    max-width: 1920px;
+    max-height:1080px ;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 2fr 1fr;
+      
+}
+.contPg3lv2 .textPg3{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.contPg3 .botonPg3{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.contPg3lv2 .picPg3 .mapahch{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.contPg3lv2 .picPg3 .leroipg3{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.contPg3lv2 .picPg3 .mystuff{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+/* Grid Page 3 End*/
 /* Grid Page 4 Start*/
 .conPg4{
     width: 100%;
@@ -183,10 +226,13 @@ body{
     grid-gap: 20px;
     align-items: center;
     justify-content: center;
-    grid-template-columns: 3fr 2fr 1fr;
-    grid-template-rows: repeat(4, 2fr );
+    grid-template-columns: 2fr 1fr .5fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
+
     
 }
+
+
 
 .conData1 #botones{
     grid-column-start: 3;
@@ -210,11 +256,16 @@ body{
     grid-row-end: 5;
 }
 .conData1 #PDbtnN1{
-    grid-area: foot;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    
 }
 .conData1 #textoinfdata1{
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 2;
+    margin-left: 2%;
 }
 /* Grid Data 1 End*/
 
