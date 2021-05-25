@@ -171,7 +171,23 @@
             
          </div>
             <!--<button id="botondisc">Discriminado</button>-->
-         <div id ="personitas" ></div>
+         <div id ="personitas" >
+
+            <div id ="personitas1" ></div>
+            <div id ="personitas2" ></div>
+            <div id ="personitas3" ></div>
+            <div id ="personitas4" ></div>
+            <div id ="personitas5" ></div>
+            <div id ="personitas6" ></div>
+            <div id ="personitas7" ></div>
+            <div id ="personitas8" ></div>
+            <div id ="personitas9" ></div>
+            <div id="personitas10"></div>
+            <div>
+                <p>*Datos obtenidos de encuesta Casen 2017</p>
+            </div>
+         </div>
+
             <button class="ingresar" id='PDbtnN1' style="float:right; ;">Nivel Terminado!</button>
         </div>
 
@@ -239,6 +255,8 @@
                 var box1 = document.querySelector('#botones');
                 var width1 = box1.clientWidth;
                 lista_paises = []
+                var caja = 1
+                var cuenta = 1
 
         
            
@@ -272,14 +290,22 @@
                         $(rect).css("width", (width - width1)/13);
                         $(rect).css("background", color);
                         $(rect).css("display", "inline-block");
-                        $(rect).css("margin", "px");
+                        $(rect).css("margin", "2px");
                         $(rect).css("border", "3px solid " + borde);
                         $(rect).css("border-radius", "80px");
-                        $("#personitas").append(rect);
+                        $("#personitas" + caja.toString()).append(rect);
                         $("#info-escrita").css("width", "80%")
                         $("#info-escrita").css("height", widthtot)
                         $("#info-escrita").css("background-color", "#e1743d20")
                         $("#info-escrita").css("border-radius", "10px")
+                        
+                        console.log(contador)
+                        if (cuenta == 10) {
+                            caja += 1
+                            cuenta = 0
+                            console.log("holaaaaa")
+                        };
+                        cuenta += 1
                     };
 
                 var botones = $(".boton-pais")
