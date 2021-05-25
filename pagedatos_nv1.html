@@ -263,7 +263,7 @@
                 d3.csv("datos_migrantes_pais_discriminados.csv", function(data) {
                     var li = document.createElement("LI");
                     var btn = document.createElement("BUTTON");
-                    btn.innerHTML = data.pais;
+                    btn.innerHTML = data.nombre;
                     $(btn).attr("class", "boton-pais")
                     $(btn).attr("id", data.pais);
                     li.append(btn)
