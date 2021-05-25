@@ -7,9 +7,8 @@ body{
     background: rgba(255, 116, 61, 0.1);
     color: #404347;
     font-family: Lunchbox Regular;
-    position: absolute;
-    display:block;
-    width: 100%;
+
+  
     margin-top: 0px;
     margin-bottom: 0px;
     max-height: 1080px;
@@ -106,6 +105,8 @@ body{
 }
 .contpg1 .china{
     grid-area: sad;
+    align-items: center;
+    justify-content: center;
 }
 .contpg1 #divRes1 .titulo_pregunta1{
     grid-area: header;
@@ -114,6 +115,7 @@ body{
 /* Grid Page 1 End*/
 /* Grid Preguntas Start*/
 /* Grid Page 3 End*/
+
 
 .contPg3{
     width: 100%;
@@ -139,6 +141,83 @@ body{
     grid-area: pic;
 }
 /* Grid Page 3 End*/
+/* Grid Page 4 Start*/
+.conPg4{
+    width: 100%;
+    max-width: 1920px;
+    max-height:1080px ;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;    
+    grid-template-rows: 1fr 4fr 1fr 1fr;    
+}
+.conPg4 #lugarotropreg{
+    grid-row-start: 2; 
+    grid-row-end: 3; 
+
+}
+.conPg4 .ingresar {
+    grid-row-start: 4; 
+    grid-row-end: 5; 
+}
+.conPg4 #divRes2 #titulo_pregunta2{
+    grid-row-start: 1; 
+    grid-row-end: 2;
+}
+.conPg4 #divRes2 #resDivRes2{
+    grid-row-start: 2; 
+    grid-row-end: 3;
+ 
+
+}
+
+
+/* Grid Page 4 End*/
+/* Grid Data 1 Start*/
+.conData1{
+    width: 100%;
+    max-width: 1920px;
+    max-height:1080px ;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 3fr 2fr 1fr;
+    grid-template-rows: repeat(4, 2fr );
+    
+}
+
+.conData1 #botones{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+.conData1 #personitas{
+    
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    
+   
+}
+.conData1 #info-escrita{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+.conData1 #PDbtnN1{
+    grid-area: foot;
+}
+.conData1 #textoinfdata1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+/* Grid Data 1 End*/
+
 
 #navbar ul li {
     list-style-type: none;

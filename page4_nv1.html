@@ -9,8 +9,8 @@
             #lugarotropreg{
                 font-size: 50px;
                 text-align: center;
-                margin: 50px auto;
-                width: 90%;
+                margin: 50px 50px;
+                
                 
             }
             #botonlugar{
@@ -24,23 +24,25 @@
     </head>
 
     <body>
-        <p id="lugarotropreg">Ahora, te toca a tí ponerte en el lugar de Arnaav<br><span style="color: #c03600; font-size: 70px; margin: 10px auto;">¿Qué pasaría si te encontrases tú en esa situación?</span>
-            <br>Tu almuerzo parece incomodar al resto, y aunque tienes hambre, te encuentras muy avergonzado/a por los comentarios de tu compañeros. Sabes que tu mamá se tomó mucho tiempo en prepararlo el día anterior, pero aún así, crees que lo mejor es no comer hoy.</p>
-        <button id='botonlugar' class="ingresar">Continuar
+        <div class="conPg4">
 
-        </button>
+         <p id="lugarotropreg">Ahora, te toca a tí ponerte en el lugar de Arnaav<br><span style="color: #c03600; font-size: 70px; margin: 10px auto;">¿Qué pasaría si te encontrases tú en esa situación?</span>
+            <br>Tu almuerzo parece incomodar al resto, y aunque tienes hambre, te encuentras muy avergonzado/a por los comentarios de tu compañeros. Sabes que tu mamá se tomó mucho tiempo en prepararlo el día anterior, pero aún así, crees que lo mejor es no comer hoy.</p>
+         <button id='botonlugar' class="ingresar">Continuar
+
+            </button>
 
  
-        <div id='divRes2' style='display: none;'>
+            <div id='divRes2' style='display: none;'>
             <h2 id="titulo_pregunta2">¿Cómo crees que te sentirías tú en esta situación? <h2>
                 <style>
                     #titulo_pregunta2{
                         text-align: center;
-                        position: absolute;
+                        
                         color: #43474C;
                         font-size: 90px;
                         top:0px;
-                        width: 90%;
+                       
                     }
 
 
@@ -48,22 +50,19 @@
 
                 </style>
 
-                <div class='flex-container'>
-                <div>
-                    <button id="btnA2"  class='div_respuestas m90'>Incómodo/a, porque me da vergüenza que me digan esas cosas enfrente a otras personas.</button>
+                <div id='resDivRes2'class='flex-container'>
+                    <div>
+                        <button id="btnA2"  class='div_respuestas m90'>Incómodo/a, porque me da vergüenza que me digan esas cosas enfrente a otras personas.</button>
+                    </div>
+                    <div>
+                        <button id="btnB2" class='div_respuestas m90'>Triste, porque sé que me lo hizo mi mamá con esfuerzo y ahora no lo voy a poder disfrutar.</button>
+                    </div>
+                    <div>
+                        <button id="btnC2" class='div_respuestas m90'>Enojado/a, porque los otros quieren dejarme sin almuerzo sólo porque a ellos les incomodan los olores.</button>
+                    </div>
                 </div>
-                <div>
-                    <button id="btnB2" class='div_respuestas m90'>Triste, porque sé que me lo hizo mi mamá con esfuerzo y ahora no lo voy a poder disfrutar.</button>
-                </div>
-                <div>
-                    <button id="btnC2" class='div_respuestas m90'>Enojado/a, porque los otros quieren dejarme sin almuerzo sólo porque a ellos les incomodan los olores.</button>
-                </div>
-
-
-
-                        
-
-        </div>
+            </div>
+        </div>    
         <script>
             $(document).ready(function(){
                 var but = $("#botonlugar")
