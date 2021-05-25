@@ -253,7 +253,7 @@
                 var width1 = box1.clientWidth;
                 lista_paises = []
                 var caja = 1
-                var cuenta = 0
+                var cuenta = 1
 
         
            
@@ -295,13 +295,14 @@
                         $("#info-escrita").css("height", widthtot)
                         $("#info-escrita").css("background-color", "#e1743d20")
                         $("#info-escrita").css("border-radius", "10px")
-                        cuenta += 1
+                        
                         console.log(contador)
-                        if (cuenta == 9) {
+                        if (cuenta == 10) {
                             caja += 1
                             cuenta = 0
                             console.log("holaaaaa")
-                            };
+                        };
+                        cuenta += 1
                     };
 
                 var botones = $(".boton-pais")
