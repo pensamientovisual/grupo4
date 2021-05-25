@@ -32,7 +32,20 @@
                     $("#mainContent").empty();
                     $( "#mainContent" ).load( "pagedatos_nv1.html" );
 
-                })
+                });
+                btn.mouseenter(function(){
+                    $(btn).css("background-color","#c03600" )
+                    $(btn).css("transition-duration","0.5s" )
+                    $(btn).css("color","#f8e9d3" )
+                    $(btn).css("border","0px" )
+                    console.log("hola")
+                });
+                btn.mouseleave(function(){
+                    $(btn).css("background-color","#e1743d" )
+                    $(btn).css("transition-duration","0.5s" )
+                    $(btn).css("color","#404347" )
+                });
+
             })
 
         </script>
