@@ -172,7 +172,7 @@
          </div>
             <!--<button id="botondisc">Discriminado</button>-->
          <div id ="personitas" ></div>
-            <button class="ingresar" id='PDbtnN1' style="float:right; margin-right: 2%;">Nivel Terminado!</button>
+            <button class="ingresar" id='PDbtnN1' style="float:right; ;">Nivel Terminado!</button>
         </div>
 
 
@@ -272,13 +272,14 @@
                         $(rect).css("width", (width - width1)/13);
                         $(rect).css("background", color);
                         $(rect).css("display", "inline-block");
-                        $(rect).css("margin", "5px");
+                        $(rect).css("margin", "px");
                         $(rect).css("border", "3px solid " + borde);
                         $(rect).css("border-radius", "80px");
                         $("#personitas").append(rect);
                         $("#info-escrita").css("width", "80%")
                         $("#info-escrita").css("height", widthtot)
                         $("#info-escrita").css("background-color", "#e1743d20")
+                        $("#info-escrita").css("border-radius", "10px")
                     };
 
                 var botones = $(".boton-pais")
