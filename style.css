@@ -183,10 +183,13 @@ body{
     grid-gap: 20px;
     align-items: center;
     justify-content: center;
-    grid-template-columns: 3fr 2fr 1fr;
-    grid-template-rows: repeat(4, 2fr );
+    grid-template-columns: 2fr 1fr .5fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
+
     
 }
+
+
 
 .conData1 #botones{
     grid-column-start: 3;
@@ -210,11 +213,16 @@ body{
     grid-row-end: 5;
 }
 .conData1 #PDbtnN1{
-    grid-area: foot;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    
 }
 .conData1 #textoinfdata1{
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 2;
+    margin-left: 2%;
 }
 /* Grid Data 1 End*/
 
