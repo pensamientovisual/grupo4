@@ -1,12 +1,12 @@
-pais,total_migrantes_por_pais,porcentaje_migrantes_por_pais,cantidad_discriminados_por_pais,porcentaje_discriminado_por_pais,porcentaje_discriminado_por_pais_de_total
-Perú,172.584,0.22,54.537,0.316,0.069
-Argentina,43.535,0.06,6.182,0.142,0.01
-Colombia,115.834,0.15,58.843,0.508,0.08
-Bolivia,52.864,0.069,13.427,0.254,0.02
-Ecuador,27.987,0.04,8.480,0.303,0.01
-Venezuela,188.132,0.24,67.916,0.361,0.09
-Haití,76.186,0.1,17.827,0.234,0.02
-AméricaLatinayCaribe,49.754,0.06,11.891,0.239,0.02
-Canadayusa,8.551,0.01,2.044,0.239,0.00
-Europa,33.429,0.04,7.989,0.239,0.01
-Otro,8.551,0.01,2.044,0.239,0.00
+pais,nombre,total_migrantes_por_pais,porcentaje_migrantes_por_pais,cantidad_discriminados_por_pais,porcentaje_discriminado_por_pais,porcentaje_discriminado_por_pais_de_total
+Perú,Perú,172.584,0.22,54.537,0.316,0.069
+Argentina,Argentina,43.535,0.06,6.182,0.142,0.01
+Colombia,Colombia,115.834,0.15,58.843,0.508,0.08
+Bolivia,Bolivia,52.864,0.069,13.427,0.254,0.02
+Ecuador,Ecuador,27.987,0.04,8.480,0.303,0.01
+Venezuela,Venezuela,188.132,0.24,67.916,0.361,0.09
+Haití,Haití,76.186,0.1,17.827,0.234,0.02
+AméricaLatinayCaribe,América Latina y Caribe,49.754,0.06,11.891,0.239,0.02
+Canadayusa,Canada y USA,8.551,0.01,2.044,0.239,0.00
+Europa,Europa,33.429,0.04,7.989,0.239,0.01
+Otro,Otro,8.551,0.01,2.044,0.239,0.00
