@@ -11,6 +11,31 @@ $(document).ready(function(){
     var boton = $("#username_btn")
     var clicked_mujer = false
     var clicked_hombre = false
+    var n_1 = false
+    var n_2 = false
+    var n_3 = false
+
+    if (n_1 == false) {
+        $("#ilvl2").css("cursor", "url('cursor/cursor_candado.png'), auto")
+        $("#iconlvl2").css("cursor", "url('cursor/cursor_candado.png'), auto")
+    }
+    else {
+        $("#ilvl2").css("cursor", "url('cursor/cursor_pointer.png'), auto")
+        $("#iconlvl2").css("cursor", "url('cursor/cursor_pointer.png'), auto")
+
+
+    };
+    if (n_2 == false) {
+        $("#ilvl1").css("cursor", "url('cursor/cursor_candado.png'), auto")
+        $("#iconlvl1").css("cursor", "url('cursor/cursor_candado.png'), auto")
+
+    }
+    else{
+        $("#ilvl1").css("cursor", "url('cursor/cursor_pointer.png'), auto")
+        $("#iconlvl1").css("cursor", "url('cursor/cursor_pointer.png'), auto")
+
+
+    }
 
     
     $("#PDbtnN1").click(function(){
@@ -18,6 +43,15 @@ $(document).ready(function(){
         console.log(n_1)
         $("#ilvl2").css("cursor", "url('cursor/cursor_pointer.png'), auto")
         $("#iconlvl2").css("cursor", "url('cursor/cursor_pointer.png'), auto")
+
+
+        
+    });
+    $("#botondatos").click(function(){
+        n_2 = true
+        console.log(n_2)
+        $("#ilvl1").css("cursor", "url('cursor/cursor_pointer.png'), auto")
+        $("#iconlvl1").css("cursor", "url('cursor/cursor_pointer.png'), auto")
 
 
         
@@ -93,6 +127,8 @@ $(document).ready(function(){
             $(boton).css("transition-duration", "0.2s")}
 
     );
+
+
 
 });
 
