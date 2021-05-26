@@ -219,6 +219,12 @@
                 $("#PDbtnN1").click(function(){
                     $("#mainContent").empty();
                     $( "#mainContent" ).load( "page_niveles.html" );
+                    var linknav = document.createElement("A");
+                    linknav.innerHTML = "Datos 1";
+                    $(linknav).attr("id", "Datos1");
+                  //  $(linknav).attr("href", "pagedatos_nv1.html")
+                    $("#mySidenav").append(linknav)
+
 
                     
                 });

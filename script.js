@@ -15,32 +15,33 @@ $(document).ready(function(){
     var n_2 = false
     var n_3 = false
 
-    if (n_1 == false) {
-        $("#ilvl2").css("cursor", "url('cursor/cursor_candado.png'), auto")
-        $("#iconlvl2").css("cursor", "url('cursor/cursor_candado.png'), auto")
-    }
-    else {
-        $("#ilvl2").css("cursor", "url('cursor/cursor_pointer.png'), auto")
-        $("#iconlvl2").css("cursor", "url('cursor/cursor_pointer.png'), auto")
+//    if (n_1 == false) {
+  //      $("#ilvl2").css("cursor", "url('cursor/cursor_candado.png'), auto")
+    //    $("#iconlvl2").css("cursor", "url('cursor/cursor_candado.png'), auto")
+    //}
+   // else {
+     //   console.log("HOLIIIIIII")
+       // $("#ilvl2").css("cursor", "url('cursor/cursor_pointer.png'), auto")
+       // $("#iconlvl2").css("cursor", "url('cursor/cursor_pointer.png'), auto")
 
 
-    };
-    if (n_2 == false) {
-        $("#ilvl1").css("cursor", "url('cursor/cursor_candado.png'), auto")
-        $("#iconlvl1").css("cursor", "url('cursor/cursor_candado.png'), auto")
+  //  };
+//    if (n_2 == false) {
+ //       $("#ilvl1").css("cursor", "url('cursor/cursor_candado.png'), auto")
+  //      $("#iconlvl1").css("cursor", "url('cursor/cursor_candado.png'), auto")
 
-    }
-    else{
-        $("#ilvl1").css("cursor", "url('cursor/cursor_pointer.png'), auto")
-        $("#iconlvl1").css("cursor", "url('cursor/cursor_pointer.png'), auto")
+  //  }
+   // else{
+  //      $("#ilvl1").css("cursor", "url('cursor/cursor_pointer.png'), auto")
+  //      $("#iconlvl1").css("cursor", "url('cursor/cursor_pointer.png'), auto")
 
 
-    }
-
+  //  }
+//
     
     $("#PDbtnN1").click(function(){
         n_1 = true
-        console.log(n_1)
+        console.log(n_1, "N1N1N1N1N1")
         $("#ilvl2").css("cursor", "url('cursor/cursor_pointer.png'), auto")
         $("#iconlvl2").css("cursor", "url('cursor/cursor_pointer.png'), auto")
 

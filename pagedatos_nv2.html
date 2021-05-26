@@ -1983,6 +1983,15 @@
                     console.log('click')
                     $("#mainContent").empty();
                     $( "#mainContent" ).load( "page_niveles.html" );
+                    var linknav = document.createElement("A");
+                    linknav.innerHTML = "Datos 2";
+                    $(linknav).attr("id", "Datos2");
+                  //  $(linknav).attr("href", "pagedatos_nv1.html")
+                    $("#mySidenav").append(linknav)
+
+
+                    
+
 
                 })
 
