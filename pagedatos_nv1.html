@@ -278,6 +278,8 @@
 
 
                     contador = 0
+                    discriminados = 0
+                    
                     for (var i = 0; i < (parseFloat(data.porcentaje_migrantes_por_pais) * 100); i++) {
                         var rect = document.createElement("DIV");
                         var pais = data.pais
@@ -287,9 +289,10 @@
                         var borde = "#e1743d40"
                         if (contador < parseFloat(data.porcentaje_discriminado_por_pais_de_total) * 100){
                             $(rect).attr("class", "personita-pais " + data.pais + " discriminado")
-                            var color = "#9cc2df40"
-                            var borde = "#9cc2df40"
+                   //         var color = "#9cc2df40"
+                     //       var borde = "#9cc2df40"
                             contador += 1
+                            discriminados += 1
                         };
 
                         $(rect).css("height", (width - width1)/13);
