@@ -8,7 +8,7 @@
                 <script type="text/javascript" src="script.js"></script>
                 <style>
                     .mapahch{
-                        
+
                         top: 90px;
                     }
                     .mystuff{
@@ -23,7 +23,7 @@
                         left:50px;
                     }
 
-                    #par3{
+                    #N2p3parr3{
                         font-size: 60px;
 
 
@@ -35,8 +35,8 @@
                     #botondatosar{
 
                         margin-left: 80%;
-                        
-                        
+
+
                         top: 250px;
 
                         text-align: center;
@@ -54,17 +54,17 @@
             </head>
 
 
-        
+
             <body id="bodyarnav">
                 <div class="contPg3lv2">
                     <div class="textPg3">
-                        <p class="" id="par1"><span style="color: #e1743d">Leroi</span>, junto a sus padres y cinco hermanos,<br>llegó hace dos semanas a Chile desde el puerto de Jacque, en <span style="color: #e1743d">Haití</span>.</p>
-                        <p id="par2">Su familia se dedicaba a la agricultura,<br>pero la erosión de los suelos y la crisis económica los obligó a viajar a Chile para poder tener una <span style="color: #e1743d">mejor calidad de vida.</span></p>
-                        <p id="par3">Aunque en Haití su familia conversaba en <span style="color: #e1743d">CRÉOLE</span>, una derivación caribeña del francés, desde que llegaron a Chile han intentado hacerlo sólo en español para poder aprender el idioma de manera más rápida.</p>
+                        <p class="" id="N2p3parr1"><span style="color: #e1743d">Leroi</span>, junto a sus padres y cinco hermanos,<br>llegó hace dos semanas a Chile desde el puerto de Jacque, en <span style="color: #e1743d">Haití</span>.</p>
+                        <p id="N2p3parr2">Su familia se dedicaba a la agricultura,<br>pero la erosión de los suelos y la crisis económica los obligó a viajar a Chile para poder tener una <span style="color: #e1743d">mejor calidad de vida.</span></p>
+                        <p id="N2p3parr3">Aunque en Haití su familia conversaba en <span style="color: #e1743d">CRÉOLE</span>, una derivación caribeña del francés, desde que llegaron a Chile han intentado hacerlo sólo en español para poder aprender el idioma de manera más rápida.</p>
                     </div>
                     <div class="picPg3" id="dibujosleroi" style='z-index: -10;'>
                         <div class="mapahch">
-                            <img src="imagenes_nv2/viaje1.png" height="70%">    
+                            <img src="imagenes_nv2/viaje1.png" height="70%">
                         </div>
                         <script>
                             var images1 = ['viaje1.png','viaje2.png','viaje3.png'],  //https://stackoverflow.com/questions/7086290/javascript-image-change-after-x-amount-of-time
@@ -73,17 +73,17 @@
                             var timer = setInterval(function() {
                                 var curImage1 = images1[index];
                                 index = (index == maxImages) ? 0 : ++index;
-                                //set your image using the curImageVar 
+                                //set your image using the curImageVar
                                 $('div.mapahch img').attr('src','imagenes_nv2/'+curImage1);
                             }, 1000);
-                        </script>   
+                        </script>
 
                         <div class="mystuff">
-                            <img src="imagenes_nv2/cosecha_1.png" height="70%">        
+                            <img src="imagenes_nv2/cosecha_1.png" height="70%">
                         </div>
 
                         <div class="leroipg3">
-                            <img src="imagenes_nv2/haiti_feliz.png" height="70%">    
+                            <img src="imagenes_nv2/haiti_feliz.png" height="70%">
                         </div>
                     </div>
                         <script>
@@ -93,14 +93,14 @@
                             var timer = setInterval(function() {
                                 var curImage = images[index];
                                 index = (index == maxImages) ? 0 : ++index;
-                                //set your image using the curImageVar 
+                                //set your image using the curImageVar
                                 $('div.mystuff img').attr('src','imagenes_nv2/'+curImage);
                             }, 1500);
                         </script>
-                       
-                  
-                
-                
+
+
+
+
                     </div>
                     <div class="botonPg3">
                         <button id='botondatos2' class="ingresar">Sigamos</button>
@@ -109,9 +109,9 @@
 
                     $(document).ready(function(){
                         var botarnav = $("#botondatos2");
-                        var p1 = $("#par1");
-                        var p2 = $("#par2");
-                        var p3 = $("#par3");
+                        var p1 = $("#N2p3parr1");
+                        var p2 = $("#N2p3parr2");
+                        var p3 = $("#N2p3parr3");
                         var ar = $(".mapahch");
                         var arcomida = $(".mystuff");
                         var leroi = $(".leroipg3")
@@ -121,7 +121,7 @@
                         $(p3).hide();
                         $(arcomida).hide();
                         $(leroi).hide()
-                        
+
 
                         botarnav.mouseenter(function(){
                             $(botarnav).css("background-color","#c03600" )
@@ -162,7 +162,7 @@
                             if (contador == 3){
                                 $("#mainContent").empty();
                                 $( "#mainContent" ).load( "page4_nv2.html" );
-                                
+
                             };
 
     //alert(name);
@@ -170,7 +170,7 @@
 
                         });
 
-                        
+
                     });
 
                 </script>

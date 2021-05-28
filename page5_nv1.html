@@ -7,14 +7,14 @@
         <script type="text/javascript" src="Java/jquery-3.6.0.js"></script>
     </head>
     <body>
-       <p id='P5par1N1' style="font-size: 80px; text-align: center;"><span style="color: #c03600">No </span>te gustaría encontrarte en esa posición,<br> ¿cierto?</p> 
-       <p id="P5par2N1" style="font-size: 80px; text-align: center;">Ahora que conoces un poco más de la historia y situación de Arnav, pongámonos nuevamente en el escenario inicial.</p>
-       <div id="P5par3N1" class="div_parr">
-            <p class = 'parr' >Te encuentras en la situación inicial.<br>Es otro día de colegio, y por fin terminaron las clases de la mañana. Entre tanto estudio y correr en el recreo, 
-            esperas con ansias la hora del almuerzo. Cuando por fin te sientas a comer el sándwich de queso que trajiste de tu casa, 
+       <p id='N1p5parr1' style="font-size: 80px; text-align: center;"><span style="color: #c03600">No </span>te gustaría encontrarte en esa posición,<br> ¿cierto?</p>
+       <p id="N1p5parr2" style="font-size: 80px; text-align: center;">Ahora que conoces un poco más de la historia y situación de Arnav, pongámonos nuevamente en el escenario inicial.</p>
+       <div id="N1p5parr3" class="div_parr">
+            <p class = 'parr' >Te encuentras en la situación inicial.<br>Es otro día de colegio, y por fin terminaron las clases de la mañana. Entre tanto estudio y correr en el recreo,
+            esperas con ansias la hora del almuerzo. Cuando por fin te sientas a comer el sándwich de queso que trajiste de tu casa,
             sientes un olor raro que te hace fijarte de donde viene.</p>
             <p class = 'parr' >Al mirar a tu alrededor, te das cuenta de que Arnav, tu compañero nuevo que viene de la India, trajo un almuerzo con
-            carne de un color amarillento, condimientos y vegetales que tu no conoces. El olor te molesta muchísimo.<br><span style="font-size: 50px;">Sin embargo, <span style="color: #c03600">esta vez</span> decides:</span></p>    
+            carne de un color amarillento, condimientos y vegetales que tu no conoces. El olor te molesta muchísimo.<br><span style="font-size: 50px;">Sin embargo, <span style="color: #c03600">esta vez</span> decides:</span></p>
        </div>
        <button class="ingresar" id='P5btnN1'>Sigamos</button>
 
@@ -41,8 +41,8 @@
                 <button id="btnC3" value='mala' class='div_respuestas' style="background-color: #e1743d; opacity: 0.5;">DECIRLE A ARNAV QUE BOTE SU COMIDA A LA BASURA. (el boton esta bloqueado)</button>
             </div>
 
-                    
-        </form>    
+
+        </form>
         </div>
         <p></p>
 
@@ -51,9 +51,9 @@
 
            $(document).ready(function(){
             var btn = $("#P5btnN1");
-                        var p1 = $("#P5par1N1");
-                        var p2 = $("#P5par2N1");
-                        var p3 = $("#P5par3N1");
+                        var p1 = $("#N1p5parr1");
+                        var p2 = $("#N1p5parr2");
+                        var p3 = $("#N1p5parr3");
 
                         //var ar = $("#arnavv");
                         //var arcomida = $("#arnavvcomida");
@@ -62,7 +62,7 @@
                         $(p2).hide();
                         $(p3).hide();
                         //$(arcomida).hide();
-                        
+
 
                         btn.mouseenter(function(){
                             $(btn).css("background-color","#c03600" )
@@ -76,8 +76,8 @@
                             $(btn).css("transition-duration","0.5s" )
                             $(btn).css("color","#404347" )
                         });
-                        
-                        
+
+
                         btn.click(function(){
                             console.log("holi")
                             contador += 1
@@ -86,17 +86,17 @@
                                 $(p1).hide();
                                 $(p2).fadeTo("fast", 1);
                                 //$(ar).fadeTo("fast", 0);
-                                
+
                                 //$(arcomida).fadeTo("fast", 1);
 
-                                
+
                             };
                             if (contador == 2){
                                 $(p2).fadeTo("fast", 0);
                                 $(p2).hide();
                                 $(p3).fadeTo("fast", 1);
-                                
-                                
+
+
                             };
                             if (contador == 3){
                                 $(p3).fadeTo("fast", 0);
@@ -105,14 +105,14 @@
                                 $('#divRes3').show();
                                 $('.div_parr').css("opacity", "0.5")
                                 document.body.style.backgroundColor = "rgba(169, 165, 163, 0.8)"
-                                                              
+
                             };
 
-                            
+
                         });
-                        
+
                         $('#btnA3').on('click', function () {
-                            
+
                             $("#mainContent").empty();
                             $( "#mainContent" ).load( "page6_nv1.html" );
 
@@ -132,10 +132,10 @@
                             $( "#mainContent" ).load( "page6_nv1.html" );*/
                             document.body.style.backgroundColor = 'rgba(255, 99, 0, 0.1)'
                         })
-                            
+
                         });
 
-           
+
        </script>
     </body>
 </html>
