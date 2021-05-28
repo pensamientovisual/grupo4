@@ -9,9 +9,10 @@
     <body>
         <br><br><br>
         <!--<p id='demoPage3' class="titulo_niveles">hola</p>-->
+        <p id='demoPage2_nv2' class="titulo_niveles">hola</p>
         <br>
         <br>
-        <button id="btnSig_3a4" class = 'ingresar'>CONT</button>
+        <button id="btnSig_3a4" class = 'ingresar'>CONT</button> 
 
         <script>
             var textCorrectAns = String('¡Felicitaciones! Hiciste lo correcto... Pero mucha gente no actúa así. Mira lo que sucedería si hubieras elejido una de las otras opciones...');
@@ -19,10 +20,10 @@
             $(document).ready(function(){
                 if (btnSelectN2 == 'correcta') {
                     //alert('si');
-                    $('#demoPage3').text(textCorrectAns);
+                    $('#demoPage2_nv2').text(textCorrectAns);
                 } else {
                     //alert('no');
-                    $('#demoPage3').text(textWrongAns);
+                    $('#demoPage2_nv2').text(textWrongAns);
                 }
 
                 $('#btnSig_3a4').click(function () {
