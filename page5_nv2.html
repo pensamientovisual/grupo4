@@ -7,7 +7,7 @@
         <script type="text/javascript" src="Java/jquery-3.6.0.js"></script>
     </head>
     <body>
-       <p id='N2p5parr1' style="font-size: 80px; text-align: center;"><span style="color: #c03600">No </span>te gustaría encontrarte en esa posición,<br> ¿cierto?</p> 
+       <p id='N2p5parr1' style="font-size: 80px; text-align: center;"><span style="color: #c03600">No </span>te gustaría encontrarte en esa posición,<br> ¿cierto?</p>
        <p id="N2p5parr2" style="font-size: 80px; text-align: center;">Ahora que conoces un poco más de la historia y situación de Arnaav, pongámonos nuevamente en el escenario inicial.</p>
        <div id="N2p5parr3" class="div_parr">
             <p class = 'parr' >Te encuentras en la situación inicial.<br>Es otro día en colegio, y hoy tu profesor decide asignar parejas para la próxima tarea del curso, una presentación oral sobre el descubrimiento de América.
@@ -15,7 +15,7 @@
             <p class = 'parr' >Cuando te asignan a tu compañero ya no te sientes tan seguro de que vayas a poder ir. Leroi es nuevo en tu curso y viene desde Haití. Aunque nunca le has hablado,
                 sabes que su pronunciación no es muy buena y no estás seguro de que entienda español.<br><span style="font-size: 50px;">Sin embargo, <span style="color: #c03600">esta vez</span> decides:</span></p>
        </div>
-       <button class="ingresar" id='P5btnN1'>Sigamos</button>
+       <button class="ingresar" id='N2p5btn'>Sigamos</button>
 
        <div id='divRes3' style='display: none;'>
         <h2 class="titulo_pregunta">¿ESTA VEZ, QUÉ HARÍAS?<h2>
@@ -30,14 +30,14 @@
         <form>
             <div class='flex-container' style="cursor: url('cursor/cursor_pointer.png'), auto;">
             <div>
-                <button id="btnA3" value='mala' class='div_respuestas' >PREGUNTARLE AMABLEMENTE QUE TRAJO Y SI PUEDES PROBAR UN POCO.</button>
+                <button id="N2p5btnA3" value='mala' class='div_respuestas' >PREGUNTARLE AMABLEMENTE QUE TRAJO Y SI PUEDES PROBAR UN POCO.</button>
             </div>
             <div>
-                <button id="btnB3" value='mala' class='div_respuestas' style="background-color: #e1743d; opacity: 0.5;">PEDIRLE A ARNAAV QUE VAYA A ALMORZAR A OTRO LUGAR
+                <button id="N2p5btnB3" value='mala' class='div_respuestas' style="background-color: #e1743d; opacity: 0.5;">PEDIRLE A ARNAAV QUE VAYA A ALMORZAR A OTRO LUGAR
                     DONDE NO MOLESTE A NADIE. (el boton esta bloqueado)</button>
             </div>
             <div>
-                <button id="btnC3" value='correcta' class='div_respuestas' style="background-color: #e1743d; opacity: 0.5;">ESTA ES LA CORRECTA PARA ESTA ETAPA</button>
+                <button id="N2p5btnC3" value='correcta' class='div_respuestas' style="background-color: #e1743d; opacity: 0.5;">ESTA ES LA CORRECTA PARA ESTA ETAPA</button>
             </div>
 
 
@@ -49,7 +49,7 @@
        <script>
 
            $(document).ready(function(){
-            var btn = $("#P5btnN1");
+            var btn = $("#N2p5btn");
                         var p1 = $("#N2p5parr1");
                         var p2 = $("#N2p5parr2");
                         var p3 = $("#N2p5parr3");
@@ -110,7 +110,7 @@
 
                         });
 
-                        $('#btnA3').on('click', function () {
+                        $('#N2p5btnA3').on('click', function () {
 
                             /*$("#mainContent").empty();
                             $( "#mainContent" ).load( "page6_nv1.html" );
@@ -118,14 +118,14 @@
                             document.body.style.backgroundColor = 'rgba(255, 99, 0, 0.1)'*/
                         })
 
-                        $('#btnB3').on('click', function () {
+                        $('#N2p5btnB3').on('click', function () {
 
                             /*$("#mainContent").empty();
                             $( "#mainContent" ).load( "page6_nv1.html" );*/
 
                         })
 
-                        $('#btnC3').on('click', function () {
+                        $('#N2p5btnC3').on('click', function () {
 
                             $("#mainContent").empty();
                             $( "#mainContent" ).load( "page6_nv2.html" );
