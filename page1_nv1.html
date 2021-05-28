@@ -73,17 +73,18 @@
                 <form>
                     <div class='flex-container' style="cursor: url('cursor/cursor_pointer.png'), auto;">
                     <div>
-                        <button id="btnA" value='correcta' class='div_respuestas'>PREGUNTARLE QUE TRAJO Y SI PUEDES PROBAR UN POCO.</button>
+                  
+                        <button id="N1p1btnA" value='correcta' class='div_respuestas'>PREGUNTARLE AMABLEMENTE QUE TRAJO Y SI PUEDES PROBAR UN POCO.</button>
                     </div>
                     <div>
-                        <button id="btnB" value='mala' class='div_respuestas'>PEDIRLE AMABLEMENTE A ARNAV QUE VAYA A ALMORZAR A LA MESA DE AL LADO.</button>
+                        <button id="N1p1btnB" value='mala' class='div_respuestas'>PEDIRLE AMABLEMENTE A ARNAV QUE VAYA A ALMORZAR A LA MESA DE AL LADO. </button>
                     </div>
                     <div>
-                        <button id="btnC" value='mala' class='div_respuestas'>DECIRLE EN SECRETO A TU AMIGO QUE LA COMIDA ES DE ARNAV.</button>
+                        <button id="N1p1btnC" value='mala' class='div_respuestas'>DECIRLE EN SECRETO A TU AMIGO QUE LA COMIDA ES DE ARNAV.</button>
                     </div>
 
 
-                </div>
+                    </div>
                 </form>
                 <button class='ingresar' id="backBtnN1" style="float: left; margin: 20px;">VOLVER</button>
 
@@ -116,8 +117,8 @@
 
                 })*/
 
-                $('#btnA').on('click', function () {
-                    btnSelect = $('#btnA').val();
+                $('#N1p1btnA').on('click', function () {
+                    btnSelect = $('#N1p1btnA').val();
 
                     $("#mainContent").empty();
                     $( "#mainContent" ).load( "page2_nv1.html" );
@@ -125,8 +126,8 @@
 
                 })
 
-                $('#btnB').on('click', function () {
-                    btnSelect = $('#btnB').val();
+                $('#N1p1btnB').on('click', function () {
+                    btnSelect = $('#N1p1btnB').val();
 
 
                     $("#mainContent").empty();
@@ -135,8 +136,8 @@
 
                 })
 
-                $('#btnC').on('click', function () {
-                    btnSelect = $('#btnC').val();
+                $('#N1p1btnC').on('click', function () {
+                    btnSelect = $('#N1p1btnC').val();
 
                     $("#mainContent").empty();
                     $( "#mainContent" ).load( "page2_nv1.html" );
