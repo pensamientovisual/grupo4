@@ -67,7 +67,7 @@
                             <img src="imagenes_nv2/viaje1.png" height="70%">
                         </div>
                         <script>
-                            var images1 = ['viaje1.png','viaje2.png','viaje3.png'],  //https://stackoverflow.com/questions/7086290/javascript-image-change-after-x-amount-of-time
+                            var images1 = ['viaje1.png','viaje2.png','viaje3.png'],   //https://stackoverflow.com/questions/7086290/javascript-image-change-after-x-amount-of-time
                             index = 0, // starting index
                             maxImages = images1.length - 1;
                             var timer = setInterval(function() {
@@ -95,7 +95,7 @@
                                 index = (index == maxImages) ? 0 : ++index;
                                 //set your image using the curImageVar
                                 $('div.mystuff img').attr('src','imagenes_nv2/'+curImage);
-                            }, 1500);
+                            }, 1000);
                         </script>
 
 
