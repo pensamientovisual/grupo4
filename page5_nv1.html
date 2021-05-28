@@ -36,14 +36,13 @@
         <form>
             <div class='flex-container' style="cursor: url('cursor/cursor_pointer.png'), auto;">
             <div>
-                <button id="btnA3" value='correcta' class='div_respuestas' >PREGUNTARLE AMABLEMENTE QUE TRAJO Y SI PUEDES PROBAR UN POCO.</button>
+                <button id="btnA3" value='correcta' class='div_respuestas' >PREGUNTARLE QUE TRAJO Y SI PUEDES PROBAR UN POCO.</button>
             </div>
             <div>
-                <button id="btnB3" value='mala' class='div_respuestas' style="background-color: #e1743d; opacity: 0.5;">PEDIRLE A ARNAV QUE VAYA A ALMORZAR A OTRO LUGAR
-                    DONDE NO MOLESTE A NADIE. (el boton esta bloqueado)</button>
+                <button id="btnB3" value='mala' class='div_respuestas' style="background-color: #e1743d; opacity: 0.5;">PEDIRLE AMABLEMENTE A ARNAV QUE VAYA A ALMORZAR A LA MESA DE AL LADO.</button>
             </div>
             <div>
-                <button id="btnC3" value='mala' class='div_respuestas' style="background-color: #e1743d; opacity: 0.5;">DECIRLE A ARNAV QUE BOTE SU COMIDA A LA BASURA. (el boton esta bloqueado)</button>
+                <button id="btnC3" value='mala' class='div_respuestas' style="background-color: #e1743d; opacity: 0.5;">DECIRLE EN SECRETO A TU AMIGO QUE LA COMIDA ES DE ARNAV.</button>
             </div>
 
 
@@ -133,14 +132,21 @@
                         })
 
                         $('#btnB3').on('click', function () {
-
+                            //$("#N1p5parr1").text("Mmmm... Seguro/a?");
+                            $("#mainContent").empty();
+                            $( "#mainContent" ).load( "page5_nv1.html" );
+                            
+                            document.body.style.backgroundColor = 'rgba(255, 99, 0, 0.1)'
                             /*$("#mainContent").empty();
                             $( "#mainContent" ).load( "page6_nv1.html" );*/
 
                         })
 
                         $('#btnC3').on('click', function () {
-
+                     //       $("#N1p5parr1").text("Mmmm... Seguro/a?");
+                            $("#mainContent").empty();
+                            $( "#mainContent" ).load( "page5_nv1.html" );
+                            
                             /*$("#mainContent").empty();
                             $( "#mainContent" ).load( "page6_nv1.html" );*/
                             document.body.style.backgroundColor = 'rgba(255, 99, 0, 0.1)'
