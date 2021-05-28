@@ -83,8 +83,9 @@
                     </div>
 
                             
-                </form>    
-            </div>
+                </div>
+                </form>
+                <button class='ingresar' id="backBtnN1">VOLVER</button>    
             
         </div>
 
@@ -95,6 +96,7 @@
             var radioAns;
             var greet = '¡Hola '+ name + '!';
             var hideBtn1 = '#hideBtn1'
+            var backBtnN1 = '#backBtnN1'
 
 
             $(document).ready(function(){
@@ -167,8 +169,38 @@
                     $(hideBtn1).css("color", "404347");
                     $(hideBtn1).css("transition-duration", "0.2s")}
                     
+                );
 
-    );
+                $(backBtnN1).hover(function(){
+                    $(backBtnN1).css("background-color", "#c03600");
+                    $(backBtnN1).css("border", "0px");
+                    $(backBtnN1).css("cursor", "url('cursor/cursor_pointer.png'), auto;");
+                    $(backBtnN1).css("color", "white");
+                    $(backBtnN1).css("transition-duration", "0.5s")}
+                    
+
+                , function(){
+                    $(backBtnN1).css("background", "#e1743d");
+                    $(backBtnN1).css("color", "404347");
+                    $(backBtnN1).css("transition-duration", "0.2s")
+
+                });
+
+                $(backBtnN1).click(function(){
+                    $('#divRes1').hide();
+                    $(hideBtn1).show()
+                    $('.div_parr').css("opacity", "1")
+                    $('.div_parr').show()
+                    $('#mujerAn').css("opacity", "1")
+                    $("#saludo").css("opacity", 1)
+                    $("#ninacomiendo").css("opacity", "1")
+
+
+
+                    document.body.style.backgroundColor = 'rgba(255, 99, 0, 0.1)';
+   
+                })
+
 
 
 
