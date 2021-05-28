@@ -16,6 +16,11 @@
             <p class = 'parr' >Al mirar a tu alrededor, te das cuenta de que Arnav, tu compañero nuevo que viene de la India, trajo un almuerzo con
             carne de un color amarillento, condimientos y vegetales que tu no conoces. El olor te molesta muchísimo.<br><span style="font-size: 50px;">Sin embargo, <span style="color: #c03600">esta vez</span> decides:</span></p>
        </div>
+       <div class="china2">
+           <img src="imagenes_nv1/comida_feliz.png" width="600px" height="600px" id="ninacomiendo">
+        
+       </div>
+       <div id= 'mujerAn2'></div>
        <button class="ingresar" id='P5btnN1'>Sigamos</button>
 
        <div id='divRes3' style='display: none;'>
@@ -50,6 +55,14 @@
        <script>
 
            $(document).ready(function(){
+            const mujerAnContainer = document.getElementById('mujerAn2')
+            const mujerAn = bodymovin.loadAnimation({
+                wrapper: mujerAnContainer,
+                animType: 'svg',
+                loop: true,
+                autoplay: true,
+                path: 'mujerA.json',
+            })
             var btn = $("#P5btnN1");
                         var p1 = $("#N1p5parr1");
                         var p2 = $("#N1p5parr2");
@@ -134,6 +147,7 @@
                         })
 
                         });
+
 
 
        </script>
