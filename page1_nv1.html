@@ -5,7 +5,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="bodymovin.js"></script>
         <script type="text/javascript" src="script.js"></script>
-        
+
     </head>
 
     <body>
@@ -14,52 +14,52 @@
             transition: background-color .5s;
             background-color: rgba(192, 54, 0, .1);
             cursor: url('cursor/cursor_normal.png'), auto;
-            
+
         }
-        
+
         </style>
        <div class="contpg1">
             <div class="china">
                 <img src="imagenes_nv1/comida_feliz.png" width="600px" height="600px" id="ninacomiendo">
 
-            </div> 
+            </div>
             <div class="titulo_niveles">
                 <p  id='saludo' style="margin-left: 80px; font-size: 90px;"></p>
             </div>
             <div class='div_parr'>
 
-                
-                <div id="parr1">
 
-                    <p class = 'parr' >Es otro día de colegio, y por fin terminaron las clases de la mañana. Entre tanto estudio y correr en el recreo, 
-                    esperas con ansias la hora del almuerzo. Cuando por fin te sientas a comer el sándwich de queso que trajiste de tu casa, 
-                    sientes un olor raro que te hace fijarte de donde viene.</p> 
+                <div id="N2p1parr1">
+
+                    <p class = 'parr' >Es otro día de colegio, y por fin terminaron las clases de la mañana. Entre tanto estudio y correr en el recreo,
+                    esperas con ansias la hora del almuerzo. Cuando por fin te sientas a comer el sándwich de queso que trajiste de tu casa,
+                    sientes un olor raro que te hace fijarte de donde viene.</p>
                 </div>
                 <div id="parr2">
                     <p class = 'parr' >Al mirar a tu alrededor, te das cuenta de que Arnav, tu compañero nuevo que viene de la India, trajo un almuerzo con
                 carne de un color amarillento, condimentos y vegetales que tu no conoces. El olor te molesta muchísimo ("¿es nuevo para ti? porque es raro que el olor te moleste y le pidas probar"), así que decides:</p>
                 </div>
-                
-                
+
+
                 <!--
                 </div>
                 <div class='container'>
-                    
-                    <form > 
+
+                    <form >
                         <input class='radio_q' type='radio' name='res' value='correcta' id='opcion1'>
                         <label class='radio_res' for="opcion1">Opción a</label><br>
-                        <input class='radio_q' type='radio' name='res' value='mala' id='opcion2'>   
-                        <label class='radio_res' for="opcion2">Opción b</label><br>           
+                        <input class='radio_q' type='radio' name='res' value='mala' id='opcion2'>
+                        <label class='radio_res' for="opcion2">Opción b</label><br>
                         <input class='radio_q' type='radio' name='res' value='mala' id='opcion3'>
-                        <label class='radio_res' for="opcion3">Opción c</label><br> 
-                        
+                        <label class='radio_res' for="opcion3">Opción c</label><br>
+
                         <button id="radio_btn" class = 'ingresar'>Continuar</button>
                     </form>  -->
-                    
+
             </div>
-            <div id= 'mujerAn'></div> 
+            <div id= 'mujerAn'></div>
             <button id='hideBtn1' class="ingresar" style="float: right; border: 0px;">Ya he terminado de leer</button>
-           
+
             <div id='divRes1' style='display: none;'>
                 <h2 class="titulo_pregunta">¿QUÉ HARÍAS TU?<h2>
                     <style>
@@ -82,15 +82,15 @@
                         <button id="btnC" value='mala' class='div_respuestas'>DECIRLE A ARNAV QUE BOTE SU COMIDA A LA BASURA.</button>
                     </div>
 
-                            
+
                 </div>
                 </form>
-                <button class='ingresar' id="backBtnN1" style="float: left; margin: 20px;">VOLVER</button>    
-            
+                <button class='ingresar' id="backBtnN1" style="float: left; margin: 20px;">VOLVER</button>
+
         </div>
 
         <script>
-            
+
             var radioSelect;
             var btnSelect;
             var radioAns;
@@ -102,7 +102,7 @@
             $(document).ready(function(){
 
                 $('#saludo').text(greet)
-                    
+
                 /*$('#radio_btn').on('click',function () {
                     if ($('input:radio[name=res]:checked').val() != undefined) {
                         radioSelect = $('input:radio[name=res]:checked').val()
@@ -113,7 +113,7 @@
 
                     $("#mainContent").empty();
                     $( "#mainContent" ).load( "page3.html" );
-            
+
                 })*/
 
                 $('#btnA').on('click', function () {
@@ -142,7 +142,7 @@
                     $( "#mainContent" ).load( "page2_nv1.html" );
                     document.body.style.backgroundColor = 'rgba(255, 99, 0, 0.1)'
                 })
-                
+
                 $('#hideBtn1').click(function (){
                     $('#divRes1').show();
                     $(hideBtn1).hide()
@@ -162,13 +162,13 @@
                     $(hideBtn1).css("cursor", "url('cursor/cursor_pointer.png'), auto;");
                     $(hideBtn1).css("color", "white");
                     $(hideBtn1).css("transition-duration", "0.5s")}
-                    
+
 
                 , function(){
                     $(hideBtn1).css("background", "#e1743d");
                     $(hideBtn1).css("color", "404347");
                     $(hideBtn1).css("transition-duration", "0.2s")}
-                    
+
                 );
 
                 $(backBtnN1).hover(function(){
@@ -177,7 +177,7 @@
                     $(backBtnN1).css("cursor", "url('cursor/cursor_pointer.png'), auto;");
                     $(backBtnN1).css("color", "white");
                     $(backBtnN1).css("transition-duration", "0.5s")}
-                    
+
 
                 , function(){
                     $(backBtnN1).css("background", "#e1743d");
@@ -198,7 +198,7 @@
 
 
                     document.body.style.backgroundColor = 'rgba(255, 99, 0, 0.1)';
-   
+
                 })
 
 
@@ -218,5 +218,5 @@
 
         </script>
 
-    </body>    
+    </body>
 </html>
