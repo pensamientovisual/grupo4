@@ -217,13 +217,13 @@
             //                $( "#mainContent" ).load( "index.html" );
 
                 $("#PDbtnN1").click(function(){
+                    $("#loadD1").css("visibility", "visible")
                     $("#mainContent").empty();
                     $( "#mainContent" ).load( "page_niveles.html" );
-                    var linknav = document.createElement("A");
-                    linknav.innerHTML = "Datos 1";
-                    $(linknav).attr("id", "Datos1");
+                    
+
                   //  $(linknav).attr("href", "pagedatos_nv1.html")
-                    $("#mySidenav").append(linknav)
+
 
 
                     
@@ -279,7 +279,7 @@
 
                     contador = 0
                     discriminados = 0
-                    
+
                     for (var i = 0; i < (parseFloat(data.porcentaje_migrantes_por_pais) * 100); i++) {
                         var rect = document.createElement("DIV");
                         var pais = data.pais

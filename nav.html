@@ -44,7 +44,15 @@
         font-size: 36px;
         margin-left: 50px;
       }
-      
+      #loadD1{
+        visibility: hidden;
+      }
+      #loadD2{
+        visibility: hidden;
+      }
+      #loadD3{
+        visibility: hidden;
+      }
       @media screen and (max-height: 450px) {
         .sidenav {padding-top: 15px;}
         .sidenav a {font-size: 18px;}
@@ -58,6 +66,10 @@
         <a href ="index.html" class="link">INICIO</a>
         <a id='loadNiveles'>ETAPAS</a>
         <a href="#">SOBRE NOSOTROS</a>
+        <a id='loadD1'>DATOS 1</a>
+        <a id='loadD2'>DATOS 2</a>
+        <a id='loadD3'>DATOS 2</a>
+        
       </div>
       
       <span id='openNav' style="font-size:40px;cursor: url('cursor/cursor_pointer.png'), auto;" onclick="openNav()">&#9776; </span> <!--animacion der cabio de color-->
@@ -79,10 +91,20 @@
           $( "#mainContent" ).load( "page_niveles.html" );
 
         })
-        $("#Datos1").click(function(){
+        $("#loadD1").click(function(){
           console.log("holaaaaaaaaaa1234568")
           $("#mainContent").empty();
           $("#mainContent").load("pagedatos_nv1.html");
+        });
+        $("#loadD2").click(function(){
+          console.log("holaaaaaaaaaa1234568")
+          $("#mainContent").empty();
+          $("#mainContent").load("pagedatos_nv2.html");
+        });
+        $("#loadD3").click(function(){
+          console.log("holaaaaaaaaaa1234568")
+          $("#mainContent").empty();
+          $("#mainContent").load("pagedatos_nv3.html");
         });
       })
       </script>         

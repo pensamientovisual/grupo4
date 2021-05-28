@@ -1725,7 +1725,7 @@
 
         </div>
         <div id="divbotondatos"> 
-            <button id='botondatos' class="ingresar">Sigamos</button>
+            <button id='botondatos' class="ingresar">Nivel Terminado!</button>
         </div>
    
 
@@ -1981,13 +1981,12 @@
                 });
                 $(botondatos).click(function(){
                     console.log('click')
+                    $("#loadD2").css("visibility", "visible")
                     $("#mainContent").empty();
                     $( "#mainContent" ).load( "page_niveles.html" );
-                    var linknav = document.createElement("A");
-                    linknav.innerHTML = "Datos 2";
-                    $(linknav).attr("id", "Datos2");
+
                   //  $(linknav).attr("href", "pagedatos_nv1.html")
-                    $("#mySidenav").append(linknav)
+
 
 
                     
