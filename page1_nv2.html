@@ -91,10 +91,11 @@
                     <div>
                         <button id="btnCN2" value='correcta' class='div_respuestas'>OPCION C (CORRECTA)</button>
                     </div>
-
-                            
+                
+                </div>
                 </form>    
-            </div>
+                <button class='ingresar' id="backBtnN2">VOLVER</button>    
+
         </div>
 
         <script>
@@ -102,9 +103,10 @@
             var btnSelectN2;
             var greet = '¡Hola de nuevo '+ name + '!';
             var hideBtn1N2 = '#hideBtn1N2'
-
-
+            
+            
             $(document).ready(function(){
+                var backBtnN2 = "#backBtnN2"
 
                 $('#saludoN2').text(greet)
                     
@@ -163,6 +165,49 @@
                     
 
     );
+                $(hideBtn1N2).hover(function(){
+                    $(hideBtn1N2).css("background-color", "#c03600");
+                    $(hideBtn1N2).css("border", "0px");
+                    $(hideBtn1N2).css("cursor", "url('cursor/cursor_pointer.png'), auto;");
+                    $(hideBtn1N2).css("color", "white");
+                    $(hideBtn1N2).css("transition-duration", "0.5s")}
+                    
+
+                , function(){
+                    $(hideBtn1N2).css("background", "#e1743d");
+                    $(hideBtn1N2).css("color", "404347");
+                    $(hideBtn1N2).css("transition-duration", "0.2s")}
+                    
+                );
+
+                $(backBtnN2).hover(function(){
+                    $(backBtnN2).css("background-color", "#c03600");
+                    $(backBtnN2).css("border", "0px");
+                    $(backBtnN2).css("cursor", "url('cursor/cursor_pointer.png'), auto;");
+                    $(backBtnN2).css("color", "white");
+                    $(backBtnN2).css("transition-duration", "0.5s")}
+                    
+
+                , function(){
+                    $(backBtnN2).css("background", "#e1743d");
+                    $(backBtnN2).css("color", "404347");
+                    $(backBtnN2).css("transition-duration", "0.2s")
+
+                });
+
+                $(backBtnN2).click(function(){
+                    $('#divRes1N2').hide();
+                    $(hideBtn1N2).show()
+                    $('.div_parr').css("opacity", "1")
+                    $('.div_parr').show()
+                    $('#mujerAnN2').css("opacity", "1")
+                    $("#saludoN2").css("opacity", 1)
+
+
+
+                    document.body.style.backgroundColor = 'rgba(255, 99, 0, 0.1)';
+   
+                })
 
 
 
