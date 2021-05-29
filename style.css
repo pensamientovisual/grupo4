@@ -84,29 +84,38 @@ body{
     margin: 20px auto;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(4, 3fr);
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas:"header header header header"
-                        "sad sad nina nina"
-                        "body body nina nina"
-                        "foot foot foot foot";
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
 }
 .contpg1 .titulo_niveles{
-    grid-column: header;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 .contpg1 .ingresar{
-    grid-area: foot;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
 }
 .contpg1 .div_parr{
-    grid-area: body;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 .contpg1 #mujerAn{
-    grid-area: nina;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;;
 }
 .contpg1 .china{
-    grid-area: sad;
-    align-items: center;
-    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 .contpg1 #divRes1 .titulo_pregunta1{
     grid-area: header;
