@@ -125,7 +125,16 @@
                             $( "#mainContent" ).load( "page6_nv1.html" );*/
 
                         })
+                        $("#N2p5btn").click(function(event) {
+                        console.log("jajaja")
 
+                        $('html, body').animate({
+                            scrollTop: 0
+                        }, 800, function(){
+
+                        });
+
+                        });
                         $('#N2p5btnC3').on('click', function () {
 
                             $("#mainContent").empty();
