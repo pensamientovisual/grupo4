@@ -183,11 +183,54 @@ body{
     grid-row-start: 2;
     grid-row-end: 3;
 }
-
-
-    
-
-/* Grid Page 1-2 End*/
+/* Grid Page 1 level 2 End*/
+/* Grid Page 1 level 2 Start*/
+.contpg1_nv3{
+    width: 100%;
+    max-width: 1920px;
+    max-height: 1080px;  
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+}
+.contpg1_nv3 .titulo_niveles{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.contpg1_nv3 .div_parr{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.contpg1_nv3 #mujerAnN3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.contpg1_nv3 .ingresar{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.contpg1_nv3 .arnaav{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.contpg1_nv3 .tarea{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+/* Grid Page 1 level 2 End*/
 /* Grid Preguntas Start*/
 /* Grid Page 3 End*/
 
