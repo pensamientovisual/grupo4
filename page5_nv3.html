@@ -4,23 +4,27 @@
         <meta charset="UTF-8">
         <title>Migracion</title>
         <link href="STYLE.css" rel="stylesheet" />
+        <script src="bodymovin.js"></script>
         <script type="text/javascript" src="Java/jquery-3.6.0.js"></script>
+        <style>
+            #mujerAn8{
+                height: 600px;
+            }
+        </style>
     </head>
     <body>
        <p id='N1p5parr1' style="font-size: 80px; text-align: center;"><span style="color: #c03600">No </span>te gustaría encontrarte en esa posición,<br> ¿cierto?</p>
-       <p id="N1p5parr2" style="font-size: 80px; text-align: center;">Ahora que conoces un poco más de la historia y situación de Arnav, pongámonos nuevamente en el escenario inicial.</p>
+       <p id="N1p5parr2" style="font-size: 80px; text-align: center;">Ahora que conoces un poco más </p>
        <div id="N1p5parr3" class="div_parr">
-            <p class = 'parr' >Te encuentras en la situación inicial.<br>Es otro día de colegio, y por fin terminaron las clases de la mañana. Entre tanto estudio y correr en el recreo,
-            esperas con ansias la hora del almuerzo. Cuando por fin te sientas a comer el sándwich de queso que trajiste de tu casa,
-            sientes un olor raro que te hace fijarte de donde viene.</p>
-            <p class = 'parr' >Al mirar a tu alrededor, te das cuenta de que Arnav, tu compañero nuevo que viene de la India, trajo un almuerzo con
-            carne de un color amarillento, condimientos y vegetales que tu no conoces. El olor te molesta muchísimo.<br><span style="font-size: 50px;">Sin embargo, <span style="color: #c03600">esta vez</span> decides:</span></p>
+            <p class = 'parr' >Te encuentras en la situación inicial.<br>Es otra mañana de invierno y llegas temprano al colegio como todos los días. No obstante, al llegar te percatas de que un grupo de tus compañeros que llevan poleras llamativas de color blanco y rojo se encuentran reunidos y que colgaron una bandera con los mismos colores. Esto te sorprende mucho, y decides preguntarles de qué se trata.</p>
+            <p class = 'parr' >Tus compañeros te explican que hoy, 28 de julio, se conmemora el día de la independencia peruana y que, por lo tanto, decidieron celebrarlo con sus compañeros. Esto te parece extraño, porque estamos en Chile, no en Perú<br><span style="font-size: 50px;">Sin embargo, <span style="color: #c03600">esta vez</span> decides:</span></p>
        </div>
-       <div class="china2">
-           <img src="imagenes_nv1/comida_feliz.png" width="600px" height="600px" id="ninacomiendo">
 
-       </div>
-       <div id= 'mujerAn2'></div>
+
+       <div id= 'mujerAn8' ></div>
+       <img src="imagenes_nv3/peru_feliz.png" height="800">
+       <img src="imagenes_nv3/fecha_peru.png" height="400">
+       <img src="imagenes/peru.png" height="400"> 
        <button class="ingresar" id='P5btnN1'>Sigamos</button>
 
        <div id='divRes3' style='display: none;'>
@@ -37,13 +41,13 @@
             <div class='flex-container' style="cursor: url('cursor/cursor_pointer.png'), auto;">
 
             <div>
-                <button id="N1p5btnA3" value='correcta' class='div_respuestas' >PREGUNTARLE QUE TRAJO Y SI PUEDES PROBAR UN POCO.</button>
+                <button id="N1p5btnA3" value='correcta' class='div_respuestas' style="background-color: #e1743d; opacity: 0.5;">Pedirles que hagan sus celebraciones fuera de la sala de clases, ya que estamos en Chile.</button>
             </div>
             <div>
-                <button id="N1p5btnB3" value='mala' class='div_respuestas' style="background-color: #e1743d; opacity: 0.5;">PEDIRLE AMABLEMENTE A ARNAV QUE VAYA A ALMORZAR A LA MESA DE AL LADO.</button>
+                <button id="N1p5btnB3" value='mala' class='div_respuestas' style="background-color: #e1743d; opacity: 0.5;">Sacar las banderas Peruanas, porque es irrespetuoso para el resto de los chilenos de tu curso.</button>
             </div>
             <div>
-                <button id="N1p5btnC3" value='mala' class='div_respuestas' style="background-color: #e1743d; opacity: 0.5;">DECIRLE EN SECRETO A TU AMIGO QUE LA COMIDA ES DE ARNAV.</button>
+                <button id="N1p5btnC3" value='mala' class='div_respuestas' style="background-color: #e1743d;">OPCION C (CORRECTA)</button>
             </div>
 
 
@@ -55,7 +59,7 @@
        <script>
 
            $(document).ready(function(){
-            const mujerAnContainer = document.getElementById('mujerAn2')
+            const mujerAnContainer = document.getElementById('mujerAn8')
             const mujerAn = bodymovin.loadAnimation({
                 wrapper: mujerAnContainer,
                 animType: 'svg',
