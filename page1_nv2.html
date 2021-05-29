@@ -5,7 +5,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="bodymovin.js"></script>
         <script type="text/javascript" src="script.js"></script>
-        
+
     </head>
 
     <body>
@@ -14,20 +14,23 @@
             transition: background-color .5s;
             background-color: rgba(192, 54, 0, .1);
             cursor: url('cursor/cursor_normal.png'), auto;
-            
+
         }
-        
+
         </style>
         <br>
         <br>
         <br>
         <br>
+        <audio id="audio_sit2" autoplay muted controls>
+          <source src="audio/audio_sit2.mp3" type="audio/mpeg">
+        </audio>
         <div class='contpg1_nv2'>
             <div class="titulo_niveles">
                 <p class="titulo_niveles" id='saludoN2' style="margin-left: 80px; font-size: 90px;"></p>
-                 
+
             </div>
-            <div class='div_parr'>                
+            <div class='div_parr'>
                 <style>
                     #saludoN2{
                         font-size: 200px;
@@ -36,32 +39,32 @@
 
                 <div>
 
-                    <p class = 'parr' style="margin-left: 40px;">Es otro día en colegio, y hoy tu profesor decide asignar parejas para la 
-                        próxima tarea del curso, una presentación oral sobre el descubrimiento de América. Tus notas no han sido las mejores 
-                        últimamente y sabes que necesitas un buen promedio para poder ir a las vacaciones que tus papás te prometieron.</p> 
+                    <p class = 'parr' style="margin-left: 40px;">Es otro día en colegio, y hoy tu profesor decide asignar parejas para la
+                        próxima tarea del curso, una presentación oral sobre el descubrimiento de América. Tus notas no han sido las mejores
+                        últimamente y sabes que necesitas un buen promedio para poder ir a las vacaciones que tus papás te prometieron.</p>
                 </div>
                 <div>
-                    <p class = 'parr parr2' style="margin-left: 40px">Sin embargo, cuando te asignan a tu compañero ya no te sientes 
-                        tan seguro de que vayas a poder ir. Leroi es nuevo en tu curso y viene desde Haití. Aunque nunca le has hablado, 
+                    <p class = 'parr parr2' style="margin-left: 40px">Sin embargo, cuando te asignan a tu compañero ya no te sientes
+                        tan seguro de que vayas a poder ir. Leroi es nuevo en tu curso y viene desde Haití. Aunque nunca le has hablado,
                         sabes que su pronunciación no es muy buena y no estás seguro de que entienda español. Ante este inconveniente decides:</p>
                 </div>
-                
-                
+
+
                 <!--
                 </div>
                 <div class='container'>
-                    
-                    <form > 
+
+                    <form >
                         <input class='radio_q' type='radio' name='res' value='correcta' id='opcion1'>
                         <label class='radio_res' for="opcion1">Opción a</label><br>
-                        <input class='radio_q' type='radio' name='res' value='mala' id='opcion2'>   
-                        <label class='radio_res' for="opcion2">Opción b</label><br>           
+                        <input class='radio_q' type='radio' name='res' value='mala' id='opcion2'>
+                        <label class='radio_res' for="opcion2">Opción b</label><br>
                         <input class='radio_q' type='radio' name='res' value='mala' id='opcion3'>
-                        <label class='radio_res' for="opcion3">Opción c</label><br> 
-                        
+                        <label class='radio_res' for="opcion3">Opción c</label><br>
+
                         <button id="radio_btn" class = 'ingresar'>Continuar</button>
                     </form>  -->
-                    
+
             </div>
             <div class="arnaav">
                 <img src="imagenes_nv2/haiti_feliz.png" height="600">
@@ -69,11 +72,11 @@
             <div class="tarea">
                 <img src="imagenes_nv2/tarea.png">
             </div>
-           
-           
-            <div id= 'mujerAnN2'></div> 
+
+
+            <div id= 'mujerAnN2'></div>
             <button id='hideBtn1N2' class="ingresar" style="float: right; border: 0px;">Ya he terminado de leer</button>
-           
+
             <div id='divRes1N2' style='display: none;'>
                 <style>
                     #divRes1N2{
@@ -102,26 +105,26 @@
                     <div>
                         <button id="N2p1btnC" value='correcta' class='div_respuestas'>OPCION C (CORRECTA)</button>
                     </div>
-                
+
                 </div>
-                </form>    
-                <button class='ingresar' id="backBtnN2" style="float: left; margin: 20px;">VOLVER</button>    
+                </form>
+                <button class='ingresar' id="backBtnN2" style="float: left; margin: 20px;">VOLVER</button>
 
             </div>
         </div>
 
         <script>
-            
+
             var btnSelectN2;
             var greet = '¡Hola de nuevo '+ name + '!';
             var hideBtn1N2 = '#hideBtn1N2'
-            
-            
+
+
             $(document).ready(function(){
                 var backBtnN2 = "#backBtnN2"
 
                 $('#saludoN2').text(greet)
-                    
+
 
                 $('#N2p1btnA').on('click', function () {
                     btnSelectN2 = $('#N2p1btnA').val();
@@ -149,7 +152,7 @@
                     $( "#mainContent" ).load( "page2_nv2.html" );
                     document.body.style.backgroundColor = 'rgba(255, 99, 0, 0.1)'
                 })
-                
+
                 $('#hideBtn1N2').click(function (){
                     $('#divRes1N2').show();
                     $(hideBtn1N2).hide()
@@ -168,13 +171,13 @@
                     $(hideBtn1N2).css("cursor", "url('cursor/cursor_pointer.png'), auto;");
                     $(hideBtn1N2).css("color", "white");
                     $(hideBtn1N2).css("transition-duration", "0.5s")}
-                    
+
 
                 , function(){
                     $(hideBtn1N2).css("background", "#e1743d");
                     $(hideBtn1N2).css("color", "404347");
                     $(hideBtn1N2).css("transition-duration", "0.2s")}
-                    
+
 
     );
                 $(hideBtn1N2).hover(function(){
@@ -183,13 +186,13 @@
                     $(hideBtn1N2).css("cursor", "url('cursor/cursor_pointer.png'), auto;");
                     $(hideBtn1N2).css("color", "white");
                     $(hideBtn1N2).css("transition-duration", "0.5s")}
-                    
+
 
                 , function(){
                     $(hideBtn1N2).css("background", "#e1743d");
                     $(hideBtn1N2).css("color", "404347");
                     $(hideBtn1N2).css("transition-duration", "0.2s")}
-                    
+
                 );
 
                 $(backBtnN2).hover(function(){
@@ -198,7 +201,7 @@
                     $(backBtnN2).css("cursor", "url('cursor/cursor_pointer.png'), auto;");
                     $(backBtnN2).css("color", "white");
                     $(backBtnN2).css("transition-duration", "0.5s")}
-                    
+
 
                 , function(){
                     $(backBtnN2).css("background", "#e1743d");
@@ -218,7 +221,7 @@
 
 
                     document.body.style.backgroundColor = 'rgba(255, 99, 0, 0.1)';
-   
+
                 })
                 $("#hideBtn1N2").click(function(event) {
                     console.log("jajaja")
@@ -246,5 +249,5 @@
 
         </script>
 
-    </body>    
+    </body>
 </html>
