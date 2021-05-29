@@ -13,9 +13,9 @@
         </style>
     </head>
     <body>
-       <p id='N1p5parr1' style="font-size: 80px; text-align: center;"><span style="color: #c03600">No </span>te gustaría encontrarte en esa posición,<br> ¿cierto?</p>
-       <p id="N1p5parr2" style="font-size: 80px; text-align: center;">Ahora que conoces un poco más </p>
-       <div id="N1p5parr3" class="div_parr">
+       <p id='N3p5parr1' style="font-size: 80px; text-align: center;"><span style="color: #c03600">No </span>te gustaría encontrarte en esa posición,<br> ¿cierto?</p>
+       <p id="N3p5parr2" style="font-size: 80px; text-align: center;">Ahora que conoces un poco más </p>
+       <div id="N3p5parr3" class="div_parr">
             <p class = 'parr' >Te encuentras en la situación inicial.<br>Es otra mañana de invierno y llegas temprano al colegio como todos los días. No obstante, al llegar te percatas de que un grupo de tus compañeros que llevan poleras llamativas de color blanco y rojo se encuentran reunidos y que colgaron una bandera con los mismos colores. Esto te sorprende mucho, y decides preguntarles de qué se trata.</p>
             <p class = 'parr' >Tus compañeros te explican que hoy, 28 de julio, se conmemora el día de la independencia peruana y que, por lo tanto, decidieron celebrarlo con sus compañeros. Esto te parece extraño, porque estamos en Chile, no en Perú<br><span style="font-size: 50px;">Sin embargo, <span style="color: #c03600">esta vez</span> decides:</span></p>
        </div>
@@ -24,8 +24,8 @@
        <div id= 'mujerAn8' ></div>
        <img src="imagenes_nv3/peru_feliz.png" height="800">
        <img src="imagenes_nv3/fecha_peru.png" height="400">
-       <img src="imagenes/peru.png" height="400"> 
-       <button class="ingresar" id='P5btnN1'>Sigamos</button>
+       <img src="imagenes/peru.png" height="400">
+       <button class="ingresar" id='P5btnN3'>Sigamos</button>
 
        <div id='divRes3' style='display: none;'>
         <h2 class="titulo_pregunta">¿ESTA VEZ, QUÉ HARÍAS?<h2>
@@ -41,13 +41,13 @@
             <div class='flex-container' style="cursor: url('cursor/cursor_pointer.png'), auto;">
 
             <div>
-                <button id="N1p5btnA3" value='correcta' class='div_respuestas' style="background-color: #e1743d; opacity: 0.5;">Pedirles que hagan sus celebraciones fuera de la sala de clases, ya que estamos en Chile.</button>
+                <button id="N3p5btnA3" value='correcta' class='div_respuestas' style="background-color: #e1743d; opacity: 0.5;">Pedirles que hagan sus celebraciones fuera de la sala de clases, ya que estamos en Chile.</button>
             </div>
             <div>
-                <button id="N1p5btnB3" value='mala' class='div_respuestas' style="background-color: #e1743d; opacity: 0.5;">Sacar las banderas Peruanas, porque es irrespetuoso para el resto de los chilenos de tu curso.</button>
+                <button id="N3p5btnB3" value='mala' class='div_respuestas' style="background-color: #e1743d; opacity: 0.5;">Sacar las banderas Peruanas, porque es irrespetuoso para el resto de los chilenos de tu curso.</button>
             </div>
             <div>
-                <button id="N1p5btnC3" value='mala' class='div_respuestas' style="background-color: #e1743d;">OPCION C (CORRECTA)</button>
+                <button id="N3p5btnC3" value='mala' class='div_respuestas' style="background-color: #e1743d;">OPCION C (CORRECTA)</button>
             </div>
 
 
@@ -67,10 +67,10 @@
                 autoplay: true,
                 path: 'mujerA.json',
             })
-            var btn = $("#P5btnN1");
-                        var p1 = $("#N1p5parr1");
-                        var p2 = $("#N1p5parr2");
-                        var p3 = $("#N1p5parr3");
+            var btn = $("#P5btnN3");
+                        var p1 = $("#N3p5parr1");
+                        var p2 = $("#N3p5parr2");
+                        var p3 = $("#N3p5parr3");
 
                         //var ar = $("#arnavv");
                         //var arcomida = $("#arnavvcomida");
@@ -128,7 +128,7 @@
 
                         });
 
-                        $('#N1p5btnA3').on('click', function () {
+                        $('#N3p5btnA3').on('click', function () {
 
                             $("#mainContent").empty();
                             $( "#mainContent" ).load( "page6_nv1.html" );
@@ -136,12 +136,12 @@
                             document.body.style.backgroundColor = 'rgba(255, 99, 0, 0.1)'
                         })
 
-                            //$("#N1p5parr1").text("Mmmm... Seguro/a?");
+                            //$("#N3p5parr1").text("Mmmm... Seguro/a?");
 
-                        $('#N1p5btnB3').on('click', function () {
+                        $('#N3p5btnB3').on('click', function () {
                             $("#mainContent").empty();
                             $( "#mainContent" ).load( "page5_nv1.html" );
-                            
+
                             document.body.style.backgroundColor = 'rgba(255, 99, 0, 0.1)'
                             /*$("#mainContent").empty();
                             $( "#mainContent" ).load( "page6_nv1.html" );*/
@@ -150,16 +150,16 @@
 
 
 
-                        $('#N1p5btnC3').on('click', function () {
-                     //       $("#N1p5parr1").text("Mmmm... Seguro/a?");
+                        $('#N3p5btnC3').on('click', function () {
+                     //       $("#N3p5parr1").text("Mmmm... Seguro/a?");
                             $("#mainContent").empty();
                             $( "#mainContent" ).load( "page5_nv1.html" );
-                            
+
                             /*$("#mainContent").empty();
                             $( "#mainContent" ).load( "page6_nv1.html" );*/
                             document.body.style.backgroundColor = 'rgba(255, 99, 0, 0.1)'
                         })
-                        $("#P5btnN1").click(function(event) {
+                        $("#P5btnN3").click(function(event) {
                         console.log("jajaja")
 
                         $('html, body').animate({
