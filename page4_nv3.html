@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet" />
+        <script type="text/javascript" src="Java/jquery-3.6.0.js"></script>
+        <script src="bodymovin.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+        <style>
+            #N1p4parr1{
+                font-size: 50px;
+                text-align: center;
+                margin: 50px 50px;
+
+
+
+            }
+
+            #botonlugar{
+                background-color: #c03600;
+                border: 0px;
+                color: white;
+            }
+            #empanadanina{
+                position: absolute;
+                z-index: -10;
+                opacity: 0.7;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <div class="conPg4">
+
+        <p id="N1p4parr1">Ahora, te toca a tí ponerte en el lugar de Arnav<br><span style="color: #c03600; font-size: 70px; margin: 10px auto;">¿Qué pasaría si te encontrases tú en esa situación?</span>
+            <br>Tu almuerzo parece incomodar al resto, y aunque tienes hambre, te encuentras muy avergonzado/a por los comentarios de tu compañeros. Sabes que tu mamá se tomó mucho tiempo en prepararlo el día anterior, pero aún así, crees que lo mejor es no comer hoy.
+            <br>Estás comiendo empanadas y el resto de los niños se ríen porque no están acostumbrados a cocinar con cebolla...</p>
+        <img src="imagenes_nv1/empanada_nina.png" width="600" id="empanadanina"> <!--hacer que quede abajo del párrafo, idealmente al lado, esta con la grid por eso prefiero no cambiar-->
+        <button id='botonlugar' class="ingresar">Continuar</button>
+
+
+            <div id='divRes2' style='display: none;'>
+            <h2 id="titulo_pregunta2">¿Cómo crees que te sentirías tú en esta situación? <h2>
+                <style>
+                    #titulo_pregunta2{
+                        text-align: center;
+
+                        color: #43474C;
+                        font-size: 90px;
+                        top:0px;
+
+                    }
+
+
+
+
+                </style>
+
+                <div id='resDivRes2'class='flex-container'>
+                    <div>
+                        <button id="N1p4btnA2"  class='div_respuestas m90'>Incómodo/a, porque me da vergüenza que me digan esas cosas enfrente a otras personas.</button>
+                    </div>
+                    <div>
+                        <button id="N1p4btnB2" class='div_respuestas m90'>Triste, porque sé que me lo hizo mi mamá con esfuerzo y ahora no lo voy a poder disfrutar.</button>
+                    </div>
+                    <div>
+                        <button id="N1p4btnC2" class='div_respuestas m90'>Enojado/a, porque los otros quieren dejarme sin almuerzo sólo porque a ellos les incomodan los olores.</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function(){
+                var but = $("#botonlugar")
+                var con = 0
+                var parrr = $("#N1p4parr1")
+                var r = $("#divRes2")
+                var botones = $(".m90")
+                var titulop2 = $("#titulo_pregunta2")
+
+            but.mouseenter(function(){
+                $(but).css("background-color","#e1743d" )
+                $(but).css("transition-duration","0.5s" )
+                $(but).css("color","#404347" )
+                $(but).css("border","0px" )
+                console.log("hola")
+            });
+            but.mouseleave(function(){
+                $(but).css("background-color","#c03600" )
+                $(but).css("transition-duration","0.5s" )
+                $(but).css("color","#f8e9d3" )
+            });
+
+            but.click(function(){
+                con += 1
+                if (con == 1){
+                    but.fadeTo("fast", 0)
+                    parrr.fadeTo("fast", 0)
+                    document.body.style.backgroundColor = "rgba(169, 165, 163, 0.8)";
+                    r.show()
+                  //  svgllorar.css("opacity", 0)
+
+
+
+
+                };
+
+
+            });
+            botones.click(function(){
+                botones.hide()
+                but.hide()
+                parrr.hide()
+                document.body.style.backgroundColor = 'rgba(255, 99, 0, 0.1)'
+                titulop2.hide()
+                $("#mainContent").empty();
+                $( "#mainContent" ).load( "page5_nv1.html" );
+                });
+
+
+            $("#botonlugar").click(function(event) {
+                console.log("jajaja")
+
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 800, function(){
+
+                });
+
+                });
+
+
+            });
+        </script>
+
+
+    </body>
+</html>

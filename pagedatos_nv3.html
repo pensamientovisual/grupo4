@@ -1,0 +1,369 @@
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet" />
+        <script type="text/javascript" src="Java/jquery-3.6.0.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+        <script src="https://d3js.org/d3.v6.js"></script>
+        <title>Migración</title>
+        <link rel="shortcut icon" type="image/png" href="flavicon.png"/>
+        <style>
+            #personitas{
+                
+                margin: 5%;
+                margin-top: 3%;
+            }
+            .boton-pais{
+                width: 100%;
+                height: 43px;
+
+                cursor: pointer;
+                margin: 10px auto;
+                font-size: 30px;
+                font-family: Lunchbox Regular;;
+                padding: 5px 0px 0px 0px;
+                color: #404347;
+                background-color: #9cc2df80;
+                box-shadow: -3px 3px #404347;
+                border: 0px;
+                border-radius: 5px ;
+                margin-left: 1%;
+                cursor: url("cursor/cursor_pointer.png"), auto;
+                
+
+            }
+            #botondisc{
+                width: 10%;
+                height: 43px;
+
+                cursor: pointer;
+                margin: 10px auto;
+                font-size: 15px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                padding: 5px 0px 0px 0px;
+                color: #404347;
+                background-color: #9cc2df80;
+                box-shadow: -3px 3px #404347;
+                border: 0px;
+                border-radius: 5px ;
+                margin-left: 1%;
+                float:right;
+
+            }
+
+
+            #botones{
+                float: right;
+                margin-right: 5%;
+                margin-top: 0%;
+            }
+            #lista-botones{
+                margin-top: 0px;
+            }
+            #info-escrita{
+                float: right;
+                padding: 0% 1%;
+                width: 80%;
+
+            }
+
+            #info-escrita .infoe{
+                font-size: 40px;
+                margin-left: 7%;
+                margin-bottom: 0%;
+               
+
+            }
+
+
+            #p1infoe{
+                margin-top: 290px;
+
+            }
+
+            #numero-personas {
+                font-size: 70px;
+                text-align: center;
+                color: #e1743d;
+                margin: 0% auto;
+                
+
+            }
+            #numero-personas-disc {
+                font-size: 70px;
+                text-align: center;
+                color: #9cc2df;
+                margin: 0% auto;
+
+            }
+
+            #dibujo-bandera{
+                position:relative;
+                height: 100%;
+                width: 100%;
+          
+            }
+
+            #dibujo-bandera img{
+                margin: 20px 9%;
+                position: absolute;
+                visibility: hidden;
+            }
+
+            #textoinfdata1{
+                width: 100%;
+                
+
+                
+            }
+            #textoinfdata1 p{
+                text-align: center;
+                margin: 1%;
+
+                font-size: 40px;
+            }
+
+
+
+
+
+        </style>
+    </head>
+
+    <body>
+        <br>
+        <div class="conData1">
+         <div id="textoinfdata1">
+            <p>Imaginemos que los <span style="color: #e1743d">777.407 MIGRANTES DE CHILE</span> son estas 100 personas que ves.</p>
+            <p>Los celestes son aquellos que se han sentido <span style="color: #9cc2df">DISCRIMINADOS</span> por su país de origen.</p>
+            <p>Clickea los países para ver "algo de como se diferencian o algo así"</p>
+        </div>
+            <div id ="botones" >
+            <ul id="lista-botones" style="list-style-type:none;">
+            </ul>
+         </div>
+
+        <div id="info-escrita" style="width: 80%;">
+           
+            <div id="dibujo-bandera">
+                <!--<img src="imagenes/vacio.png" id="vacio" class="vacio" style="position: relative;;" width="80%">-->
+                <img src="imagenes/mundo.png" id="banderainicio" class="bandera inicio" alt="Mundo" width="80%" style="visibility: visible;">
+                <img src="imagenes/peru.png" id="banderaperu" class="bandera Perú" alt="bandera Perú" width="80%">
+                <img src="imagenes/colombia.png" id="banderacolombia" class="bandera Colombia" alt="bandera Colombia" width="80%">
+                <img src="imagenes/argentina.png" id="banderaargentina" class="bandera Argentina" alt="bandera Argentina" width="80%">
+                <img src="imagenes/bolivia.png" id="banderabolivia" class="bandera Bolivia" alt="bandera Bolivia" width="80%">
+                <img src="imagenes/ecuador.png" id="banderaecuador" class="bandera Ecuador" alt="bandera Ecuador" width="80%">
+                <img src="imagenes/venezuela.png" id="banderavenezuela" class="bandera Venezuela" alt="bandera Venezuela" width="80%">
+                <img src="imagenes/haiti.png" id="banderahaiti" class="bandera Haití" alt="bandera Haití" width="80%">
+                <img src="imagenes/americalatina.png" id="banderaamericalatina" class="bandera AméricaLatinayCaribe" alt="bandera America Latina" width="80%">
+                <img src="imagenes/canadausa.png" id="banderavcanadausa" class="bandera Canadayusa" alt="bandera CanadaUSA" width="80%">
+                <img src="imagenes/europa.png" id="banderaeuropa" class="bandera Europa" alt="bandera Europa" width="80%">
+                <img src="imagenes/mundo.png" id="banderaotro" class="bandera Otro" alt="bandera Otro" width="80%">
+
+
+
+            </div>            
+            <p id="p1infoe" class="infoe">Total Personas: </p>
+            <p id="numero-personas">777.407</p>
+            <p class="infoe"> Estimación Discriminados: </p>
+            <p id="numero-personas-disc">251.181</p>
+            
+         </div>
+            <!--<button id="botondisc">Discriminado</button>-->
+         <div id ="personitas" >
+
+            <div id ="personitas1" ></div>
+            <div id ="personitas2" ></div>
+            <div id ="personitas3" ></div>
+            <div id ="personitas4" ></div>
+            <div id ="personitas5" ></div>
+            <div id ="personitas6" ></div>
+            <div id ="personitas7" ></div>
+            <div id ="personitas8" ></div>
+            <div id ="personitas9" ></div>
+            <div id="personitas10"></div>
+            <div>
+                <p>*Datos obtenidos de encuesta Casen 2017</p>
+            </div>
+         </div>
+
+            <button class="ingresar" id='PDbtnN1' style="float:right;">¡Etapa completada!</button>
+        </div>
+
+
+
+        <script>
+            //d3.csv("employee.csv", function(data) {
+                //console.log(data)
+                //console.log(data.length)
+          
+                    //console.log(true)
+              //  console.log(data);
+
+                
+            //});
+//        for (var i = 0; i < data.length; i++) {
+  //      console.log(data[i].Name);
+    //    console.log(data[i].Age);
+
+   // }
+//});
+
+            $(document).ready(function(){
+           //     $('#PDbtnN1').on('click', function () {
+                            
+             //               $("#mainContent").empty();
+            //                $( "#mainContent" ).load( "index.html" );
+
+                $("#PDbtnN1").click(function(){
+                    $("#loadD1").css("visibility", "visible")
+                    $("#mainContent").empty();
+                    $( "#mainContent" ).load( "page_niveles.html" );
+                    
+
+                  //  $(linknav).attr("href", "pagedatos_nv1.html")
+
+
+
+
+                    
+                });
+                function joinDeDatos(datos) {
+                    svg
+                      .selectAll("rect")
+                      .data(datos)
+                      .join("rect")
+                      .attr("width", 50)
+                      .attr("fill", "magenta")
+                      .attr("height", (d) => d.porcentaje_migrantes_por_pais)
+                      .attr("x", (_,i) => 50 + i *100);
+
+
+                }
+                
+                //d3.csv("datos_migrantes_pais_discriminados.csv"), function(data)
+
+              //  d3.csv("datos_migrantes_pais_discriminados.csv", function(data) {
+                //    console.log(data)
+                    
+              //  })
+                
+                    //.then((datos) => {
+                    //    console.log(datos);
+                      //  joinDeDatos(datos);
+                    //})
+                    //.catch((error) => console.log(error));
+                var box = document.querySelector('#personitas');
+                var width = box.offsetWidth;
+                var margin = getComputedStyle(box)
+                var widthtot = width + margin
+                var height = box.offsetHeight;
+                var box1 = document.querySelector('#botones');
+                var width1 = box1.clientWidth;
+                lista_paises = []
+                var caja = 1
+                var cuenta = 1
+
+        
+           
+                d3.csv("datos_migrantes_pais_discriminados.csv", function(data) {
+                    var li = document.createElement("LI");
+                    var btn = document.createElement("BUTTON");
+                    btn.innerHTML = data.nombre;
+                    $(btn).attr("class", "boton-pais")
+                    $(btn).attr("id", data.pais);
+                    li.append(btn)
+                    $("#lista-botones").append(li)
+                    lista_paises.push([data.pais, data.total_migrantes_por_pais, data.porcentaje_migrantes_por_pais,data.cantidad_discriminados_por_pais, data.porcentaje_discriminado_por_pais, data.porcentaje_discriminado_por_pais_de_total])
+
+
+                    contador = 0
+                    discriminados = 0
+
+                    for (var i = 0; i < (parseFloat(data.porcentaje_migrantes_por_pais) * 100); i++) {
+                        var rect = document.createElement("DIV");
+                        var pais = data.pais
+                        $(rect).attr("id", pais  + "personita");
+                        $(rect).attr("class", "personita-pais " + data.pais)
+                        var color = "#e1743d40"
+                        var borde = "#e1743d40"
+                        if (contador < parseFloat(data.porcentaje_discriminado_por_pais_de_total) * 100){
+                            $(rect).attr("class", "personita-pais " + data.pais + " discriminado")
+                   //         var color = "#9cc2df40"
+                     //       var borde = "#9cc2df40"
+                            contador += 1
+                            discriminados += 1
+                        };
+
+                        $(rect).css("height", (width - width1)/13);
+                        $(rect).css("width", (width - width1)/13);
+                        $(rect).css("background", color);
+                        $(rect).css("display", "inline-block");
+                        $(rect).css("margin", "2px");
+                        $(rect).css("border", "3px solid " + borde);
+                        $(rect).css("border-radius", "80px");
+                        $("#personitas" + caja.toString()).append(rect);
+                        $("#info-escrita").css("width", "80%")
+                        $("#info-escrita").css("height", widthtot)
+                        $("#info-escrita").css("background-color", "#e1743d20")
+                        $("#info-escrita").css("border-radius", "10px")
+                        
+                        console.log(contador)
+                        if (cuenta == 10) {
+                            caja += 1
+                            cuenta = 0
+                            console.log("holaaaaa")
+                        };
+                        cuenta += 1
+                    };
+
+                var botones = $(".boton-pais")
+                var personitas = $(".personita-pais")
+                botones.click(function(){
+                    botones.css("background", "#9cc2df80")
+                    $(this).css("background", "#e1743d")
+                    botones.css("transition-duration", "0.2s")
+                    var paisBoton = $(this).attr("id")
+                    //console.log(paisBoton)
+                    var personitasBoton = $(".personita-pais." + paisBoton)
+                    var personitasDisBoton = $("." + paisBoton + ".discriminado.personita-pais")
+                    $(personitas).css("background-color", "#e1743d40")
+                    $(personitas).css("border", "3px solid #e1743d40");
+                    $(personitasBoton).css("background-color", "#e1743d99")
+                    $(personitasBoton).css("border", "3px solid #e1743d");
+                    $(personitasDisBoton).css("border", "3px solid #9cc2df");
+                    $(personitasDisBoton).css("background-color", "#9cc2df99")
+
+                    for (var i = 0; i < lista_paises.length; i++) {
+                        console.log(lista_paises[i][0], "for i")
+                        console.log(paisBoton, "boton")
+                        if (lista_paises[i][0] == paisBoton) {
+                            console.log("funcionaaa")
+                            var n_total = lista_paises[i][1]
+                            var n_discriminados = lista_paises[i][3]
+
+                        };
+                    var banderas = $(".bandera")
+
+                    var bandera_pais = $(".bandera." + paisBoton)
+                    $(banderas).css("visibility", "hidden")
+                    $(bandera_pais).css("visibility", "visible")
+
+
+                    };
+                    $("#numero-personas").text(n_total)
+                    $("#numero-personas-disc").text(n_discriminados)
+                });
+                });
+            });
+
+        </script>
+
+
+
+
+
+    </body>
+</html>
+    
