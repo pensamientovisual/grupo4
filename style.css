@@ -116,11 +116,26 @@ body{
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+
 }
 .contpg1 #divRes1 .titulo_pregunta1{
     grid-area: header;
 }
+.contpg1-1{
+    width: 100%;
+    max-width: 1920px;
+    max-height: 1080px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+   
+    grid-template-rows: 1fr 2fr 1fr;
+}
 
+.contpg1-1 #divRes1 .titulo_pregunta{
+    grid-row-start: 1;
+    grid-row-end: 2;    
+}
 /* Grid Page 1 End*/
 /* Grid Preguntas Start*/
 /* Grid Page 3 End*/
@@ -283,6 +298,13 @@ body{
     margin-left: 2%;
 }
 /* Grid Data 1 End*/
+
+.titulo_pregunta{
+    text-align: center;
+    position: relative;
+    color: #43474C;
+    font-size: 90px;
+}
 
 
 #navbar ul li {
