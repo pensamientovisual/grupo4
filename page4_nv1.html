@@ -99,7 +99,7 @@
                     parrr.fadeTo("fast", 0)
                     document.body.style.backgroundColor = "rgba(169, 165, 163, 0.8)";
                     r.show()
-                    svgllorar.css("opacity", 0)
+                  //  svgllorar.css("opacity", 0)
 
 
 
@@ -119,7 +119,16 @@
                 });
 
 
+            $("#botonlugar").click(function(event) {
+                console.log("jajaja")
 
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 800, function(){
+
+                });
+
+                });
 
 
             });

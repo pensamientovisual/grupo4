@@ -201,7 +201,16 @@
                     document.body.style.backgroundColor = 'rgba(255, 99, 0, 0.1)';
 
                 })
+                $("#hideBtn1").click(function(event) {
+                    console.log("jajaja")
 
+                    $('html, body').animate({
+                        scrollTop: 0
+                    }, 800, function(){
+
+                    });
+
+                    });
 
 
 
