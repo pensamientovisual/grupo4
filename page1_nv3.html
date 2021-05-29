@@ -5,7 +5,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="bodymovin.js"></script>
         <script type="text/javascript" src="script.js"></script>
-        
+
     </head>
 
     <body>
@@ -14,18 +14,22 @@
             transition: background-color .5s;
             background-color: rgba(192, 54, 0, .1);
             cursor: url('cursor/cursor_normal.png'), auto;
-            
+
         }
-        
+
         </style>
         <br>
         <br>
         <br>
         <br>
+        <div>
+        <audio id="audio_sit2" autoplay muted controls>
+          <source src="audio/audio_sit2.mp3" type="audio/mpeg">
+        </audio>
         <div class='contpg1_nv3'>
             <div class='div_parr'>
 
-               
+
                 <style>
                     #saludoN3{
                         font-size: 200px;
@@ -33,40 +37,40 @@
                 </style>
                 <div>
 
-                    <p class = 'parr' style="margin-left: 40px;">Es otra mañana de invierno y llegas temprano al colegio como todos los días. No obstante, al llegar te percatas de que un grupo de tus compañeros que llevan poleras llamativas de color blanco y rojo se encuentran reunidos y que colgaron una bandera con los mismos colores. Esto te sorprende mucho, y decides preguntarles de qué se trata.</p> 
+                    <p class = 'parr' style="margin-left: 40px;">Es otra mañana de invierno y llegas temprano al colegio como todos los días. No obstante, al llegar te percatas de que un grupo de tus compañeros que llevan poleras llamativas de color blanco y rojo se encuentran reunidos y que colgaron una bandera con los mismos colores. Esto te sorprende mucho, y decides preguntarles de qué se trata.</p>
                 </div>
                 <div>
                     <p class = 'parr parr2' style="margin-left: 40px">Tus compañeros te explican que hoy, 28 de julio, se conmemora el día de la independencia peruana y que, por lo tanto, decidieron celebrarlo con sus compañeros. Esto te parece extraño, porque estamos en Chile, no en Perú</p>
                 </div>
-                
-                
+
+
                 <!--
                 </div>
                 <div class='container'>
-                    
-                    <form > 
+
+                    <form >
                         <input class='radio_q' type='radio' name='res' value='correcta' id='opcion1'>
                         <label class='radio_res' for="opcion1">Opción a</label><br>
-                        <input class='radio_q' type='radio' name='res' value='mala' id='opcion2'>   
-                        <label class='radio_res' for="opcion2">Opción b</label><br>           
+                        <input class='radio_q' type='radio' name='res' value='mala' id='opcion2'>
+                        <label class='radio_res' for="opcion2">Opción b</label><br>
                         <input class='radio_q' type='radio' name='res' value='mala' id='opcion3'>
-                        <label class='radio_res' for="opcion3">Opción c</label><br> 
-                        
+                        <label class='radio_res' for="opcion3">Opción c</label><br>
+
                         <button id="radio_btn" class = 'ingresar'>Continuar</button>
                     </form>  -->
-                    
+
             </div>
             <div class="titulo_niveles">
                 <p class="titulo_niveles" id='saludoN3' style="margin-left: 80px; font-size: 90px;"></p>
             </div>
 
-            
-            <div id= 'mujerAnN3'></div> 
+
+            <div id= 'mujerAnN3'></div>
             <img src="imagenes_nv3/peru_feliz.png" height="800">
             <img src="imagenes_nv3/fecha_peru.png" height="400">
             <img src="imagenes/peru.png" height="400"> <!--no se si poner o no la bandera por los colores-->
             <button id='hideBtn1N3' class="ingresar" style="float: right; border: 0px;">Ya he terminado de leer</button>
-           
+
             <div id='divRes1N3' style='display: none;'>
                 <style>
                     #divRes1N3{
@@ -86,7 +90,7 @@
                     </style>
                 <form>
                     <div class='flex-container' style="cursor: url('cursor/cursor_pointer.png'), auto;">
-                    <div> 
+                    <div>
                         <button id="btnAN3" value='mala' class='div_respuestas'>Pedirles que hagan sus celebraciones fuera de la sala de clases, ya que estamos en Chile.</button>
                     </div>
                     <div>
@@ -96,13 +100,13 @@
                         <button id="btnCN3" value='correcta' class='div_respuestas'>OPCION C (CORRECTA)</button>
                     </div>
 
-                            
-                </form>    
+
+                </form>
             </div>
         </div>
 
         <script>
-            
+
             var btnSelectN3;
             var greet = '¡Hola una vez más '+ name + '!';
             var hideBtn1N3 = '#hideBtn1N3'
@@ -111,7 +115,7 @@
             $(document).ready(function(){
 
                 $('#saludoN3').text(greet)
-                    
+
 
                 $('#btnAN3').on('click', function () {
                     btnSelectN3 = $('#btnAN3').val();
@@ -167,13 +171,13 @@
                     $(hideBtn1N3).css("cursor", "url('cursor/cursor_pointer.png'), auto;");
                     $(hideBtn1N3).css("color", "white");
                     $(hideBtn1N3).css("transition-duration", "0.5s")}
-                    
+
 
                 , function(){
                     $(hideBtn1N3).css("background", "#e1743d");
                     $(hideBtn1N3).css("color", "404347");
                     $(hideBtn1N3).css("transition-duration", "0.2s")}
-                    
+
 
     );
 
@@ -193,5 +197,5 @@
 
         </script>
 
-    </body>    
+    </body>
 </html>
