@@ -37,7 +37,9 @@ body{
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
     align-items: center;
+    justify-items: center;
     justify-content: center;
+    align-content: center;
  }
  .contenedor .titulo_niveles{
      grid-column-start: 1;
@@ -116,10 +118,20 @@ body{
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+    justify-self: center;
 
 }
 .contpg1 #divRes1 .titulo_pregunta1{
     grid-area: header;
+}
+.audio_pg1_nv1{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    align-self: center;
+    justify-self: center;
+
 }
 .contpg1-1{
     width: 100%;
@@ -236,14 +248,17 @@ body{
 
 
 .contPg3{
-    width: 100%;
-    max-width: 1920px;
-    max-height:1080px ;
-    margin: 20px auto;
+    width: 1920px;
+    height:1080px ;
+    margin: 20px 20px;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 2fr 2fr;
     grid-template-rows: 1fr 2fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
 
 }
 .contPg3 .textPg3{
@@ -251,19 +266,44 @@ body{
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
+    align-self: start;
 }
 .contPg3 .botonPg3{
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
+    align-self: end;
+    justify-self: end;
+    margin-right: 20%;
+
 }
 .contPg3 .picPg3{
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 3;
+    align-self: center;
+    justify-self: center;
 }
+.conPg3 #arnaav{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    align-self: center;
+    justify-self: center;
+
+}
+.conPg3 .picPg3 #arnavvfeliz{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    align-self: center;
+    justify-self: center;
+}
+
 /* Grid Page 3 End*/
 /* Grid Page 3 End*/
 
