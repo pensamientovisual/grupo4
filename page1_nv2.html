@@ -22,8 +22,8 @@
         <br>
         <br>
         <br>
-        
-        <audio id="audio_sit2" autoplay controls>
+
+        <audio id="audio_sit2" autoplay>
           <source src="audio/audio_sit2.mp3" type="audio/mpeg">
         </audio>
         <div class='contpg1_nv2'>
@@ -65,7 +65,9 @@
 
                         <button id="radio_btn" class = 'ingresar'>Continuar</button>
                     </form>  -->
-
+              <div>
+                <button class="playbtn" onclick="playPause()">&#9658;/||</button>
+              </div>
             </div>
             <div class="arnaav">
                 <img src="imagenes_nv2/haiti_feliz.png" height="600">
@@ -245,9 +247,14 @@
                 autoplay: true,
                 path: 'mujerA.json',
             })
-
-
-
+            <!-- Idea de codigo extraido de "https://www.youtube.com/watch?v=GSIkghMhFF4" -->
+            var miAudioN2 = document.getElementById("audio_sit2")
+            function playPause(){
+             if (miAudioN2.paused)
+                   miAudioN2.play();
+             else
+                 miAudioN2.pause();
+               }
         </script>
 
     </body>

@@ -23,7 +23,7 @@
         <br>
         <br>
 
-        <audio id="audio_sit3" autoplay controls>
+        <audio id="audio_sit3" autoplay>
           <source src="audio/audio_sit3.mp3" type="audio/mpeg">
         </audio>
         <div class='contpg1_nv3'>
@@ -58,7 +58,9 @@
 
                         <button id="radio_btn" class = 'ingresar'>Continuar</button>
                     </form>  -->
-
+                <div>
+                  <button class="playbtn" onclick="playPause()">&#9658;/||</button>
+                </div>
             </div>
             <div class="titulo_niveles">
                 <p class="titulo_niveles" id='saludoN3' style="margin-left: 80px; font-size: 90px;"></p>
@@ -193,7 +195,14 @@
                 path: 'mujerA.json',
             })
 
-
+            <!-- Idea de codigo extraido de "https://www.youtube.com/watch?v=GSIkghMhFF4" -->
+            var miAudioN3 = document.getElementById("audio_sit3")
+            function playPause(){
+             if (miAudioN3.paused)
+                   miAudioN3.play();
+             else
+                 miAudioN3.pause();
+               }
 
         </script>
 
