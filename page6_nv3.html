@@ -9,18 +9,18 @@
     <body>
         <p style="font-size: 80px;">¡Felicitaciones!</p>
         <p id="N3p6parr1" style="font-size: 80px; margin-top: 0px;"></p>
-        <button class="ingresar" id='P6btnN1'>Sigamos</button>
+        <button class="ingresar" id='P6btnN3'>Sigamos</button>
 
 
         <script>
-            var textAnsAgain = String('¡Nuevamente hiciste lo correcto y Arnav está muy contento de compartir un poco de su almuerzo contigo!');
-            var textAns = String('¡Esta vez hiciste lo correcto y Arnav está muy contento de compartir un poco de su almuerzo contigo!');
+            var textAnsAgain = String('¡Nuevamente hiciste lo correcto y FRASE MOTIVACIONAL SIT 3!');
+            var textAns = String('¡Esta vez hiciste lo correcto y FRASE MOTIVACIONAL SIT 3!');
 
             $(document).ready(function(){
-                var btn = $("#P6btnN1");
+                var btn = $("#P6btnN3");
                 var p1 = $("#N3p6parr1");
 
-                if (btnSelect == 'correcta') {
+                if (btnSelectN3 == 'correcta') {
                     //alert('si');
                     $(p1).text(textAnsAgain);
                 } else {
@@ -30,7 +30,7 @@
                 $(btn).click(function(){
                     console.log('click')
                     $("#mainContent").empty();
-                    $( "#mainContent" ).load( "pagedatos_nv1.html" );
+                    $( "#mainContent" ).load( "pagedatos_nv3.html" );
 
                 });
                 btn.mouseenter(function(){
