@@ -121,6 +121,7 @@
             var btnSelectN2;
             var greet = '¡Hola de nuevo '+ name + '!';
             var hideBtn1N2 = '#hideBtn1N2'
+            var playbtn ='.playbtn'
 
 
             $(document).ready(function(){
@@ -195,6 +196,19 @@
                     $(hideBtn1N2).css("background", "#e1743d");
                     $(hideBtn1N2).css("color", "404347");
                     $(hideBtn1N2).css("transition-duration", "0.2s")}
+
+                );
+                $(playbtn).hover(function(){
+                    $(playbtn).css("background-color", "#c03600");
+                    $(playbtn).css("border", "0px");
+                    $(playbtn).css("cursor", "url('cursor/cursor_pointer.png'), auto;");
+                    $(playbtn).css("color", "white");
+                    $(playbtn).css("transition-duration", "0.5s")}
+
+                , function(){
+                    $(playbtn).css("background", "#e1743d");
+                    $(playbtn).css("color", "404347");
+                    $(playbtn).css("transition-duration", "0.2s")}
 
                 );
 

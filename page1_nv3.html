@@ -112,6 +112,7 @@
             var btnSelectN3;
             var greet = '¡Hola una vez más '+ name + '!';
             var hideBtn1N3 = '#hideBtn1N3'
+            var playbtn ='.playbtn'
 
 
             $(document).ready(function(){
@@ -183,6 +184,19 @@
 
     );
 
+                $(playbtn).hover(function(){
+                  $(playbtn).css("background-color", "#c03600");
+                  $(playbtn).css("border", "0px");
+                  $(playbtn).css("cursor", "url('cursor/cursor_pointer.png'), auto;");
+                  $(playbtn).css("color", "white");
+                  $(playbtn).css("transition-duration", "0.5s")}
+
+              , function(){
+                  $(playbtn).css("background", "#e1743d");
+                  $(playbtn).css("color", "404347");
+                  $(playbtn).css("transition-duration", "0.2s")}
+
+                );
 
 
             });
