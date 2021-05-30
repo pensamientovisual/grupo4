@@ -8,7 +8,7 @@
     </head>
     <body>
         <br><br><br>
-        <p id='demoPage3' class="titulo_niveles">hola</p>
+        <p id='demoPage3N3' class="titulo_niveles">hola</p>
         <br>
         <br>
         <button id="btnSig_3a4" class = 'ingresar'>Seguir</button>
@@ -19,16 +19,16 @@
             $(document).ready(function(){
                 if (btnSelectN3 == 'correcta') {
                     //alert('si');
-                    $('#demoPage3').text(textCorrectAns);
+                    $('#demoPage3N3').text(textCorrectAns);
                 } else {
                     //alert('no');
-                    $('#demoPage3').text(textWrongAns);
+                    $('#demoPage3N3').text(textWrongAns);
                 }
 
                 $('#btnSig_3a4').on('click', function () {
 
                     $("#mainContent").empty();
-                    $( "#mainContent" ).load( "page3_nv1.html" );
+                    $( "#mainContent" ).load( "page3_nv3.html" );
 
                 })
                 $('#btnSig_3a4').hover(function(){
