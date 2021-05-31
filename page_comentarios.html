@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+    <html>    
+        <head>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet" />
+        <script type="text/javascript" src="Java/jquery-3.6.0.js"></script>
+        <script src="bodymovin.js"></script>
+        <script src="https://d3js.org/d3.v6.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+        <title>Migración</title>
+        <link rel="shortcut icon" type="image/png" href="flavicon.png"/>
+        
+    </head> <!--Código modificado a partir de: https://codepen.io/monoke/pen/jOPMvOo-->
+
+
+        <body>
+            <header>
+                <h1>¡DINOS QUÉ HAZ APRENDIDO!</h1>
+            </header>
+            <section>
+                <textarea class="commentBox" placeholder="Escribe aquí" type="textarea" cols="70" rows="10"></textarea>
+                <p style='font-size: 30px;'>¡TE QUEDAN <span class="counter" style="color: #e1743d; ">140</span> CARACTERES!</p>
+                <button>Post</button>
+                <ul class="clearfix comments">
+                    <li>I left a comment...</li>
+                    <li>I left another comment...</li>
+                </ul>
+            </section>
+        </body>
+
+        <script>
+            $(document).ready(function() {
+	$('button').click(function() {
+		var comment = $('.commentBox').val();
+		$('<li>').text(comment).prependTo('.comments');
+		$('button').attr('disabled', 'true');
+		$('.counter').text('140');
+		$('.commentBox').val('');
+	});
+	
+	$('.commentBox').keyup(function() {
+		var commentLength = $(this).val().length;
+		var charLeft =  140 - commentLength;
+		$('.counter').text(charLeft);
+		
+		if (commentLength == 0) {
+			$('button').attr('disabled', 'true');
+		}
+		else if (commentLength > 140) {
+			$('button').attr('disabled', 'true');
+		}
+		else {
+			$('button').removeAttr('disabled', 'true');
+		}
+	});
+	
+	$('button').attr('disabled', 'true');
+	
+});
+        </script>
+</html>
