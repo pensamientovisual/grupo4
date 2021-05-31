@@ -26,6 +26,9 @@
         <audio id="audio_sit3" autoplay>
           <source src="audio/audio_sit3.mp3" type="audio/mpeg">
         </audio>
+        <audio id="sonidofondo" autoplay loop>
+          <source src="audio/alishas-theme.mp3" type="audio/mpeg">
+        </audio>
         <div class='contpg1_nv3'>
             <div class='div_parr'>
 
@@ -70,7 +73,7 @@
             <div id= 'mujerAnN3'></div>
             <img id="perufeliz" src="imagenes_nv3/peru_feliz.png" height="800">
             <img id="fechaperu" src="imagenes_nv3/fecha_peru.png" height="400">
-          
+
             <button id='hideBtn1N3' class="ingresar" style="float: right; border: 0px;">Ya he terminado de leer</button>
 
             <div id='divRes1N3' style='display: none;'>
@@ -209,7 +212,7 @@
                 path: 'mujerA.json',
             })
 
-            //Idea de codigo extraido de "https://www.youtube.com/watch?v=GSIkghMhFF4" 
+            //Idea de codigo extraido de "https://www.youtube.com/watch?v=GSIkghMhFF4"
             var miAudioN3 = document.getElementById("audio_sit3")
             function playPause(){
              if (miAudioN3.paused)
