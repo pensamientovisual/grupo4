@@ -26,6 +26,9 @@
         <audio id="audio_sit2" autoplay>
           <source src="audio/audio_sit2.mp3" type="audio/mpeg">
         </audio>
+        <audio id="sonidofondo" autoplay>
+          <source src="audio/alishas-theme.mp3" type="audio/mpeg">
+        </audio>
         <div class='contpg1_nv2'>
             <div class="titulo_niveles">
                 <p class="titulo_niveles" id='saludoN2' style="margin-left: 80px; font-size: 90px;"></p>
@@ -269,6 +272,8 @@
              else
                  miAudioN2.pause();
                }
+            var audio = document.getElementById("a1");
+                audio.volume = 0.1;
         </script>
 
     </body>

@@ -18,7 +18,7 @@
         }
 
         </style>
-        <audio>
+        <audio id="sonidofondo" autoplay>
           <source src="audio/alishas-theme.mp3" type="audio/mpeg">
         </audio>
         <audio id="audio_sit1" autoplay>
@@ -251,6 +251,8 @@
               else
                   miAudioN1.pause();
                 }
+            var audio = document.getElementById("a1");
+              audio.volume = 0.1;
         </script>
 
     </body>
