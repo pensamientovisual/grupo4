@@ -56,6 +56,9 @@
 
 
             <body id="bodyarnav">
+              <audio id="sonidofondo" autoplay loop>
+                <source src="audio/alishas-theme.mp3" type="audio/mpeg">
+              </audio>
                 <div class="contPg3lv2">
                     <div class="textPg3">
                         <p class="" id="N2p3parr1"><span style="color: #e1743d">Leroi</span>, junto a sus padres y cinco hermanos,<br>llegó hace dos semanas a Chile desde el puerto de Jacque, en <span style="color: #e1743d">Haití</span>.</p>
@@ -67,7 +70,7 @@
                             <img src="imagenes_nv2/viaje1.png" height="70%">
                         </div>
 
- 
+
                         <script>
                             var images1 = ['viaje1.png','viaje2.png','viaje3.png'],   //https://stackoverflow.com/questions/7086290/javascript-image-change-after-x-amount-of-time
                             index1 = 0, // starting index
@@ -107,7 +110,7 @@
 
 
                     </div>
-                    
+
                <script>
 
                     $(document).ready(function(){
@@ -184,6 +187,8 @@
                     });
 
                     });
+                    var audio = document.getElementById("sonidofondo");
+                      audio.volume = 0.28;
 
                 </script>
             </body>
