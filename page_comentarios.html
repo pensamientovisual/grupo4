@@ -23,7 +23,7 @@
                 <h1 style='color: whitesmoke; font-family: Pigment;'>¡DINOS QUÉ HAZ APRENDIDO!</h1>
             </header>
             <div style='margin-left: auto; margin-right: auto; width: 800px'>
-                <textarea class="commentBox" placeholder="Escribe aquí" type="textarea" cols="70" rows="5" style="font-size: 20px; position: relative; background-color: #31343a; margin-left: auto; color: rgba(245, 245, 245, 0.651); border-radius: 8px;"></textarea>
+                <textarea class="commentBox" placeholder="Escribenos aquí" type="textarea" cols="70" rows="5" style="font-size: 20px; position: relative; background-color: #31343a; margin-left: auto; color: rgba(245, 245, 245, 0.651); border-radius: 8px;"></textarea>
                 <p style='font-size: 30px; color: rgba(245, 245, 245, 0.651); font-family: Pigment;'>¡TE QUEDAN <span class="counter" style="color: #e1743d; ">140</span> CARACTERES!</p>
                 <button class='ingresar' id='comentar' style='font-family: Pigment; height: 80px; font-weight: 20px;'>Dejar comentario</button>
                 <style>
@@ -35,12 +35,13 @@
             <br>
             <div style='background-color: #31343a;'>
                 <ul class="clearfix comments" style="font-size: 30px; color: whitesmoke; margin-right: 20px; padding-right: 40px; font-family: Pigment;">
-                    <ul>"Aprendí que mis comentarios pueden ser más ofensivos de lo que creía. Voy a intentar ser más cuidadosa con mis palabras :)"</ul><br>
-                    <ul>“Aunque conozco a muchas personas de otros países, nunca había parado a pensar en lo que habían tenido que pasar para llegar a Chile. Ahora me doy cuenta de que existe una historia por detrás y que yo no les estaba ayudando para nada a adaptarse a su nueva vida aquí.”</ul><br>
-                    <ul>"No sabía que hay gente que le molesta el olor a empanada :/"</ul><br>
-                    <ul>"Me dí cuenta que mis bromas no eran tan divertidas para mis compañeros que como para mí. Me voy a proponer pensarlo dos veces antes de hacerlas."</ul><br>
-                    <ul>“Hay muchos compañeros que les hacen bromas a los que vienen de otro país. Aunque no lo dicen, ahora pienso que quizás sí les afectan esos comentarios y los pueden hacer sentir incómodos.”</ul><br>
-                    <ul>“Yo pensaba que muchos inmigrantes venían a Chile por que querían pero ahora entiendo que algunos no tienen otra opción y necesitan mi ayuda.”</ul><br>
+                    <ul><span style='color: #c03600;'>"</span>Aprendí que mis comentarios pueden ser más ofensivos de lo que creía. Voy a intentar ser más cuidadosa con mis palabras :)<span style='color: #c03600;'>"</span></ul><br>
+                    <ul><span style='color: #c03600;'>"</span>Mamá siempre dice que sea amorosa con Ha-Neul y ahora entiendo por qué.<span style='color: #c03600;'>"</span></ul><br>
+                    <ul><span style='color: #c03600;'>"</span>Aunque conozco a muchas personas de otros países, nunca había parado a pensar en lo que habían tenido que pasar para llegar a Chile. Ahora me doy cuenta de que existe una historia por detrás y que yo no les estaba ayudando para nada a adaptarse a su nueva vida aquí.<span style='color: #c03600;'>"</span></ul><br>
+                    <ul><span style='color: #c03600;'>"</span>No sabía que hay gente que le molesta el olor a empanada :/<span style='color: #c03600;'>"</span></ul><br>
+                    <ul><span style='color: #c03600;'>"</span>Me dí cuenta que mis bromas no eran tan divertidas para mis compañeros que como para mí. Me voy a proponer pensarlo dos veces antes de hacerlas.<span style='color: #c03600;'>"</span></ul><br>
+                    <ul><span style='color: #c03600;'>"</span>Hay muchos compañeros que les hacen bromas a los que vienen de otro país. Aunque no lo dicen, ahora pienso que quizás sí les afectan esos comentarios y los pueden hacer sentir incómodos.<span style='color: #c03600;'>"</span></ul><br>
+                    <ul><span style='color: #c03600;'>"</span>Yo pensaba que muchos inmigrantes venían a Chile por que querían pero ahora entiendo que algunos no tienen otra opción y necesitan mi ayuda.<span style='color: #c03600;'>"</span></ul><br>
                     <!--<li>“Muchas veces mis amigos y yo nos reíamos de las costumbres de algunos compañeros extranjeros. Ahora me doy cuenta de que no sólo me estaba burlando de su cultura, sino que también de su identidad.”</li>-->
                 </ul>
             </div>
@@ -50,6 +51,8 @@
             $(document).ready(function() {
 
 	$('button').click(function() {
+        //var comillas = String('"')
+        //$(comillas).css('color','#c03600')
 		var comment = '"'+$('.commentBox').val()+'"';
 		$('<ul>').text(comment).prependTo('.comments');
 		$('button').attr('disabled', 'true');
