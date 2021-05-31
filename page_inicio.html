@@ -9,7 +9,7 @@
     </head>
     <body>
         <div class="contenedor">
-          <audio id="sonidofondo" autoplay>
+          <audio id="sonidofondo" autoplay loop>
             <source src="audio/alishas-theme.mp3" type="audio/mpeg">
           </audio>
             <div class="titulo_niveles"> <!--pag 1-->
@@ -131,8 +131,8 @@
                 });
 
             });
-            var audio = document.getElementById("a1");
-              audio.volume = 0.1;
+            var audio = document.getElementById("sonidofondo");
+              audio.volume = 0.28;
         </script>
 
     </body>

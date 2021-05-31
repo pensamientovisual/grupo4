@@ -6,10 +6,13 @@
         <script type="text/javascript" src="script.js"></script>
 
     </head>
-   
+
     <body>
+      <audio id="sonidofondo" autoplay loop>
+        <source src="audio/alishas-theme.mp3" type="audio/mpeg">
+      </audio>
         <div class="contpg2_nv1">
-           <p id='demoPage3' class="titulo_niveles">hola</p>  
+           <p id='demoPage3' class="titulo_niveles">hola</p>
             <button id="btnSig_3a4" class = 'ingresar'>Seguir</button>
         </div>
         <script>
@@ -36,7 +39,7 @@
                     $('#btnSig_3a4').css("cursor", "url('cursor/cursor_pointer.png'), auto");
                     $('#btnSig_3a4').css("transition-duration", "0.5s")
                     $('#btnSig_3a4').css("color", "white")}
-                    
+
 
                 , function(){
                     $('#btnSig_3a4').css("background", "#E1743D");
@@ -45,7 +48,9 @@
                 });
 
             });
-                
+          var audio = document.getElementById("sonidofondo");
+            audio.volume = 0.28;
+
 
         </script>
     </body>
