@@ -15,12 +15,12 @@
 
         <body style='background-color: #31343a;'>
             <header>
-                <h1 style='color: whitesmoke;'>¡DINOS QUÉ HAZ APRENDIDO!</h1>
+                <h1 style='color: whitesmoke; font-family: Pigment;'>¡DINOS QUÉ HAZ APRENDIDO!</h1>
             </header>
             <div style='margin-left: auto; margin-right: auto; width: 800px'>
                 <textarea class="commentBox" placeholder="Escribe aquí" type="textarea" cols="70" rows="5" style="font-size: 20px; position: relative; background-color: #31343a; margin-left: auto; color: rgba(245, 245, 245, 0.651)"></textarea>
-                <p style='font-size: 30px; color: rgba(245, 245, 245, 0.651)'>¡TE QUEDAN <span class="counter" style="color: #e1743d; ">140</span> CARACTERES!</p>
-                <button class='ingresar' >Dejar comentario</button>
+                <p style='font-size: 30px; color: rgba(245, 245, 245, 0.651); font-family: Pigment;'>¡TE QUEDAN <span class="counter" style="color: #e1743d; ">140</span> CARACTERES!</p>
+                <button class='ingresar' style='font-family: Pigment;'>Dejar comentario</button>
             </div>
             <br>
             <div style='background-color: #31343a;'>
@@ -40,7 +40,7 @@
             $(document).ready(function() {
 
 	$('button').click(function() {
-		var comment = '"'+$('.commentBox').val()+'"<br />';
+		var comment = '"'+$('.commentBox').val()+'"';
 		$('<ul>').text(comment).prependTo('.comments');
 		$('button').attr('disabled', 'true');
 		$('.counter').text('140');
