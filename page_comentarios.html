@@ -18,18 +18,22 @@
                 <h1>¡DINOS QUÉ HAZ APRENDIDO!</h1>
             </header>
             <section>
-                <textarea class="commentBox" placeholder="Escribe aquí" type="textarea" cols="70" rows="10"></textarea>
+                <textarea class="commentBox" placeholder="Escribe aquí" type="textarea" cols="70" rows="5" style="font-size: 20px; position: relative; margin: auto; align-self: unset;"></textarea>
                 <p style='font-size: 30px;'>¡TE QUEDAN <span class="counter" style="color: #e1743d; ">140</span> CARACTERES!</p>
-                <button>Post</button>
-                <ul class="clearfix comments">
-                    <li>I left a comment...</li>
-                    <li>I left another comment...</li>
-                </ul>
+                <button class='ingresar' id="comment">Dejar comentario</button>
             </section>
+            <div>
+                <ul class="clearfix comments" style="font-size: 30px;">
+                    <li>Aprendí que mis comentarios pueden ser más ofensivos de lo que creía. Voy a intentar ser más cuidadoso con mis palabras.</li>
+                    <li>Me dí cuenta que mis bromas no eran tan divertidas para mis compañeros que como para mí. Me voy a proponer pensarlo dos veces antes de hacerlas.</li>
+                </ul>
+            </div>
         </body>
 
         <script>
             $(document).ready(function() {
+                var botarnav = $("#comment");
+
 	$('button').click(function() {
 		var comment = $('.commentBox').val();
 		$('<li>').text(comment).prependTo('.comments');
@@ -55,6 +59,20 @@
 	});
 	
 	$('button').attr('disabled', 'true');
+
+    botarnav.mouseenter(function(){
+        $(botarnav).css("background-color","#c03600" )
+        $(botarnav).css("transition-duration","0.5s" )
+        $(botarnav).css("color","#f8e9d3" )
+        $(botarnav).css("border","0px" )
+        console.log("hola")
+    });
+    botarnav.mouseleave(function(){
+        $(botarnav).css("background-color","#e1743d" )
+        $(botarnav).css("transition-duration","0.5s" )
+        $(botarnav).css("color","#404347" )
+    });
+
 	
 });
         </script>
