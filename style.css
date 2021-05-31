@@ -3,6 +3,12 @@
     src: url(Lunchbox_Regular/Lunchbox.ttf);
 }
 
+
+@font-face{ 
+    font-family: Eraser Regular;
+    src: url(Eraser_Regular/Eraser_Dust.ttf);
+}
+
 body{
     background: rgba(255, 116, 61, 0.1);
     color: #404347;
