@@ -2834,11 +2834,15 @@
             </div>
             
         </div>
+        <h1 id="niv" style="color: #404347">¿Ya haz completado todas las etapas?</h1>
+        <button class="ingresar" id="load_pizarra">¡Clickea aquí!</button>
+
             <script>
                 $(document).ready(function(){
                     var lvl1 = $("#ilvl3")
                     var lvl2 = $("#ilvl2")
                     var lvl3 = $("#ilvl1")
+                    var btnpiz = $('#load_pizarra')
 
                     lvl1.mouseenter(function(){
                         $(lvl1).css("transform", "scale(1.1, 1.1)");
@@ -2941,6 +2945,34 @@
                         $( "#mainContent" ).load( "page1_nv3.html" )
 
                     });
+
+                    btnpiz.click(function() {
+                        console.log("hola")
+                    //    if (n_2 == true){
+
+                        $("#mainContent").empty();
+                        $( "#mainContent" ).load( "page_comentarios.html" );
+                        document.body.style.backgroundColor = 'rgba(49, 52, 58, 1)';
+
+
+                    });
+
+                    $(btnpiz).hover(function(){
+                    $(btnpiz).css("background-color", "#c03600");
+                    $(btnpiz).css("border", "0px");
+                    $(btnpiz).css("cursor", "url('cursor/cursor_pointer.png'), auto;");
+                    $(btnpiz).css("color", "white");
+                    $(btnpiz).css("transition-duration", "0.5s")}
+
+
+                , function(){
+                    $(btnpiz).css("background", "#e1743d");
+                    $(btnpiz).css("color", "404347");
+                    $(btnpiz).css("transition-duration", "0.2s")
+
+                });
+
+
 
 
 

@@ -13,30 +13,45 @@
     </head> <!--Código modificado a partir de: https://codepen.io/monoke/pen/jOPMvOo-->
 
 
-        <body>
+        <body id='pizarra' style='background-color: #31343a;'>
+            <style>
+                #pizarra {
+                    background-color: #31343a;
+                }
+            </style>
             <header>
-                <h1>¡DINOS QUÉ HAZ APRENDIDO!</h1>
+                <h1 style='color: whitesmoke; font-family: Pigment;'>¡DINOS QUÉ HAZ APRENDIDO!</h1>
             </header>
-            <section>
-                <textarea class="commentBox" placeholder="Escribe aquí" type="textarea" cols="70" rows="5" style="font-size: 20px; position: relative; margin: auto; align-self: unset;"></textarea>
-                <p style='font-size: 30px;'>¡TE QUEDAN <span class="counter" style="color: #e1743d; ">140</span> CARACTERES!</p>
-                <button class='ingresar' id="comment">Dejar comentario</button>
-            </section>
+            <div style='margin-left: auto; margin-right: auto; width: 800px'>
+                <textarea class="commentBox" placeholder="Escribe aquí" type="textarea" cols="70" rows="5" style="font-size: 20px; position: relative; background-color: #31343a; margin-left: auto; color: rgba(245, 245, 245, 0.651)"></textarea>
+                <p style='font-size: 30px; color: rgba(245, 245, 245, 0.651); font-family: Pigment;'>¡TE QUEDAN <span class="counter" style="color: #e1743d; ">140</span> CARACTERES!</p>
+                <button class='ingresar' id='comentar' style='font-family: Pigment; height: 80px; font-weight: 20px;'>Dejar comentario</button>
+                <style>
+                    #comentar {
+                        font-weight: bolder;
+                    }
+                </style>
+            </div>
+            <br>
             <div style='background-color: #31343a;'>
-                <ul class="clearfix comments" style="font-size: 30px; color: whitesmoke;">
-                    <li>Aprendí que mis comentarios pueden ser más ofensivos de lo que creía. Voy a intentar ser más cuidadoso con mis palabras.</li>
-                    <li>Me dí cuenta que mis bromas no eran tan divertidas para mis compañeros que como para mí. Me voy a proponer pensarlo dos veces antes de hacerlas.</li>
+                <ul class="clearfix comments" style="font-size: 30px; color: whitesmoke; margin-right: 20px; padding-right: 40px; font-family: Pigment;">
+                    <ul>"Aprendí que mis comentarios pueden ser más ofensivos de lo que creía. Voy a intentar ser más cuidadosa con mis palabras :)"</ul><br>
+                    <ul>“Aunque conozco a muchas personas de otros países, nunca había parado a pensar en lo que habían tenido que pasar para llegar a Chile. Ahora me doy cuenta de que existe una historia por detrás y que yo no les estaba ayudando para nada a adaptarse a su nueva vida aquí.”</ul><br>
+                    <ul>"No sabía que hay gente que le molesta el olor a empanada :/"</ul><br>
+                    <ul>"Me dí cuenta que mis bromas no eran tan divertidas para mis compañeros que como para mí. Me voy a proponer pensarlo dos veces antes de hacerlas."</ul><br>
+                    <ul>“Hay muchos compañeros que les hacen bromas a los que vienen de otro país. Aunque no lo dicen, ahora pienso que quizás sí les afectan esos comentarios y los pueden hacer sentir incómodos.”</ul><br>
+                    <ul>“Yo pensaba que muchos inmigrantes venían a Chile por que querían pero ahora entiendo que algunos no tienen otra opción y necesitan mi ayuda.”</ul><br>
+                    <!--<li>“Muchas veces mis amigos y yo nos reíamos de las costumbres de algunos compañeros extranjeros. Ahora me doy cuenta de que no sólo me estaba burlando de su cultura, sino que también de su identidad.”</li>-->
                 </ul>
             </div>
         </body>
 
         <script>
             $(document).ready(function() {
-                var botarnav = $("#comment");
 
 	$('button').click(function() {
-		var comment = $('.commentBox').val();
-		$('<li>').text(comment).prependTo('.comments');
+		var comment = '"'+$('.commentBox').val()+'"';
+		$('<ul>').text(comment).prependTo('.comments');
 		$('button').attr('disabled', 'true');
 		$('.counter').text('140');
 		$('.commentBox').val('');
@@ -60,18 +75,22 @@
 	
 	$('button').attr('disabled', 'true');
 
-    botarnav.mouseenter(function(){
-        $(botarnav).css("background-color","#c03600" )
-        $(botarnav).css("transition-duration","0.5s" )
-        $(botarnav).css("color","#f8e9d3" )
-        $(botarnav).css("border","0px" )
-        console.log("hola")
+
+    $('button').hover(function(){
+        $('button').css("background-color", "#c03600");
+        $('button').css("border", "0px");
+        $('button').css("cursor", "url('cursor/cursor_pointer.png'), auto;");
+        $('button').css("color", "white");
+        $('button').css("transition-duration", "0.5s")}
+
+
+    , function(){
+        $('button').css("background", "#e1743d");
+        $('button').css("color", "404347");
+        $('button').css("transition-duration", "0.2s")
+
     });
-    botarnav.mouseleave(function(){
-        $(botarnav).css("background-color","#e1743d" )
-        $(botarnav).css("transition-duration","0.5s" )
-        $(botarnav).css("color","#404347" )
-    });
+
 
 	
 });

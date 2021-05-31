@@ -3,6 +3,23 @@
     src: url(Lunchbox_Regular/Lunchbox.ttf);
 }
 
+
+@font-face{ 
+    font-family: Eraser Regular;
+    src: url(Eraser_Regular/EraserRegular.ttf);
+}
+
+@font-face{ 
+    font-family: Chalk;
+    src: url(pwchalk/PWChalk.ttf);
+}
+
+@font-face{ 
+    font-family: Pigment;
+    src: url(pigment-demo/pigment_DEMO.otf);
+}
+
+
 body{
     background: rgba(255, 116, 61, 0.1);
     color: #404347;
