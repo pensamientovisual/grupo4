@@ -13,6 +13,9 @@
         </style>
     </head>
     <body>
+      <audio id="sonidofondo" autoplay loop>
+        <source src="audio/alishas-theme.mp3" type="audio/mpeg">
+      </audio>
         <div class="contPg5_nv1">
             <div class="div_parr1">
                 <p id='N3p5parr1' style="font-size: 80px; text-align: center;"><span style="color: #c03600">No </span>te gustaría encontrarte en esa posición,<br> ¿cierto?</p>
@@ -171,6 +174,8 @@
 
                         });
                         });
+                        var audio = document.getElementById("sonidofondo");
+                          audio.volume = 0.28;
 
 
 

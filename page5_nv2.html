@@ -8,6 +8,9 @@
         <script src="bodymovin.js"></script>
     </head>
     <body>
+      <audio id="sonidofondo" autoplay loop>
+        <source src="audio/alishas-theme.mp3" type="audio/mpeg">
+      </audio>
        <div class="contPg5_nv1">
            <div class="div_parr1">
             <p id='N2p5parr1' style="font-size: 80px; text-align: center;"><span style="color: #c03600">No </span>te gustaría encontrarte en esa posición,<br> ¿cierto?</p>
@@ -18,9 +21,9 @@
                 <p class = 'parr' >Cuando te asignan a tu compañero ya no te sientes tan seguro de que vayas a poder ir. Leroi es nuevo en tu curso y viene desde Haití. Aunque nunca le has hablado,
                     sabes que su pronunciación no es muy buena y no estás seguro de que entienda español.<br><span style="font-size: 50px;">Sin embargo, <span style="color: #c03600">esta vez</span> decides:</span></p>
             </div>
-            </div> 
+            </div>
             <img id="haitifeliz" src="imagenes_nv2/haiti_feliz.png" height="600">
-            <div id= 'mujerAnN4'></div> 
+            <div id= 'mujerAnN4'></div>
             <button class="ingresar" id='N2p5btn'>Sigamos</button>
 
             <div id='divRes3' style='display: none;'>
@@ -33,7 +36,7 @@
                         font-size: 90px;
                     }
                 </style>
-            <form> 
+            <form>
                 <div class='flex-container' style="cursor: url('cursor/cursor_pointer.png'), auto;">
                 <div>
                     <button id="N2p5btnA3" value='mala' class='div_respuestas' style="opacity: 0.5">Pedirle al profesor que añada a otro compañero a tu grupo porque te parece injusto hacer todo el trabajo sólo.</button>
@@ -158,6 +161,8 @@
                         })
 
                         });
+                        var audio = document.getElementById("sonidofondo");
+                          audio.volume = 0.28;
 
 
        </script>
