@@ -8,194 +8,20 @@
         <script src="https://d3js.org/d3.v6.js"></script>
         <title>Migración</title>
         <link rel="shortcut icon" type="image/png" href="flavicon.png"/>
-        <style>
-            #personitas{
-
-                margin: 5%;
-                margin-top: 3%;
-            }
-            .boton-pais{
-                width: 100%;
-                height: 43px;
-
-                cursor: pointer;
-                margin: 10px auto;
-                font-size: 30px;
-                font-family: Lunchbox Regular;;
-                padding: 5px 0px 0px 0px;
-                color: #404347;
-                background-color: #9cc2df80;
-                box-shadow: -3px 3px #404347;
-                border: 0px;
-                border-radius: 5px ;
-                margin-left: 1%;
-                cursor: url("cursor/cursor_pointer.png"), auto;
 
 
-            }
-            #botondisc{
-                width: 10%;
-                height: 43px;
-
-                cursor: pointer;
-                margin: 10px auto;
-                font-size: 15px;
-                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                padding: 5px 0px 0px 0px;
-                color: #404347;
-                background-color: #9cc2df80;
-                box-shadow: -3px 3px #404347;
-                border: 0px;
-                border-radius: 5px ;
-                margin-left: 1%;
-                float:right;
-
-            }
-
-
-            #botones{
-                float: right;
-                margin-right: 5%;
-                margin-top: 0%;
-            }
-            #lista-botones{
-                margin-top: 0px;
-            }
-            #info-escrita{
-                float: right;
-                padding: 0% 1%;
-                width: 80%;
-
-            }
-
-            #info-escrita .infoe{
-                font-size: 40px;
-                margin-left: 7%;
-                margin-bottom: 0%;
-
-
-            }
-
-
-            #p1infoe{
-                margin-top: 290px;
-
-            }
-
-            #numero-personas {
-                font-size: 70px;
-                text-align: center;
-                color: #e1743d;
-                margin: 0% auto;
-
-
-            }
-            #numero-personas-disc {
-                font-size: 70px;
-                text-align: center;
-                color: #9cc2df;
-                margin: 0% auto;
-
-            }
-
-            #dibujo-bandera{
-                position:relative;
-                height: 100%;
-                width: 100%;
-
-            }
-
-            #dibujo-bandera img{
-                margin: 20px 9%;
-                position: absolute;
-                visibility: hidden;
-            }
-
-            #textoinfdata1{
-                width: 100%;
-
-
-
-            }
-            #textoinfdata1 p{
-                text-align: center;
-                margin: 1%;
-
-                font-size: 40px;
-            }
-
-
-
-
-
-        </style>
     </head>
 
     <body>
-      <audio id="sonidofondo"  loop>
-        <source src="audio/alishas-theme.mp3" type="audio/mpeg">
-      </audio>
-        <br>
-        <div class="conData1">
-         <div id="textoinfdata1">
-            <p>Imaginemos que los <span style="color: #e1743d">777.407 MIGRANTES DE CHILE</span> son estas 100 personas que ves.</p>
-            <p>Los celestes son aquellos que se han sentido <span style="color: #9cc2df">DISCRIMINADOS</span> por su país de origen.</p>
-            <p>Clickea los países para ver "algo de como se diferencian o algo así"</p>
-        </div>
-            <div id ="botones" >
-            <ul id="lista-botones" style="list-style-type:none;">
-            </ul>
-         </div>
+      <button class="ingresar" id='PDbtnN3' style="float:right;">¡Tema Completado!</button>
+       
 
-        <div id="info-escrita" style="width: 80%;">
+        <p> Alrededor de 4.611 hogares en Chile tienen migrantes, lo que equivale a un 6,5% del total de hogares del país.
+            En estos hogares, habitan más de 98 mil niños inmigrantes de diferentes nacionalidades, de los cuales el  22,7% de niños viven en situación de pobreza, comparados al 13,7% de los niños nacidos en Chile viven en estas condiciones.</p>
+        <p>“Del total de niños entre 0 y 14 años nacidos fuera de Chile, el 24% no asiste a educación básica. Esto corresponde a un total de 23 mil niños que no pueden ir al colegio, lo que equivale a la misma cantidad de personas que caben en 480 buses repletos de personas”.</p>
+        <p>¿Sabías que...?
 
-            <div id="dibujo-bandera">
-                <!--<img src="imagenes/vacio.png" id="vacio" class="vacio" style="position: relative;;" width="80%">-->
-                <img src="imagenes/mundo.png" id="banderainicio" class="bandera inicio" alt="Mundo" width="80%" style="visibility: visible;">
-                <img src="imagenes/peru.png" id="banderaperu" class="bandera Perú" alt="bandera Perú" width="80%">
-                <img src="imagenes/colombia.png" id="banderacolombia" class="bandera Colombia" alt="bandera Colombia" width="80%">
-                <img src="imagenes/argentina.png" id="banderaargentina" class="bandera Argentina" alt="bandera Argentina" width="80%">
-                <img src="imagenes/bolivia.png" id="banderabolivia" class="bandera Bolivia" alt="bandera Bolivia" width="80%">
-                <img src="imagenes/ecuador.png" id="banderaecuador" class="bandera Ecuador" alt="bandera Ecuador" width="80%">
-                <img src="imagenes/venezuela.png" id="banderavenezuela" class="bandera Venezuela" alt="bandera Venezuela" width="80%">
-                <img src="imagenes/haiti.png" id="banderahaiti" class="bandera Haití" alt="bandera Haití" width="80%">
-                <img src="imagenes/americalatina.png" id="banderaamericalatina" class="bandera AméricaLatinayCaribe" alt="bandera America Latina" width="80%">
-                <img src="imagenes/canadausa.png" id="banderavcanadausa" class="bandera Canadayusa" alt="bandera CanadaUSA" width="80%">
-                <img src="imagenes/europa.png" id="banderaeuropa" class="bandera Europa" alt="bandera Europa" width="80%">
-                <img src="imagenes/mundo.png" id="banderaotro" class="bandera Otro" alt="bandera Otro" width="80%">
-
-
-
-            </div>
-            <p id="p1infoe" class="infoe">Total Personas: </p>
-            <p id="numero-personas">777.407</p>
-            <p class="infoe"> Estimación Discriminados: </p>
-            <p id="numero-personas-disc">251.181</p>
-
-         </div>
-            <!--<button id="botondisc">Discriminado</button>-->
-         <div id ="personitas" >
-
-            <div id ="personitas1" ></div>
-            <div id ="personitas2" ></div>
-            <div id ="personitas3" ></div>
-            <div id ="personitas4" ></div>
-            <div id ="personitas5" ></div>
-            <div id ="personitas6" ></div>
-            <div id ="personitas7" ></div>
-            <div id ="personitas8" ></div>
-            <div id ="personitas9" ></div>
-            <div id="personitas10"></div>
-            <div>
-                <p>*Datos obtenidos de encuesta Casen 2017</p>
-            </div>
-         </div>
-
-            <button class="ingresar" id='PDbtnN3' style="float:right;">¡Tema Completado!</button>
-        </div>
-
-
-
+            “Aproximadamente 10.663 niños inmigrantes viven en situación de pobreza. Esta cantidad de niños equivale a la cantidad de personas que caben una cancha de fútbol lleno de personas”.</p>
         <script>
             //d3.csv("employee.csv", function(data) {
                 //console.log(data)
