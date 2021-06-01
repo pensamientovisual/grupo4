@@ -113,7 +113,7 @@ body{
 /* Grid Page 1 Start*/
 
 .contpg1{
-   
+
     width: 1920px;
     height: 1080px;
     margin: 20px auto;
@@ -145,7 +145,7 @@ body{
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 4;;
-    
+
 }
 .contpg1 .china{
     grid-column-start: 1;
@@ -246,12 +246,12 @@ body{
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
-  
+
 }
 /* Grid Page 1 level 2 End*/
 /* Grid Page 1 level 3 Start*/
 .contpg1_nv3{
-    
+
     width: 1920px;
     height: 1080px;
     display: grid;
@@ -519,7 +519,7 @@ body{
     grid-row-start: 2;
     grid-row-end: 4;
     margin-left: 9%;
-   
+
 }
 .conPg4_nv1 #divRes2 .flex-container{
     justify-self: center;
@@ -725,9 +725,9 @@ body{
     grid-row-end: 5;
     justify-self: center;
     align-self: center;
-   
 
-    
+
+
 
 }
 .conData1 #info-escrita{
@@ -1258,6 +1258,5 @@ svg{
   color: #404347;
   width: 80px;
   height: 30px;
-  margin-top: 40px;
-  float:left;
+  float:right;
 }
