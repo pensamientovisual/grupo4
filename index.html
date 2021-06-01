@@ -19,19 +19,38 @@
             </script>
         </div>
         <div>
+<<<<<<< HEAD
           <audio id="sonidofondo" autoplay loop preload>
             <source src="audio/alishas-theme-full.mp3" type="audio/mpeg">
+=======
+          <audio id="sonidofondo" autoplay loop>
+            <source src="audio/alishas-theme.ogg" type="audio/ogg">
+>>>>>>> 67a62f231a7fb78a02f96723c136eff0f360e214
           </audio>
           <script>
             var btnsonido = '.btnsonido'
             var audiogen = document.getElementById("sonidofondo");
               audiogen.volume = 0.15;
             function playPause(){
-              if (audiogen.paused)
-                    audiogen.play();
-              else
-                  audiogen.pause();
-                  }
+              if (audiogen.paused){
+                    audiogen.play();}
+              else {
+                  audiogen.pause();}
+                  };
+              $(btnsonido).hover(function(){
+                $(btnsonido).css("background-color", "#c03600");
+                $(btnsonido).css("border", "0px");
+                $(btnsonido).css("cursor", "url('cursor/cursor_pointer.png'), auto;");
+                $(btnsonido).css("color", "white");
+                $(btnsonido).css("transition-duration", "0.5s")}
+
+            , function(){
+                $(btnsonido).css("background", "#e1743d");
+                $(btnsonido).css("color", "404347");
+                $(btnsonido).css("transition-duration", "0.2s")}
+
+            );
+
 
 
           </script>
