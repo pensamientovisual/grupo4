@@ -15,26 +15,22 @@
             <br>
            <p id='demoPage3' class="titulo_niveles">hola</p>
            <br>
-           <p id="demoPage31" class='titulo_niveles'>hol</p>
+           <p id="demoPage31" class='titulo_niveles'>Conozcamos un poco más sobre Arnav...</p>
             <button id="btnSig_3a4" class = 'ingresar'>Seguir</button>
         </div>
         <script>
             var textCorrectAns = String('¡Que bueno que quieras conocer más sobre la cultura de Arnav!');
-            var textCorrectAns2 = String('Conozcamos un poco más sobre Arnav...');
 
             var textWrongAns = String('Sí, es cierto. A veces las cosas nuevas nos asustan un poco...');
-            var textWrongAns2 = String('Te cuento un poco sobre Arnav:');
 
             $(document).ready(function(){
                 if (btnSelect == 'correcta') {
                     //alert('si');
                     $('#demoPage3').text(textCorrectAns);
-                    $('#demoPage31').text(textCorrectAns2);
 
                 } else {
                     //alert('no');
                     $('#demoPage3').text(textWrongAns);
-                    $('#demoPage31').text(textWrongAns2);
 
                 }
 
