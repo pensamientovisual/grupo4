@@ -4,17 +4,17 @@
 }
 
 
-@font-face{ 
+@font-face{
     font-family: Eraser Regular;
     src: url(Eraser_Regular/EraserRegular.ttf);
 }
 
-@font-face{ 
+@font-face{
     font-family: Chalk;
     src: url(pwchalk/PWChalk.ttf);
 }
 
-@font-face{ 
+@font-face{
     font-family: Pigment;
     src: url(pigment-demo/pigment_DEMO.otf);
 }
@@ -28,8 +28,8 @@ body{
 
     margin-top: 0px;
     margin-bottom: 0px;
-    max-height: 1080px;
-    max-width: 1920px;
+    height: 1080px;
+    width: 1920px;
     cursor: url("cursor/cursor_normal.png"), auto;
 }
 #navbar{
@@ -46,8 +46,8 @@ body{
 /* Grid Index Start */
 .contenedor{
     width: 100%;
-    max-width: 1920px;
-    max-height: 1080px;
+    width: 1920px;
+    height: 1080px;
     margin: 20px auto;
     display: grid;
     grid-gap: 20px;
@@ -78,8 +78,8 @@ body{
 
 .contlvl{
     width: 100%;
-    max-width: 1920px;
-    max-height: 1080px;
+    width: 1920px;
+    height: 1080px;
     margin: 20px auto;
     display: grid;
     grid-gap: 20px;
@@ -104,6 +104,7 @@ body{
     grid-row-start: 3;
     grid-row-end: 4;
     align-self: start;
+    margin-top: 1%;
 }
 
 
@@ -112,9 +113,9 @@ body{
 /* Grid Page 1 Start*/
 
 .contpg1{
-    width: 100%;
-    max-width: 1920px;
-    max-height: 1080px;
+   
+    width: 1920px;
+    height: 1080px;
     margin: 20px auto;
     display: grid;
     grid-gap: 20px;
@@ -144,6 +145,7 @@ body{
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 4;;
+    
 }
 .contpg1 .china{
     grid-column-start: 1;
@@ -153,8 +155,13 @@ body{
     justify-self: center;
 
 }
-.contpg1 #divRes1 .titulo_pregunta1{
-    grid-area: header;
+.contpg1 .contpg1-1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    align-self: center;
+    margin-left: 15%;
 }
 .audio_pg1_nv1{
     grid-column-start: 3;
@@ -171,14 +178,19 @@ body{
     grid-row-start: 2;
     grid-row-end: 3;
 }
+.contpg1-1 #divRes1 .titulo_pregunta{
+    margin-left: -10%;
+}
+
+
 
 
 /* Grid Page 1 End*/
 /* Grid Page 1 level 2 Start*/
 .contpg1_nv2{
     width: 100%;
-    max-width: 1920px;
-    max-height: 1080px;
+    width: 1920px;
+    height: 1080px;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 2fr 1fr 2fr;
@@ -201,6 +213,8 @@ body{
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 4;
+    height: 600px;
+    align-self: end;
 }
 .contpg1_nv2 .ingresar{
     grid-column-start: 2;
@@ -213,19 +227,33 @@ body{
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
+    height: 500px;
+    align-self: center;
+    justify-self: center;
 }
 .contpg1_nv2 .tarea{
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
+    height: 400px;
+    align-self: center;
+    justify-self: start;
+    z-index: -2;
+}
+.contpg1-1 #divRes1N2{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  
 }
 /* Grid Page 1 level 2 End*/
 /* Grid Page 1 level 3 Start*/
 .contpg1_nv3{
-    width: 100%;
-    max-width: 1920px;
-    max-height: 1080px;
+    
+    width: 1920px;
+    height: 1080px;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 2fr 1fr 2fr;
@@ -272,6 +300,7 @@ body{
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
+    justify-self: center;
 
 }
 .contpg1_nv3 #fechaperu{
@@ -295,7 +324,7 @@ body{
     margin: 20px auto;
     display: grid;
     grid-gap: 20px;
-   
+
     grid-template-rows: 1fr 2fr 1fr;
     align-content: center;
     justify-content: center;
@@ -303,7 +332,7 @@ body{
     justify-items: center;
 }
 .contpg2_nv1 .ingresar{
- 
+
     grid-row-start: 3;
     grid-row-end: 4;
 
@@ -312,7 +341,7 @@ body{
 
     grid-row-start: 1;
     grid-row-end: 2;
-    align-self: end;
+    margin-top: 5%;
     justify-self: center;
 
 }
@@ -324,7 +353,7 @@ body{
     margin: 20px auto;
     display: grid;
     grid-gap: 20px;
-   
+
     grid-template-rows: 1fr 2fr 1fr;
     align-content: center;
     justify-content: center;
@@ -332,7 +361,7 @@ body{
     justify-items: center;
 }
 .contpg2_nv2 .ingresar{
- 
+
     grid-row-start: 3;
     grid-row-end: 4;
 
@@ -413,7 +442,7 @@ body{
 
 
 .contPg3lv2{
-   
+
     width: 1920px;
     height:1080px ;
     margin: 20px auto;
@@ -448,7 +477,7 @@ body{
 /* Grid Page 3 End*/
 /* Grid Page 4 Start*/
 .conPg4_nv1{
-    
+
     width: 1920px;
     height:1080px ;
     margin: 20px auto;
@@ -458,12 +487,13 @@ body{
     grid-template-rows: 1fr 2fr 2fr 1fr;
 }
 .conPg4_nv1 #N1p4parr1{
-    grid-row-start: 2;
+    grid-row-start: 1;
     grid-row-end: 4;
     grid-column-start: 1;
     grid-column-end: 3;
-}
-.conPg4_nv1 #empanadanina{
+    margin-left: 5%;
+    margin-top: 10%;
+}.conPg4_nv1 #empanadanina{
 
     grid-column-start: 3;
     grid-column-end: 4;
@@ -478,22 +508,27 @@ body{
 }
 .conPg4_nv1 #divRes2 #titulo_pregunta2{
     grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-end: 4;
+    font-size: 60px;
+    margin-left: -10%;
+    margin-top: 10%;
 }
 .conPg4_nv1 #divRes2 {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 4;
-   justify-self: center;
+    margin-left: 9%;
+   
 }
 .conPg4_nv1 #divRes2 .flex-container{
     justify-self: center;
+    margin-top: 5%;
 }
 
 /*Level 2*/
 .conPg4_nv1 #N2p4parr1{
-    grid-row-start: 3;
+    grid-row-start: 1;
     grid-row-end: 4;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -520,17 +555,17 @@ body{
 }
 
 .conPg4_nv1 .conversacionusa1{
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
     justify-self: center;
 }
 .conPg4_nv1 .conversacionusa2{
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
     justify-self: center;
 }
 
@@ -566,9 +601,11 @@ body{
 }
 .contPg5_nv1 .china2{
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+    align-self: center;
+    justify-self: center;
 }
 .contPg5_nv1 #divRes3{
     grid-column-start: 1;
@@ -603,6 +640,7 @@ body{
     grid-row-start: 2;
     grid-row-end: 3;
     align-self: center;
+    justify-self: center;
 }
 .contPg5_nv1 #fechaperu{
     grid-column-start: 2;
@@ -630,7 +668,7 @@ body{
     grid-template-rows: 1fr 2fr 1fr;
     align-content: center;
     align-items: center;
-   
+
 }
 .contPg6_nv1 .titulo_niveles{
     grid-column-start: 1;
@@ -657,8 +695,8 @@ body{
 /* Grid Data 1 Start*/
 .conData1{
     width: 100%;
-    max-width: 1920px;
-    max-height:1080px ;
+    width: 1920px;
+    height:1080px ;
     margin: 20px auto;
     display: grid;
     grid-gap: 20px;
@@ -687,7 +725,9 @@ body{
     grid-row-end: 5;
     justify-self: center;
     align-self: center;
+   
 
+    
 
 }
 .conData1 #info-escrita{
@@ -994,7 +1034,8 @@ h1{
 
 #ninacomiendo{
     z-index: -20;
-
+    height: 500px;
+    width: 500px;
     top:0px;
     left:0px;
     opacity: 0.4;
@@ -1011,7 +1052,7 @@ h1{
 .div_parr{
     position: relative;
     z-index: 1;
-    max-width: 100%;
+    width: 100%;
     height: 100%;
     float: left;
     background-color: whitesmoke ;
@@ -1062,7 +1103,7 @@ h1{
   margin-left: 50px;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
@@ -1209,4 +1250,14 @@ svg{
   width: 80px;
   height: 30px;
   margin-left: 40px;
+}
+.btnsonido{
+  background-color: rgba(255, 116, 61, 1);
+  border-radius: 5px;
+  border-color: #404347;
+  color: #404347;
+  width: 80px;
+  height: 30px;
+  margin-top: 40px;
+  float:left;
 }
