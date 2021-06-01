@@ -316,6 +316,15 @@ body{
     grid-row-start: 1;
     grid-row-end: 2;
 }
+.contpg1_nv3 #divRes1n3{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    align-content: center;
+    justify-content: center;
+
+}
 /* Grid Page 1 level 3 End*/
 /* Grid Preguntas Start*/
 .contpg2_nv1{
@@ -361,16 +370,30 @@ body{
     justify-items: center;
 }
 .contpg2_nv2 .ingresar{
-
+    grid-column-start: 1;
+    grid-column-end:3 ;
     grid-row-start: 3;
     grid-row-end: 4;
 
 }
-.contpg2_nv2 .titulo_niveles{
-
+.contpg2_nv2 #demoPage2_nv2{
+    grid-column-start: 1;
+    grid-column-end:3 ;
     grid-row-start: 1;
     grid-row-end: 2;
     align-self: end;
+    justify-self: center;
+    text-align: center;
+    margin-top: 5%;
+
+}
+
+.contpg2_nv2 .titulo_niveles{
+    grid-column-start: 1;
+    grid-column-end:3 ;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    align-self: start;
     justify-self: center;
     text-align: center;
     margin-top: 5%;
@@ -533,7 +556,7 @@ body{
     grid-row-start: 1;
     grid-row-end: 4;
     font-size: 60px;
-    margin-left: -10%;
+    margin-left: -5%;
     margin-top: 10%;
 }
 .conPg4_nv1 #divRes2 {
@@ -810,6 +833,9 @@ h1{
     position: sticky;
     top: 30%;
     opacity: 0;
+    align-self: center;
+    justify-self: center;
+    background-color: #404347;
 
 }
 
