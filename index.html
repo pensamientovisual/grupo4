@@ -22,19 +22,18 @@
           <audio id="sonidofondo" autoplay loop>
             <source src="audio/alishas-theme-full.mp3" type="audio/mpeg">
           </audio>
-          <button class="btnsonido" onclick="playPause()"> <img src="imagenes/btnplay.png" alt="x" width="100" /></button>
           <script>
             var btnsonido = '.btnsonido'
-            var audio = document.getElementById("sonidofondo");
-              audio.volume = 0.15;
+            var audiogen = document.getElementById("sonidofondo");
+              audiogen.volume = 0.15;
             function playPause(){
-              if (audio.paused)
-                    audio.play();
+              if (audiogen.paused)
+                    audiogen.play();
               else
-                  audio.pause();
+                  audiogen.pause();
                   }
 
-                  );
+                  
           </script>
         </div>
     </head>
@@ -43,9 +42,7 @@
 
 
         <div id="mainContent">
-          <div>
-            <button class="btnsonido" onclick="playPause()">&#9658;/||</button>
-          </div>
+
         <script>
             $(document).ready(function(){
                 $("#mainContent").empty();
