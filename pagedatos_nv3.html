@@ -10,12 +10,13 @@
         <link rel="shortcut icon" type="image/png" href="flavicon.png"/>
         <style>
           .parrPDN3{
-            font-size: 40px;
+            font-size: 50px;
             padding: 30px;
           }
           .imgPDN3{
-            margin: 30px;
+            margin: 0px;
             float: left;
+            cursor: url('cursor/cursor_pointer.png'), auto;
           }
           #divmicroPDN3{
             width: 800px;
@@ -28,7 +29,7 @@
           #divparrPDN3p1{
             background-color: #ffffff95;
             float: right;
-            width: 700;
+            width: 720;
             border: 5px solid #404347;
     text-align: center;
     border-radius: 10px;
@@ -40,7 +41,7 @@
     text-align: center;
     border-radius: 10px;
             float: right;
-            width: 700;
+            width: 750;
             margin: 70px;
           }
           #fuentedn3 {
@@ -60,8 +61,9 @@
             text-align: center;
           }
           #nro1{
-            font-size: 70px;
+            font-size: 80px;
           }
+
         </style>
 
 
@@ -72,13 +74,14 @@
       
       <button class="ingresar" id='PDbtnN3' style="float:right;">¡Tema Completado!</button>
       <div id="divtitulopdn3">
-        <p id="titulopdn3">¿Quieres saber a qué equivale la cantidad de gente que podrías encontrar en....</p>
+        <p id="titulopdn3" style="margin-bottom: 0px;">¿Quieres saber a qué equivale la cantidad de gente que podrías encontrar en?....</p>
+        <p style="font-size: 30px; text-align: center; margin-top:0px; margin-bottom: 20px;">¡Clickea cada uno!</p>
       </div>
       <div id="divmicroPDN3">
         <p class="titulodivtxt"><span id="nro1">480 MICROS</span></p>
-        <img class="imgPDN3"  src="imagenes/micro.png" width="700px"  id="">
+        <img id="micro" class="imgPDN3"  src="imagenes/micro.png" width="700px"  id="">
         <!--<img class="imgPDN3" src="imagenes/avion.png" width="500px"  id="">-->
-        <div id="divparrPDN3p1">
+        <div id="divparrPDN3p1" style="opacity: 0;">
           <p class="parrPDN3"> En estas micros cabrían <span class="n">23.000 niños</span>.<br> Esta es la cantidad de niños entre 0 y 14 años de otros países que<br><span class="n">no pueden ir al colegio o al jardín infantil</span><br>en Chile.</p>
             <!--Del total de niños entre 0 y 14 años nacidos fuera de Chile, el 24% no asiste a educación básica. Esto corresponde a un total de  que no pueden ir al colegio, lo que equivale a la misma cantidad de personas que caben en<br><span id="nro">480 MICROS</span><br><span class="n">REPLETAS de personas.</span></p>
     <p>*Datos obtenidos de encuesta Casen 2017</p>-->
@@ -90,11 +93,11 @@
         <div id="divcanchapdn3">
           <p><span id="nro1" class="titulodivtxt">UNA CANCHA DE FUTBOL REPLETA</span></p>
 
-        <img class="imgPDN3" src="imagenes/cancha.png" width="700px"  id="">
-        <div id="divparrPDN3p2">
-          <p class="parrPDN3">
-            Si en una cancha de fútbol todos se pusieran uno junto al otro, cabrían <span class="n">10.663 niños</span>.<br>
-            Esta es la cantidad de niños inmigrantes que<br><span class="n">viven en situación de pobreza </span>en Chile<br><br></p>
+        <img id="cancha" class="imgPDN3" src="imagenes/cancha.png" width="700px"  id="">
+        <div id="divparrPDN3p2" style="opacity: 0;">
+          <p class="parrPDN3" >
+            Si en una cancha de fútbol todos se pusieran uno junto al otro, cabrían <br><span class="n">10.663 niños</span>.<br>
+            Esta es la cantidad de niños inmigrantes que<br><span class="n">viven en situación de pobreza </span>en Chile</p>
           
               <!--Aproximadamente <span class="n">10.663 niños inmigrantes</span> viven en situación de pobreza. Esta cantidad de niños equivale a a más de la cantidad de <span class="n">niños que cabrían en una cancha de fútbol</span> con todas las personas una al lado de la otra.</p>
     <p>*Datos obtenidos de encuesta Casen 2017</p>-->
@@ -123,131 +126,80 @@
 //});
 
             $(document).ready(function(){
+              var mciro = document.getElementById('micro')
+              var cancha = document.getElementById('cancha')
            //     $('#PDbtnN1').on('click', function () {
 
              //               $("#mainContent").empty();
             //                $( "#mainContent" ).load( "index.html" );
 
+              $(cancha).hover(function(){
+             
+                    $(cancha).css("transform", "scale(1.1, 1.1)");
+
+                    $(cancha).css("transition-duration", "0.5s");}
+
+            
+
+
+                , function(){
+       
+                    $(cancha).css("transform", "scale(1, 1)");
+
+                    $(cancha).css("transition-duration", "0.5s");}
+
+                );
+              $(micro).hover(function(){
+                    
+                    $(micro).css("transform", "scale(1.1, 1.1)");
+
+                    $(micro).css("transition-duration", "0.5s");}
+
+            
+
+
+                , function(){
+
+                    $(micro).css("transform", "scale(1, 1)");
+
+                    $(micro).css("transition-duration", "0.5s");}
+
+                );
+
+                $(micro).click(function(){
+                  console.log("holiholi")
+                  $("#divparrPDN3p1").fadeTo("fast", 1)
+                  $("#divparrPDN3p1").css("transition-duration", "0.5s")
+                  $('html, body').animate({
+                        scrollTop: 500
+                    }, 800, function(){
+
+                    });
+                });
+
+                $(cancha).click(function(){
+                  console.log("holiholi")
+                  $("#divparrPDN3p2").fadeTo("fast", 1)
+                  $("#divparrPDN3p2").css("transition-duration", "0.5s")
+                  $('html, body').animate({
+                        scrollTop: 500
+                    }, 800, function(){
+
+                    });
+    
+
+
+                    });
                 $("#PDbtnN3").click(function(){
                     $("#loadD3").css("visibility", "visible")
                     $("#mainContent").empty();
                     $( "#mainContent" ).load( "page_niveles.html" );
 
 
-                  //  $(linknav).attr("href", "pagedatos_nv1.html")
-
-
-
-
-
                 });
 
 
-                //d3.csv("datos_migrantes_pais_discriminados.csv"), function(data)
 
-              //  d3.csv("datos_migrantes_pais_discriminados.csv", function(data) {
-                //    console.log(data)
-
-              //  })
-
-                    //.then((datos) => {
-                    //    console.log(datos);
-                      //  joinDeDatos(datos);
-                    //})
-                    //.catch((error) => console.log(error));
-
-
-
-
-                d3.csv("datos_migrantes_pais_discriminados.csv", function(data) {
-                    var li = document.createElement("LI");
-                    var btn = document.createElement("BUTTON");
-                    btn.innerHTML = data.nombre;
-                    $(btn).attr("class", "boton-pais")
-                    $(btn).attr("id", data.pais);
-                    li.append(btn)
-                    $("#lista-botones").append(li)
-                    lista_paises.push([data.pais, data.total_migrantes_por_pais, data.porcentaje_migrantes_por_pais,data.cantidad_discriminados_por_pais, data.porcentaje_discriminado_por_pais, data.porcentaje_discriminado_por_pais_de_total])
-
-
-                    contador = 0
-                    discriminados = 0
-
-                    for (var i = 0; i < (parseFloat(data.porcentaje_migrantes_por_pais) * 100); i++) {
-                        var rect = document.createElement("DIV");
-                        var pais = data.pais
-                        $(rect).attr("id", pais  + "personita");
-                        $(rect).attr("class", "personita-pais " + data.pais)
-                        var color = "#e1743d40"
-                        var borde = "#e1743d40"
-                        if (contador < parseFloat(data.porcentaje_discriminado_por_pais_de_total) * 100){
-                            $(rect).attr("class", "personita-pais " + data.pais + " discriminado")
-                   //         var color = "#9cc2df40"
-                     //       var borde = "#9cc2df40"
-                            contador += 1
-                            discriminados += 1
-                        };
-
-                        $(rect).css("height", (width - width1)/13);
-                        $(rect).css("width", (width - width1)/13);
-                        $(rect).css("background", color);
-                        $(rect).css("display", "inline-block");
-                        $(rect).css("margin", "2px");
-                        $(rect).css("border", "3px solid " + borde);
-                        $(rect).css("border-radius", "80px");
-                        $("#personitas" + caja.toString()).append(rect);
-                        $("#info-escrita").css("width", "80%")
-                        $("#info-escrita").css("height", widthtot)
-                        $("#info-escrita").css("background-color", "#e1743d20")
-                        $("#info-escrita").css("border-radius", "10px")
-
-                        console.log(contador)
-                        if (cuenta == 10) {
-                            caja += 1
-                            cuenta = 0
-                            console.log("holaaaaa")
-                        };
-                        cuenta += 1
-                    };
-
-                var botones = $(".boton-pais")
-                var personitas = $(".personita-pais")
-                botones.click(function(){
-                    botones.css("background", "#9cc2df80")
-                    $(this).css("background", "#e1743d")
-                    botones.css("transition-duration", "0.2s")
-                    var paisBoton = $(this).attr("id")
-                    //console.log(paisBoton)
-                    var personitasBoton = $(".personita-pais." + paisBoton)
-                    var personitasDisBoton = $("." + paisBoton + ".discriminado.personita-pais")
-                    $(personitas).css("background-color", "#e1743d40")
-                    $(personitas).css("border", "3px solid #e1743d40");
-                    $(personitasBoton).css("background-color", "#e1743d99")
-                    $(personitasBoton).css("border", "3px solid #e1743d");
-                    $(personitasDisBoton).css("border", "3px solid #9cc2df");
-                    $(personitasDisBoton).css("background-color", "#9cc2df99")
-
-                    for (var i = 0; i < lista_paises.length; i++) {
-                        console.log(lista_paises[i][0], "for i")
-                        console.log(paisBoton, "boton")
-                        if (lista_paises[i][0] == paisBoton) {
-                            console.log("funcionaaa")
-                            var n_total = lista_paises[i][1]
-                            var n_discriminados = lista_paises[i][3]
-
-                        };
-                    var banderas = $(".bandera")
-
-                    var bandera_pais = $(".bandera." + paisBoton)
-                    $(banderas).css("visibility", "hidden")
-                    $(bandera_pais).css("visibility", "visible")
-
-
-                    };
-                    $("#numero-personas").text(n_total)
-                    $("#numero-personas-disc").text(n_discriminados)
-                });
-                });
             });
             var audio = document.getElementById("sonidofondo");
               audio.volume = 0.28;
