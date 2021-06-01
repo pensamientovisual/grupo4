@@ -22,9 +22,18 @@
           <audio id="sonidofondo" autoplay loop>
             <source src="audio/alishas-theme-full.mp3" type="audio/mpeg">
           </audio>
+          <div>
+            <button class="playbtn" onclick="playPause()">&#9658;/||</button>
+          </div>
           <script>
             var audio = document.getElementById("sonidofondo");
               audio.volume = 0.15;
+            function playPause(){
+              if (audio.paused)
+                    audio.play();
+              else
+                  audio.pause();
+                  }
           </script>
         </div>
     </head>
