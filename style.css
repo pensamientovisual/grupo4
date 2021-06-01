@@ -355,8 +355,17 @@ body{
     grid-row-end: 2;
     margin-top: 5%;
     align-self: start;
+}
+.contpg2_nv1 #demoPage31{
+    grid-column-start: 1;
+    grid-column-end: 4;
 
-}.contpg2_nv1 #demoPage3N3{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-top: 5%;
+    align-self: start;
+}
+.contpg2_nv1 #demoPage3N3{
     grid-column-start: 1;
     grid-column-end: 4;
 
