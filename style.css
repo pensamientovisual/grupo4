@@ -4,17 +4,17 @@
 }
 
 
-@font-face{ 
+@font-face{
     font-family: Eraser Regular;
     src: url(Eraser_Regular/EraserRegular.ttf);
 }
 
-@font-face{ 
+@font-face{
     font-family: Chalk;
     src: url(pwchalk/PWChalk.ttf);
 }
 
-@font-face{ 
+@font-face{
     font-family: Pigment;
     src: url(pigment-demo/pigment_DEMO.otf);
 }
@@ -295,7 +295,7 @@ body{
     margin: 20px auto;
     display: grid;
     grid-gap: 20px;
-   
+
     grid-template-rows: 1fr 2fr 1fr;
     align-content: center;
     justify-content: center;
@@ -303,7 +303,7 @@ body{
     justify-items: center;
 }
 .contpg2_nv1 .ingresar{
- 
+
     grid-row-start: 3;
     grid-row-end: 4;
 
@@ -324,7 +324,7 @@ body{
     margin: 20px auto;
     display: grid;
     grid-gap: 20px;
-   
+
     grid-template-rows: 1fr 2fr 1fr;
     align-content: center;
     justify-content: center;
@@ -332,7 +332,7 @@ body{
     justify-items: center;
 }
 .contpg2_nv2 .ingresar{
- 
+
     grid-row-start: 3;
     grid-row-end: 4;
 
@@ -413,7 +413,7 @@ body{
 
 
 .contPg3lv2{
-   
+
     width: 1920px;
     height:1080px ;
     margin: 20px auto;
@@ -448,7 +448,7 @@ body{
 /* Grid Page 3 End*/
 /* Grid Page 4 Start*/
 .conPg4_nv1{
-    
+
     width: 1920px;
     height:1080px ;
     margin: 20px auto;
@@ -630,7 +630,7 @@ body{
     grid-template-rows: 1fr 2fr 1fr;
     align-content: center;
     align-items: center;
-   
+
 }
 .contPg6_nv1 .titulo_niveles{
     grid-column-start: 1;
@@ -1209,4 +1209,13 @@ svg{
   width: 80px;
   height: 30px;
   margin-left: 40px;
+}
+.sonidofondo{
+  background-color: rgba(255, 116, 61, 1);
+  border-radius: 5px;
+  border-color: #404347;
+  color: #404347;
+  width: 80px;
+  height: 30px;
+  float:right;
 }
