@@ -18,12 +18,42 @@
 
             </script>
         </div>
+        <div>
+          <audio id="sonidofondo" autoplay loop>
+            <source src="audio/alishas-theme-full.mp3" type="audio/mpeg">
+          </audio>
+          <div>
+            <button class="btnsonido" onclick="playPause()">&#9658;/||</button>
+          </div>
+          <script>
+            var btnsonido = '.btnsonido'
+            var audio = document.getElementById("sonidofondo");
+              audio.volume = 0.15;
+            function playPause(){
+              if (audio.paused)
+                    audio.play();
+              else
+                  audio.pause();
+                  }
+              $(btnsonido).hover(function(){
+                  $(btnsonido).css("background-color", "#c03600");
+                  $(btnsonido).css("border", "0px");
+                  $(btnsonido).css("cursor", "url('cursor/cursor_pointer.png'), auto;");
+                  $(btnsonido).css("color", "white");
+                  $(btnsonido).css("transition-duration", "0.5s")}
+
+              , function(){
+                  $(btnsonido).css("background", "#e1743d");
+                  $(btnsonido).css("color", "404347");
+                  $(btnsonido).css("transition-duration", "0.2s")}
+
+                  );
+          </script>
+        </div>
     </head>
 
     <body>
-      <audio id="sonidofondo" autoplay loop>
-        <source src="audio/alishas-theme.mp3" type="audio/mpeg">
-      </audio>
+
 
         <div id="mainContent">
         <script>
@@ -31,8 +61,7 @@
                 $("#mainContent").empty();
                 $( "#mainContent" ).load( "page_inicio.html" );
             });
-            var audio = document.getElementById("sonidofondo");
-              audio.volume = 0.28;
+
         </script>
         </div>
 

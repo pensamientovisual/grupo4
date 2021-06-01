@@ -8,23 +8,30 @@
     </head>
 
     <body>
-      <audio id="sonidofondo" autoplay loop>
+      <audio id="sonidofondo"  loop>
         <source src="audio/alishas-theme.mp3" type="audio/mpeg">
       </audio>
         <div class="contpg2_nv1">
+            <br>
            <p id='demoPage3' class="titulo_niveles">hola</p>
+           <br>
+           <p id="demoPage31" class='titulo_niveles'>Conozcamos un poco más sobre Arnav...</p>
             <button id="btnSig_3a4" class = 'ingresar'>Seguir</button>
         </div>
         <script>
-            var textCorrectAns = String('¡Que bueno que quieras conocer más sobre la cultura de Arnav! Conozcamos un poco más sobre Arnav...');
-            var textWrongAns = String('Si, es cierto. A veces las cosas nuevas nos asustan un poco... Te cuento un poco sobre Arnav:');
+            var textCorrectAns = String('¡Que bueno que quieras conocer más sobre la cultura de Arnav!');
+
+            var textWrongAns = String('Sí, es cierto. A veces las cosas nuevas nos asustan un poco...');
+
             $(document).ready(function(){
                 if (btnSelect == 'correcta') {
                     //alert('si');
                     $('#demoPage3').text(textCorrectAns);
+
                 } else {
                     //alert('no');
                     $('#demoPage3').text(textWrongAns);
+
                 }
 
                 $('#btnSig_3a4').on('click', function () {
