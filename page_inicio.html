@@ -141,6 +141,13 @@
                 });
 
             });
+            var botonsonido = $(".playbtn")
+            botonsonido.mouseenter(function(){
+              $(".playbtn").css("transform", "scale(1.1, 1.1)" ,fast);
+            });
+            botonsonido.mouseleave(function(){
+              $(".playbtn").css("transform", "scale(0.9, 0.9)");
+            });
             /*var audio = document.getElementById("sonidofondo");
               audio.volume = 0.28;*/
         </script>
