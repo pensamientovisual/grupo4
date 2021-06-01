@@ -7,12 +7,15 @@
 
     </head>
     <body>
-        <br><br><br>
-        <p id='demoPage3N3' class="titulo_niveles">hola</p>
-        <br>
-        <br>
-        <button id="btnSig_3a4" class = 'ingresar'>Seguir</button>
+      <audio id="sonidofondo" autoplay loop>
+        <source src="audio/alishas-theme.mp3" type="audio/mpeg">
+      </audio>
+        <div class="contpg2_nv1">
 
+            <p id='demoPage3N3' class="titulo_niveles">hola</p>
+
+            <button id="btnSig_3a4" class = 'ingresar'>Seguir</button>
+        </div>
         <script>
             var textCorrectAns = String('¡Felicitaciones! Hiciste lo correcto... Pero mucha gente no actúa así. Mira lo que sucedería si hubieras elejido una de las otras opciones...');
             var textWrongAns = String('¿Estás seguro que quieres hacer eso?... Te cuento un poco más sobre el tema');
@@ -37,7 +40,7 @@
                     $('#btnSig_3a4').css("cursor", "url('cursor/cursor_pointer.png'), auto");
                     $('#btnSig_3a4').css("transition-duration", "0.5s")
                     $('#btnSig_3a4').css("color", "white")}
-                    
+
 
                 , function(){
                     $('#btnSig_3a4').css("background", "#E1743D");
@@ -46,7 +49,9 @@
                 });
 
             });
-                
+            var audio = document.getElementById("sonidofondo");
+              audio.volume = 0.28;
+
 
         </script>
     </body>

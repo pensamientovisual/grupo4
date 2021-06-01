@@ -267,6 +267,26 @@ body{
     grid-row-start: 2;
     grid-row-end: 3;
 }
+.contpg1_nv3 #perufeliz{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+}
+.contpg1_nv3 #fechaperu{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    align-self: center;
+}
+.contpg1_nv3 #peru{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
 /* Grid Page 1 level 3 End*/
 /* Grid Preguntas Start*/
 .contpg2_nv1{
@@ -473,18 +493,32 @@ body{
 
 /*Level 2*/
 .conPg4_nv1 #N2p4parr1{
-    grid-row-start: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.conPg4_nv1 #N3p4parr1{
+    grid-row-start: 3;
     grid-row-end: 4;
     grid-column-start: 1;
     grid-column-end: 3;
 }
 .conPg4_nv1 #confundida{
-    grid-row-start: 1;
+    grid-row-start: 2;
     grid-row-end: 4;
     grid-column-start: 3;
     grid-column-end: 4;
     align-self: center;
 }
+.conPg4_nv1 #empanadanina{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    align-self: center;
+}
+
 .conPg4_nv1 .conversacionusa1{
     grid-row-start: 1;
     grid-row-end: 2;
@@ -506,7 +540,7 @@ body{
 .contPg5_nv1{
     width: 1920px;
     height:1080px ;
-    margin: 20px auto;
+    margin: 20px 20px;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 2fr 1fr 2fr;
@@ -543,6 +577,45 @@ body{
     grid-row-end: 4;
     z-index: 3;
 }
+.contPg5_nv1 #mujerAnN4{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.contPg5_nv1 #haitifeliz{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.contPg5_nv1 #mujerAn8{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    align-self: center;
+
+}
+.contPg5_nv1 #perufeliz{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    align-self: center;
+}
+.contPg5_nv1 #fechaperu{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    align-self: center;
+}
+
+
+
+
+
 
 /* Grid Page 5 End*/
 /* Grid Page 6 Start*/
@@ -604,6 +677,7 @@ body{
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 5;
+    justify-self: center;
 }
 .conData1 #personitas{
 
@@ -611,6 +685,8 @@ body{
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 5;
+    justify-self: center;
+    align-self: center;
 
 
 }
@@ -619,6 +695,8 @@ body{
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 5;
+    align-self: center;
+    justify-self: center;
 }
 .conData1 #PDbtnN1{
     grid-column-start: 3;

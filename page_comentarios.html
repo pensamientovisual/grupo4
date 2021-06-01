@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <html>    
+    <html>
         <head>
         <meta charset="UTF-8">
         <link href="style.css" rel="stylesheet" />
@@ -9,11 +9,14 @@
         <script type="text/javascript" src="script.js"></script>
         <title>Migración</title>
         <link rel="shortcut icon" type="image/png" href="flavicon.png"/>
-        
+
     </head> <!--Código modificado a partir de: https://codepen.io/monoke/pen/jOPMvOo-->
 
 
         <body id='pizarra' style='background-color: #31343a;'>
+          <audio id="sonidofondo" autoplay loop>
+            <source src="audio/alishas-theme.mp3" type="audio/mpeg">
+          </audio>
             <style>
                 #pizarra {
                     background-color: #31343a;
@@ -67,12 +70,12 @@
 		$('.counter').text('140');
 		$('.commentBox').val('');
 	});
-	
+
 	$('.commentBox').keyup(function() {
 		var commentLength = $(this).val().length;
 		var charLeft =  140 - commentLength;
 		$('.counter').text(charLeft);
-		
+
 		if (commentLength == 0) {
 			$('button').attr('disabled', 'true');
 		}
@@ -83,7 +86,7 @@
 			$('button').removeAttr('disabled', 'true');
 		}
 	});
-	
+
 	$('button').attr('disabled', 'true');
 
 
@@ -103,7 +106,9 @@
     });
 
 
-	
+
 });
+          var audio = document.getElementById("sonidofondo");
+              audio.volume = 0.28;
         </script>
 </html>

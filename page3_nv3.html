@@ -53,6 +53,9 @@
 
 
             <body id="bodyarnav">
+              <audio id="sonidofondo" autoplay loop>
+                <source src="audio/alishas-theme.mp3" type="audio/mpeg">
+              </audio>
                 <div class="contPg3">
                     <div class="textPg3">
                         <p id="N3p3parr1">La población peruana en Chile corresponde a la comunidad de inmigrantes más importante del país.</span></p>
@@ -138,6 +141,8 @@
 
 
                     });
+                    var audio = document.getElementById("sonidofondo");
+                      audio.volume = 0.28;
 
                 </script>
             </body>

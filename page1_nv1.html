@@ -18,6 +18,9 @@
         }
 
         </style>
+        <audio id="sonidofondo" autoplay loop>
+          <source src="audio/alishas-theme.mp3" type="audio/mpeg">
+        </audio>
         <audio id="audio_sit1" autoplay>
             <source src="audio/audio_sit1.mp3" type="audio/mpeg">
         </audio>
@@ -41,7 +44,7 @@
                 </div>
                 <div id="N1p1parr2">
                     <p class = 'parr' >Al mirar a tu alrededor, te das cuenta de que Arnav, tu compañero nuevo que viene de la India, trajo un almuerzo con
-                carne de un color amarillento, condimentos y vegetales que tu no conoces. El olor te molesta muchísimo, así que decides:</p>
+                carne de un color amarillento, condimentos y vegetales que tu no conoces. El olor es muy nuevo para ti, así que decides:</p>
                 </div>
 
 
@@ -78,7 +81,7 @@
                     <button id="N1p1btnA" value='correcta' class='div_respuestas'>PREGUNTARLE QUE TRAJO Y SI PUEDES PROBAR UN POCO.</button>
                 </div>
                 <div>
-                    <button id="N1p1btnB" value='mala' class='div_respuestas'>PEDIRLE AMABLEMENTE A ARNAV QUE VAYA A ALMORZAR A LA MESA DE AL LADO.</button>
+                    <button id="N1p1btnB" value='mala' class='div_respuestas'>COMER RÁPIDO PARA PODER IRME Y NO OLERLO</button>
                 </div>
                 <div>
                     <button id="N1p1btnC" value='mala' class='div_respuestas'>DECIRLE EN SECRETO A TU AMIGO QUE LA COMIDA ES DE ARNAV.</button>
@@ -151,6 +154,7 @@
                     $('#divRes1').show();
                     $(hideBtn1).hide()
                     $('.div_parr').css("opacity", "0.5")
+                    $('.div_parr').hide()
                     $('#mujerAn').css("opacity", "0.5")
                     $("#saludo").css("opacity", 0)
                     $("#ninacomiendo").css("opacity", "0.2")
@@ -248,6 +252,8 @@
               else
                   miAudioN1.pause();
                 }
+            var audio = document.getElementById("sonidofondo");
+              audio.volume = 0.28;
         </script>
 
     </body>

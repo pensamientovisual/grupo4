@@ -5,46 +5,55 @@
         <title>Migracion</title>
         <link href="STYLE.css" rel="stylesheet" />
         <script type="text/javascript" src="Java/jquery-3.6.0.js"></script>
+        <script src="bodymovin.js"></script>
     </head>
     <body>
-       <p id='N2p5parr1' style="font-size: 80px; text-align: center;"><span style="color: #c03600">No </span>te gustaría encontrarte en esa posición,<br> ¿cierto?</p>
-       <p id="N2p5parr2" style="font-size: 80px; text-align: center;">Ahora que sabes un poco más de la historia y de la situación de Leori, puedes ponerte de nuevo en el mismo escenario, esta vez recordando lo que has aprendido </p>
-       <div id="N2p5parr3" class="div_parr">
-            <p class = 'parr' ><br>Es otro día en colegio, y hoy tu profesor decide asignar parejas para la próxima tarea del curso, una presentación oral sobre el descubrimiento de América.
-                Tus notas no han sido las mejores últimamente y sabes que necesitas un buen promedio para poder ir a las vacaciones que tus papás te prometieron</p>
-            <p class = 'parr' >Cuando te asignan a tu compañero ya no te sientes tan seguro de que vayas a poder ir. Leroi es nuevo en tu curso y viene desde Haití. Aunque nunca le has hablado,
-                sabes que su pronunciación no es muy buena y no estás seguro de que entienda español.<br><span style="font-size: 50px;">Sin embargo, <span style="color: #c03600">esta vez</span> decides:</span></p>
-       </div>
-       <img src="imagenes_nv2/haiti_feliz.png" height="600">
-       <div id= 'mujerAnN4'></div> 
-       <button class="ingresar" id='N2p5btn'>Sigamos</button>
-
-       <div id='divRes3' style='display: none;'>
-        <h2 class="titulo_pregunta">¿ESTA VEZ, QUÉ HARÍAS?<h2>
-            <style>
-                .titulo_pregunta{
-                    text-align: left;
-                    position: relative;
-                    color: #43474C;
-                    font-size: 90px;
-                }
-            </style>
-        <form> 
-            <div class='flex-container' style="cursor: url('cursor/cursor_pointer.png'), auto;">
-            <div>
-                <button id="N2p5btnA3" value='mala' class='div_respuestas' style="opacity: 0.5">Pedirle al profesor que añada a otro compañero a tu grupo porque te parece injusto hacer todo el trabajo sólo.</button>
+      <audio id="sonidofondo" autoplay loop>
+        <source src="audio/alishas-theme.mp3" type="audio/mpeg">
+      </audio>
+       <div class="contPg5_nv1">
+           <div class="div_parr1">
+            <p id='N2p5parr1' style="font-size: 80px; text-align: center;"><span style="color: #c03600"></span>¿Te gustaría encontrarte en esa posición?</p>
+            <p id="N2p5parr2" style="font-size: 80px; text-align: center;">FRASE CHULA</p>
+            <div id="N2p5parr3" class="div_parr">
+                <p class = 'parr' ><br>Es otro día en colegio, y hoy tu profesor decide asignar parejas para la próxima tarea del curso, una presentación oral sobre el descubrimiento de América.
+                    Tus notas no han sido las mejores últimamente y sabes que necesitas un buen promedio para poder ir a las vacaciones que tus papás te prometieron</p>
+                <p class = 'parr' >Cuando te asignan a tu compañero ya no te sientes tan seguro de que vayas a poder ir. Leroi es nuevo en tu curso y viene desde Haití. Aunque nunca le has hablado,
+                    sabes que su pronunciación no es muy buena y no estás seguro de que entienda español.<br><span style="font-size: 50px;">Sin embargo, <span style="color: #c03600">esta vez</span> decides:</span></p>
             </div>
-            <div>
-                <button id="N2p5btnB3" value='mala' class='div_respuestas' style="background-color: #e1743d; opacity: 0.5;">Decirle a Leroi que debe conseguir un tutor que le ayude a hacer su parte del trabajo en español.</button>
             </div>
-            <div>
-                <button id="N2p5btnC3" value='correcta' class='div_respuestas' style="background-color: #e1743d;;">OPCION C (CORRECTA)</button>
-            </div>
+            <img id="haitifeliz" src="imagenes_nv2/haiti_feliz.png" height="600">
+            <div id= 'mujerAnN4'></div>
+            <button class="ingresar" id='N2p5btn'>Sigamos</button>
+
+            <div id='divRes3' style='display: none;'>
+            <h2 class="titulo_pregunta">¿ESTA VEZ, QUÉ HARÍAS?<h2>
+                <style>
+                    .titulo_pregunta{
+                        text-align: left;
+                        position: relative;
+                        color: #43474C;
+                        font-size: 90px;
+                    }
+                </style>
+            <form>
+                <div class='flex-container' style="cursor: url('cursor/cursor_pointer.png'), auto;">
+                <div>
+                    <button id="N2p5btnA3" value='mala' class='div_respuestas' style="opacity: 0.5">Pedirle al profesor que añada a otro compañero a tu grupo porque te parece injusto hacer todo el trabajo sólo.</button>
+                </div>
+                <div>
+                    <button id="N2p5btnB3" value='mala' class='div_respuestas' style="background-color: #e1743d; opacity: 0.5;">Decirle a Leroi que debe conseguir un tutor que le ayude a hacer su parte del trabajo en español.</button>
+                </div>
+                <div>
+                    <button id="N2p5btnC3" value='correcta' class='div_respuestas' style="background-color: #e1743d;;">OPCION C (CORRECTA)</button>
+                </div>
 
 
-        </form>
+            </form>
+            </div>
+            <p></p>
+
         </div>
-        <p></p>
 
 
        <script>
@@ -94,11 +103,14 @@
                             if (contador == 2){
                                 $(p2).fadeTo("fast", 0);
                                 $(p2).hide();
-                                $(p3).fadeTo("fast", 1);
+                                //$(p3).fadeTo("fast", 1);
+                                $("#mainContent").empty();
+                                $( "#mainContent" ).load( "pagedatos_nv2.html" );
+
 
 
                             };
-                            if (contador == 3){
+                            /*if (contador == 3){
                                 $(p3).fadeTo("fast", 0);
                                 $(p3).hide();
                                 $(btn).hide()
@@ -106,7 +118,7 @@
                                 $('.div_parr').css("opacity", "0.5")
                                 document.body.style.backgroundColor = "rgba(169, 165, 163, 0.8)"
 
-                            };
+                            };*/
 
 
                         });
@@ -152,6 +164,8 @@
                         })
 
                         });
+                        var audio = document.getElementById("sonidofondo");
+                          audio.volume = 0.28;
 
 
        </script>

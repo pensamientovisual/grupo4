@@ -7,10 +7,14 @@
         <script type="text/javascript" src="Java/jquery-3.6.0.js"></script>
     </head>
     <body>
-        <p style="font-size: 80px;">¡Felicitaciones!</p>
-        <p id="N3p6parr1" style="font-size: 80px; margin-top: 0px;"></p>
-        <button class="ingresar" id='P6btnN3'>Sigamos</button>
-
+      <audio id="sonidofondo" autoplay loop>
+        <source src="audio/alishas-theme.mp3" type="audio/mpeg">
+      </audio>
+        <div class="contPg6_nv1">
+            <p class="titulo_niveles" style="font-size: 80px;">¡Felicitaciones!</p>
+            <p class="textPg6" id="N3p6parr1" style="font-size: 80px; margin-top: 0px;"></p>
+            <button class="ingresar" id='P6btnN3'>Sigamos</button>
+        </div>
 
         <script>
             var textAnsAgain = String('¡Nuevamente hiciste lo correcto y FRASE MOTIVACIONAL SIT 3!');
@@ -47,6 +51,8 @@
                 });
 
             })
+            var audio = document.getElementById("sonidofondo");
+              audio.volume = 0.28;
 
         </script>
     </body>

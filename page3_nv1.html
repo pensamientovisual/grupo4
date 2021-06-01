@@ -16,7 +16,7 @@
                         top: 70px;
                         left:50px;
                     }
-                 
+
 
                     #N1p3parr3{
                         font-size: 100px;
@@ -49,6 +49,9 @@
 
 
             <body id="bodyarnav">
+              <audio id="sonidofondo" autoplay loop>
+                <source src="audio/alishas-theme.mp3" type="audio/mpeg">
+              </audio>
                 <div class="contPg3">
                     <div class="textPg3">
                         <p id="N1p3parr1"><span style="color: #e1743d">Arnav</span> es el primero de siete hermanos en su familia <br>y viene de la región de Vaniyambadi en <span style="color: #e1743d">India</span>.</p>
@@ -1336,6 +1339,8 @@
 
 
                     });
+                    var audio = document.getElementById("sonidofondo");
+                      audio.volume = 0.28;
 
                 </script>
             </body>
