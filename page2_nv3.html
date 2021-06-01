@@ -13,19 +13,26 @@
         <div class="contpg2_nv1">
 
             <p id='demoPage3N3' class="titulo_niveles">hola</p>
+            <br>
+            <p id='demoPage31N3' class="titulo_niveles">Te invitamos a conocer sobre ellos/as...</p>
+
 
             <button id="btnSig_3a4" class = 'ingresar'>Seguir</button>
         </div>
         <script>
-            var textCorrectAns = String('¡Qué bueno que te interese en conocer sobre las costumbres de tus compañeros/as! Te invitamos a conocer sobre ellos/as...');
-            var textWrongAns = String('¡Hay mucho que aprender de otras culturas! Te invitamos a conocer sobre ellos/as...');
+            var textCorrectAns = String('¡Qué bueno que te interese en conocer sobre las costumbres de tus compañeros/as!');
+
+            var textWrongAns = String('¡Hay mucho que aprender de otras culturas!');
+
             $(document).ready(function(){
                 if (btnSelectN3 == 'correcta') {
                     //alert('si');
                     $('#demoPage3N3').text(textCorrectAns);
+
                 } else {
                     //alert('no');
                     $('#demoPage3N3').text(textWrongAns);
+
                 }
 
                 $('#btnSig_3a4').on('click', function () {
