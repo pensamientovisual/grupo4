@@ -8,23 +8,102 @@
         <script src="https://d3js.org/d3.v6.js"></script>
         <title>Migración</title>
         <link rel="shortcut icon" type="image/png" href="flavicon.png"/>
+        <style>
+          .parrPDN3{
+            font-size: 40px;
+            padding: 30px;
+          }
+          .imgPDN3{
+            margin: 30px;
+            float: left;
+          }
+          #divmicroPDN3{
+            width: 800px;
+            float: left;
+          }
+          #divcanchapdn3{
+            width: 800px;
+            float: right;
+          }
+          #divparrPDN3p1{
+            background-color: #ffffff95;
+            float: right;
+            width: 700;
+            border: 5px solid #404347;
+    text-align: center;
+    border-radius: 10px;
+            margin: 70px;
+          }
+          #divparrPDN3p2{
+            background-color: #ffffff95;
+            border: 5px solid #404347;
+    text-align: center;
+    border-radius: 10px;
+            float: right;
+            width: 700;
+            margin: 70px;
+          }
+          #fuentedn3 {
+            float: left;
+            display: block;
+          }
+          #parrafospdn3{
+            width: 801;
+            float: right;
+          }
+          #titulopdn3{
+            font-size: 100px;
+            color:#C13B18;
+            text-align: center;
+          }
+          .titulodivtxt{
+            text-align: center;
+          }
+          #nro1{
+            font-size: 70px;
+          }
+        </style>
+
 
 
     </head>
 
     <body>
+      
       <button class="ingresar" id='PDbtnN3' style="float:right;">¡Tema Completado!</button>
-       
+      <div id="divtitulopdn3">
+        <p id="titulopdn3">¿Quieres saber a qué equivale la cantidad de gente que podrías encontrar en....</p>
+      </div>
+      <div id="divmicroPDN3">
+        <p class="titulodivtxt"><span id="nro1">480 MICROS</span></p>
+        <img class="imgPDN3"  src="imagenes/micro.png" width="700px"  id="">
+        <!--<img class="imgPDN3" src="imagenes/avion.png" width="500px"  id="">-->
+        <div id="divparrPDN3p1">
+          <p class="parrPDN3"> En estas micros cabrían <span class="n">23.000 niños</span>.<br> Esta es la cantidad de niños entre 0 y 14 años de otros países que<br><span class="n">no pueden ir al colegio o al jardín infantil</span><br>en Chile.</p>
+            <!--Del total de niños entre 0 y 14 años nacidos fuera de Chile, el 24% no asiste a educación básica. Esto corresponde a un total de  que no pueden ir al colegio, lo que equivale a la misma cantidad de personas que caben en<br><span id="nro">480 MICROS</span><br><span class="n">REPLETAS de personas.</span></p>
+    <p>*Datos obtenidos de encuesta Casen 2017</p>-->
+        
+        </div>
+      </div>
+        <!--<p class="parrPDN3"> Alrededor de 4.611 hogares en Chile tienen migrantes, lo que equivale a un 6,5% del total de hogares del país.
+            En estos hogares, habitan más de 98 mil niños inmigrantes de diferentes nacionalidades, de los cuales el  22,7% de niños viven en situación de pobreza, comparados al 13,7% de los niños nacidos en Chile viven en estas condiciones.</p>-->
+        <div id="divcanchapdn3">
+          <p><span id="nro1" class="titulodivtxt">UNA CANCHA DE FUTBOL REPLETA</span></p>
 
-        <p> Alrededor de 4.611 hogares en Chile tienen migrantes, lo que equivale a un 6,5% del total de hogares del país.
-            En estos hogares, habitan más de 98 mil niños inmigrantes de diferentes nacionalidades, de los cuales el  22,7% de niños viven en situación de pobreza, comparados al 13,7% de los niños nacidos en Chile viven en estas condiciones.</p>
-        <p>“Del total de niños entre 0 y 14 años nacidos fuera de Chile, el 24% no asiste a educación básica. Esto corresponde a un total de 23 mil niños que no pueden ir al colegio, lo que equivale a la misma cantidad de personas que caben en 480 buses repletos de personas”.</p>
-        <p>¿Sabías que...?
-
-            “Aproximadamente 10.663 niños inmigrantes viven en situación de pobreza. Esta cantidad de niños equivale a la cantidad de personas que caben una cancha de fútbol lleno de personas”.</p>
-            <img src="imagenes/micro.png" width="600px"  id="">
-            <img src="imagenes/avion.png" width="600px"  id="">
-            <img src="imagenes/cancha.png" width="600px"  id="">
+        <img class="imgPDN3" src="imagenes/cancha.png" width="700px"  id="">
+        <div id="divparrPDN3p2">
+          <p class="parrPDN3">
+            Si en una cancha de fútbol todos se pusieran uno junto al otro, cabrían <span class="n">10.663 niños</span>.<br>
+            Esta es la cantidad de niños inmigrantes que<br><span class="n">viven en situación de pobreza </span>en Chile<br><br></p>
+          
+              <!--Aproximadamente <span class="n">10.663 niños inmigrantes</span> viven en situación de pobreza. Esta cantidad de niños equivale a a más de la cantidad de <span class="n">niños que cabrían en una cancha de fútbol</span> con todas las personas una al lado de la otra.</p>
+    <p>*Datos obtenidos de encuesta Casen 2017</p>-->
+        
+        </div>
+      </div>
+      
+    </div>
+    
         
         <script>
             //d3.csv("employee.csv", function(data) {
@@ -62,18 +141,7 @@
 
 
                 });
-                function joinDeDatos(datos) {
-                    svg
-                      .selectAll("rect")
-                      .data(datos)
-                      .join("rect")
-                      .attr("width", 50)
-                      .attr("fill", "magenta")
-                      .attr("height", (d) => d.porcentaje_migrantes_por_pais)
-                      .attr("x", (_,i) => 50 + i *100);
 
-
-                }
 
                 //d3.csv("datos_migrantes_pais_discriminados.csv"), function(data)
 
@@ -87,16 +155,7 @@
                       //  joinDeDatos(datos);
                     //})
                     //.catch((error) => console.log(error));
-                var box = document.querySelector('#personitas');
-                var width = box.offsetWidth;
-                var margin = getComputedStyle(box)
-                var widthtot = width + margin
-                var height = box.offsetHeight;
-                var box1 = document.querySelector('#botones');
-                var width1 = box1.clientWidth;
-                lista_paises = []
-                var caja = 1
-                var cuenta = 1
+
 
 
 
