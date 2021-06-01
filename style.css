@@ -341,12 +341,34 @@ body{
     justify-items: center;
 }
 .contpg2_nv1 .ingresar{
-
+    grid-column-start: 1;
+    grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
 
 }
+.contpg2_nv1 #demoPage3{
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-top: 5%;
+    align-self: start;
+
+}.contpg2_nv1 #demoPage3N3{
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-top: 5%;
+    align-self: start;
+
+}
 .contpg2_nv1 .titulo_niveles{
+    grid-column-start: 1;
+    grid-column-end: 4;
 
     grid-row-start: 1;
     grid-row-end: 2;
