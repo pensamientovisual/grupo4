@@ -8,20 +8,22 @@
         <script type="text/javascript" src="script.js"></script>
         <title>Migración</title>
         <link rel="shortcut icon" type="image/png" href="flavicon.png"/>
-        
+
         <div id="nav" > <!--nav bar-->
             <script>
             $(document).ready(function(){
                 $("#nav").empty();
                 $( "#nav" ).load( "nav.html" );
             });
-    
+
             </script>
-        </div> 
+        </div>
     </head>
 
     <body>
-
+      <audio id="sonidofondo" autoplay loop>
+        <source src="audio/alishas-theme.mp3" type="audio/mpeg">
+      </audio>
 
         <div id="mainContent">
         <script>
@@ -29,6 +31,8 @@
                 $("#mainContent").empty();
                 $( "#mainContent" ).load( "page_inicio.html" );
             });
+            var audio = document.getElementById("sonidofondo");
+              audio.volume = 0.28;
         </script>
         </div>
 
