@@ -521,7 +521,7 @@ body{
     align-self: center;
 
 }
-    
+
 
 .conPg4_nv1 .ingresar {
     grid-column-start: 3;
@@ -1275,13 +1275,12 @@ svg{
   height: 30px;
   margin-left: 40px;
 }
-/*.btnsonido{
-  background-color: rgba(255, 116, 61, 1);
+.btnsonido{
+  /*background-color: rgba(255, 116, 61, 1);
   border-radius: 5px;
   border-color: #404347;
-  color: #404347;
+  color: #404347;*/
   width: 80px;
   height: 30px;
   float:right;
 }
-*/
