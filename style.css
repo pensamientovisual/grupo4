@@ -1280,7 +1280,7 @@ svg{
   border-radius: 5px;
   border-color: #404347;
   color: #404347;*/
-  width: 80px;
-  height: 30px;
+  background-color:transparent;
+  border-color: transparent;
   float:right;
 }
